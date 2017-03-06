@@ -1,0 +1,16 @@
+wheelhouse:
+  before_script:
+    # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc//ci/ssh_keys/README.md
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - git config --global user.email "admin@agilebg.com"
+    - git config --global user.name "agilebg_buildbot"
+    - git config --global push.default simple
+  script:
+    - git clone git@gitlab.com:agilebg/gitlab-ci-scripts.git ${HOME}/gitlab-ci-scripts
+    - chmod 700 ${HOME}/gitlab-ci-scripts/build_odoo.py
+    - export PATH=${HOME}/gitlab-ci-scripts:${PATH}
+    - build_odoo.py
