@@ -320,7 +320,7 @@ msgstr "آدرس های موجود در سفارشات خرید"
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:153
 #, python-format
 msgid "Advance: %s"
-msgstr "پیش پرداخت: "
+msgstr "پیش پرداخت:  %s"
 
 #. module: sale
 #: selection:sale.config.settings,sale_pricelist_setting:0

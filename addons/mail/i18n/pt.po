@@ -3569,7 +3569,7 @@ msgstr "Canais privados"
 #: code:addons/mail/static/src/js/client_action.js:138
 #, python-format
 msgid "Public Channels"
-msgstr ""
+msgstr "Canais Públicos"
 
 #. module: mail
 #: code:addons/mail/wizard/mail_compose_message.py:180
@@ -4128,7 +4128,7 @@ msgid ""
 msgstr ""
 "A operação solicitada não pode ser concluída devido a restrições de segurança. Entre em contato com o administrador do sistema. \n"
 "\n"
-"(Tipo de documento:% s, Operação:% s)"
+"(Tipo de documento: %s, Operação: %s)"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_shortcode_source

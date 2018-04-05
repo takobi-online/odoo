@@ -1352,7 +1352,7 @@ msgstr ""
 #: code:addons/website/static/src/js/website.editor.js:137
 #, python-format
 msgid "Create page '%s'"
-msgstr "创建网页 '%s' "
+msgstr "创建页面 '%s' "
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_config_settings_create_uid
@@ -1553,7 +1553,7 @@ msgstr "向右拖动菜单创建子菜单"
 #: code:addons/website/static/src/js/website.tour.banner.js:35
 #, python-format
 msgid "Drag another block in your page, below the cover."
-msgstr ""
+msgstr "在封面下面，在您的页面中拖动另一个块。"
 
 #. module: website
 #. openerp-web
@@ -1764,6 +1764,8 @@ msgid ""
 "For example, use pictures to help break up large areas of text by altering\n"
 "                                    Text-Image and Image-Text blocks. If you prefer icons, use the Features or Feature Grid blocks."
 msgstr ""
+"例如，通过变动 \n"
+" 文本-图像和图像-文本块，使用图片帮助大面积文本分散开来。如果您比较喜欢图标，请使用功能或功能网格区块。"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.website_planner
@@ -2558,7 +2560,7 @@ msgstr "网页"
 #: code:addons/website/models/website.py:307
 #, python-format
 msgid "Page <b>%s</b> contains a link to this page"
-msgstr "<b/>"
+msgstr "页面 <b>%s</b> 包含跳转链接"
 
 #. module: website
 #. openerp-web
@@ -3091,7 +3093,7 @@ msgstr "告诉客户<br/>这一功能的价值"
 #: code:addons/website/models/website.py:312
 #, python-format
 msgid "Template <b>%s (id:%s)</b> contains a link to this page"
-msgstr "<b/>"
+msgstr "模板 <b>%s (id:%s)</b> 含跳转链接"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.500
@@ -3249,7 +3251,7 @@ msgstr "网页未找到，如果你是管理员你可以创建它"
 #: code:addons/website/models/website.py:326
 #, python-format
 msgid "This page is in the menu <b>%s</b>"
-msgstr "<b/>"
+msgstr "该页面位于菜单 <b>%s</b>"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.snippet_options
@@ -3888,7 +3890,7 @@ msgstr "你好像对此分析帐户没有访问权限."
 msgid ""
 "You have many blocks available: References, Quotes Slider, Twitter "
 "Scroller,etc."
-msgstr ""
+msgstr "您有许多可用块：参考、报价滑块、Twitter 滚动条等。"
 
 #. module: website
 #. openerp-web
