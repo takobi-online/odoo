@@ -2305,7 +2305,7 @@ msgstr "Motivo"
 #: model:ir.model,name:mrp.model_mrp_product_produce
 #: model:ir.ui.view,arch_db:mrp.view_mrp_product_produce_wizard
 msgid "Record Production"
-msgstr ""
+msgstr "Registrare la Produzione"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_bom.py:131
@@ -2484,7 +2484,7 @@ msgstr "Scarto"
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_scrap_count
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder_scrap_count
 msgid "Scrap Move"
-msgstr ""
+msgstr "Rottamazione"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder_scrap_ids

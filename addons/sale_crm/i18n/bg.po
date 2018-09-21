@@ -26,7 +26,7 @@ msgstr ""
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_issue_count
 msgid "# Issues"
-msgstr ""
+msgstr "# Грешки"
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_sale_order_count
@@ -41,7 +41,7 @@ msgstr "<span class=\"o_stat_text\"> Поръчки</span>"
 #. module: sale_crm
 #: model:ir.ui.view,arch_db:sale_crm.crm_case_form_view_oppor
 msgid "<span class=\"o_stat_text\"> Quote(s) </span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\"> Аверта(и) </span>"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_associate_member
@@ -49,38 +49,40 @@ msgid ""
 "A member with whom you want to associate your membership. It will consider "
 "the membership state of the associated member."
 msgstr ""
+"Член, с когото желаете да свързвате членството си. Той ще разгледа "
+"състоянието на членство на асоциирания член."
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_associate_member
 msgid "Associate Member"
-msgstr ""
+msgstr "Асоцииран член"
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_membership_cancel
 msgid "Cancel Membership Date"
-msgstr ""
+msgstr "Отменете дата на членство"
 
 #. module: sale_crm
 #. openerp-web
 #: code:addons/sale_crm/static/src/js/tour.js:16
 #, python-format
 msgid "Click here to see more options."
-msgstr ""
+msgstr "Натиснете тук, за да видите повече опции."
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_payment_token_count
 msgid "Count Payment Token"
-msgstr ""
+msgstr "Сметнете токена за плащане"
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_membership_state
 msgid "Current Membership Status"
-msgstr ""
+msgstr "Текущо състояние на членство"
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_property_stock_customer
 msgid "Customer Location"
-msgstr "Местонахождение на клиент"
+msgstr "Локация на клиент"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_membership_start
@@ -90,17 +92,17 @@ msgstr "Дата от която членството става активно.
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_membership_cancel
 msgid "Date on which membership has been cancelled"
-msgstr ""
+msgstr "Дата, на която членството е отменено"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_membership_stop
 msgid "Date until which membership remains active."
-msgstr "Дато до която членството остава активно."
+msgstr "Дата, до която членството остава активно."
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_free_member
 msgid "Free Member"
-msgstr ""
+msgstr "Свободен член"
 
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_account_invoice
@@ -110,7 +112,7 @@ msgstr "Фактура"
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_target_sales_invoiced
 msgid "Invoiced in Sale Orders Target"
-msgstr ""
+msgstr "Фактурирани в цел 'Поръчки за продажба'"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_membership_state
@@ -123,6 +125,13 @@ msgid ""
 "-Invoiced Member: A member whose invoice has been created.\n"
 "-Paying member: A member who has paid the membership fee."
 msgstr ""
+"Посочва състоянието на членство.\n"
+"-Нечленуващ: контрагент, който не е кандидатствал за никакво членство.\n"
+"-Анулиран член: член, който е прекъснал членството си.\n"
+"-Стар член: член, чието членство е изтекло.\n"
+"-Изчакващ член: член, кандидатствал за членство, на който му предстои изготвяне на фактура.\n"
+"-Фактуриран член: член, чиято фактура е създадена.\n"
+"-Плащащ член: член, заплатил членската си такса."
 
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_crm_lead
@@ -134,12 +143,12 @@ msgstr "Лийд/Възможност"
 #: code:addons/sale_crm/static/src/js/tour.js:20
 #, python-format
 msgid "Let's have a look at the quotations of this sales team."
-msgstr ""
+msgstr "Нека хвърлим поглед към офертите на този търговски отдел."
 
 #. module: sale_crm
 #: model:ir.ui.view,arch_db:sale_crm.sale_view_inherit123
 msgid "Log in the chatter from which opportunity the order originates"
-msgstr ""
+msgstr "Регистрирайте се в чатъра, от чиято възможност произтича поръчката"
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_member_lines
@@ -149,7 +158,7 @@ msgstr "Членство"
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_membership_amount
 msgid "Membership Amount"
-msgstr ""
+msgstr "Размер на членство"
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_membership_stop
@@ -194,7 +203,7 @@ msgstr "Поръчки"
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_payment_token_ids
 msgid "Payment Tokens"
-msgstr ""
+msgstr "Платежни токени"
 
 #. module: sale_crm
 #: model:ir.actions.act_window,name:sale_crm.sale_action_quotations_new
@@ -216,7 +225,7 @@ msgstr "Поръчка за продажба"
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_free_member
 msgid "Select if you want to give free membership."
-msgstr ""
+msgstr "Изберете, ако искате да дадете безплатно членство."
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_picking_warn
@@ -249,7 +258,7 @@ msgstr "Етикети"
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_membership_amount
 msgid "The price negotiated by the partner"
-msgstr ""
+msgstr "Цената, договорена от контрагента"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_property_stock_customer
@@ -258,7 +267,7 @@ msgid ""
 "destination location for goods you send to this partner"
 msgstr ""
 "Това местонахождение ще се използва вместо това по подрабиране като крайно "
-"местонахождение за стоките които пращате на този партньор"
+"местонахождение за стоките които пращате на този контрагент"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_res_users_property_stock_supplier
@@ -266,8 +275,9 @@ msgid ""
 "This stock location will be used, instead of the default one, as the source "
 "location for goods you receive from the current partner"
 msgstr ""
-"Когато получавате стоки от текущия партньор като източник ще бъде използвано"
-" това местонахождение вместо това по подразбиране"
+"Това стоково местонахождение ще бъде използвано вместо местоположението по "
+"подразбиране в качеството му на източник на стоки, които получавате от "
+"текущия контрагент"
 
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_res_users
@@ -277,4 +287,4 @@ msgstr "Потребители"
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_res_users_property_stock_supplier
 msgid "Vendor Location"
-msgstr ""
+msgstr "Местоположение на доставчик"
