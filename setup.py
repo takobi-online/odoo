@@ -121,7 +121,7 @@ def py2exe_options():
 
 setup(
     name='odoo',
-    version=version,
+    version='12.0.post20181026',
     description=description,
     long_description=long_desc,
     url=url,
