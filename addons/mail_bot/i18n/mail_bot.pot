@@ -67,7 +67,7 @@ msgstr ""
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_channel.py:38
 #, python-format
-msgid "Hello,<br/>Odoo's chat helps employees collaborate efficiently. I'm here to help you discover its features.<br/><b>Try to send me an emoji :)</b>"
+msgid "Hello,<br/>Takobi's chat helps employees collaborate efficiently. I'm here to help you discover its features.<br/><b>Try to send me an emoji :)</b>"
 msgstr ""
 
 #. module: mail_bot
@@ -85,7 +85,7 @@ msgstr ""
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:59
 #, python-format
-msgid "I'm just a bot... :( You can check <a href=\"https://www.odoo.com/page/docs\">our documentation</a>) for more information!"
+msgid "I'm just a bot... :( You can check <a href=\"https://takobi.online\">our documentation</a>) for more information!"
 msgstr ""
 
 #. module: mail_bot
@@ -141,26 +141,26 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_bot/static/src/js/systray_messaging_menu.js:64
 #, python-format
-msgid "Odoo has now the permission to send you native notifications on this device."
+msgid "Takobi has now the permission to send you native notifications on this device."
 msgstr ""
 
 #. module: mail_bot
 #. openerp-web
 #: code:addons/mail_bot/static/src/js/systray_messaging_menu.js:61
 #, python-format
-msgid "Odoo will not have the permission to send native notifications on this device."
+msgid "Takobi will not have the permission to send native notifications on this device."
 msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
-msgid "OdooBot Status"
+msgid "TakobiBot Status"
 msgstr ""
 
 #. module: mail_bot
 #. openerp-web
 #: code:addons/mail_bot/static/src/js/mailbot_service.js:39
 #, python-format
-msgid "OdooBot has a request"
+msgid "TakobiBot has a request"
 msgstr ""
 
 #. module: mail_bot
@@ -210,7 +210,7 @@ msgstr ""
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:71
 #, python-format
-msgid "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. Write \"@odoobot\" and select me."
+msgid "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. Write \"@takobibot\" and select me."
 msgstr ""
 
 #. module: mail_bot
@@ -239,7 +239,7 @@ msgstr ""
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:48
 #, python-format
-msgid "Wow you are a natural!<br/>Ping someone to grab its attention with @nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+msgid "Wow you are a natural!<br/>Ping someone to grab its attention with @nameoftheuser. <b>Try to ping me using @TakobiBot</b> in a sentence."
 msgstr ""
 
 #. module: mail_bot
@@ -252,13 +252,13 @@ msgstr ""
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:51
 #, python-format
-msgid "Yep, I am here! 🎉 <br/>You finished the tour, you can <b>close this chat window</b>. Enjoy discovering Odoo."
+msgid "Yep, I am here! 🎉 <br/>You finished the tour, you can <b>close this chat window</b>. Enjoy discovering Takobi."
 msgstr ""
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:79
 #, python-format
-msgid "Yep, OdooBot is in the place!"
+msgid "Yep, TakobiBot is in the place!"
 msgstr ""
 
 #. module: mail_bot

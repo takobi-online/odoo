@@ -58,10 +58,10 @@ return MessagingMenu.include({
     _handleResponseNotificationPermission: function (value) {
         if (value !== 'granted') {
             this.call('bus_service', 'sendNotification', _t('Permission denied'),
-                _t('Odoo will not have the permission to send native notifications on this device.'));
+                _t('Takobi will not have the permission to send native notifications on this device.'));
         } else {
             this.call('bus_service', 'sendNotification', _t('Yay, push notifications are enabled!'),
-                _t('Odoo has now the permission to send you native notifications on this device.'));
+                _t('Takobi has now the permission to send you native notifications on this device.'));
         }
         this._updateCounter();
     },

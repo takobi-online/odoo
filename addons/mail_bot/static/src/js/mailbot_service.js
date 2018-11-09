@@ -36,7 +36,7 @@ var MailBotService =  AbstractService.extend({
         var previews = [];
         if (this.hasRequest() && (filter === 'mailbox_inbox' || !filter)) {
             previews.push({
-                title: _t("OdooBot has a request"),
+                title: _t("TakobiBot has a request"),
                 imageSRC: "/mail/static/src/img/odoobot.png",
                 status: 'bot',
                 body:  _t("Enable desktop notifications to chat"),
