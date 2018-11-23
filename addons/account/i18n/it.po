@@ -11435,8 +11435,8 @@ msgstr "Aggiornamento automatico tassi di cambio"
 #. openerp-web
 #: code:addons/account/static/src/xml/bills_tree_upload_views.xml:5
 #, python-format
-msgid "Upload"
-msgstr "Carica"
+msgid "Upload PDF"
+msgstr "Carica PDF"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_invoice_import_wizard_form_view

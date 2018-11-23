@@ -1584,7 +1584,7 @@ QUnit.module('Views', {
                     return $.Deferred().reject({
                         code: 200,
                         data: {},
-                        message: "Odoo server error",
+                        message: "Takobi server error",
                     }, $.Event());
                 }
                 return this._super.apply(this, arguments);
@@ -1652,7 +1652,7 @@ QUnit.module('Views', {
                     return $.Deferred().reject({
                         code: 200,
                         data: {},
-                        message: "Odoo server error",
+                        message: "Takobi server error",
                     }, $.Event());
                 }
                 return this._super.apply(this, arguments);
@@ -1706,7 +1706,7 @@ QUnit.module('Views', {
                     return $.Deferred().reject({
                         code: 200,
                         data: {},
-                        message: "Odoo server error",
+                        message: "Takobi server error",
                     }, $.Event());
                 }
                 if (args.method === 'create') {
@@ -1763,7 +1763,7 @@ QUnit.module('Views', {
                     return $.Deferred().reject({
                         code: 200,
                         data: {},
-                        message: "Odoo server error",
+                        message: "Takobi server error",
                     }, $.Event());
                 }
                 if (args.method === 'create') {

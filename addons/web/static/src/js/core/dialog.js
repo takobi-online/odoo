@@ -56,7 +56,7 @@ var Dialog = Widget.extend({
         this._opened = $.Deferred();
 
         options = _.defaults(options || {}, {
-            title: _t('Odoo'), subtitle: '',
+            title: _t('Takobi'), subtitle: '',
             size: 'large',
             fullscreen: false,
             dialogClass: '',
