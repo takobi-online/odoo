@@ -10,7 +10,7 @@ lib_name = 'odoo'
 
 setup(
     name='odoo',
-    version='12.0.post20181123',
+    version='12.0.post20181205',
     description=description,
     long_description=long_desc,
     url=url,
