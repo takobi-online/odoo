@@ -20,6 +20,7 @@ import unittest
 import psutil
 import werkzeug.serving
 from werkzeug.debug import DebuggedApplication
+from odoo.tools.config import config
 
 if os.name == 'posix':
     # Unix only for workers
@@ -940,6 +941,8 @@ class WorkerCron(Worker):
         rpc_request_flag = rpc_request.isEnabledFor(logging.DEBUG)
         _logger.debug("WorkerCron (%s) polling for jobs", self.pid)
         db_names = self._db_list()
+        allowed_cron_db = config.get('allowed_cron_db')
+        skip_cron_db = config.get('skip_cron_db')
         if len(db_names):
             self.db_index = (self.db_index + 1) % len(db_names)
             db_name = db_names[self.db_index]
@@ -948,8 +951,12 @@ class WorkerCron(Worker):
                 start_time = time.time()
                 start_memory = memory_info(psutil.Process(os.getpid()))
 
-            from odoo.addons import base
-            base.models.ir_cron.ir_cron._acquire_job(db_name)
+            allowed_cron_dbs = allowed_cron_db.split(',')
+            skip_cron_dbs = skip_cron_db.split(',')
+            if db_name in allowed_cron_dbs or allowed_cron_db == '*':
+                if db_name not in skip_cron_dbs:
+                    from odoo.addons import base
+                    base.models.ir_cron.ir_cron._acquire_job(db_name)
 
             # dont keep cursors in multi database mode
             if len(db_names) > 1:
