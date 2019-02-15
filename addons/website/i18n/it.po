@@ -3457,12 +3457,12 @@ msgstr "Promuovi la pagina sul web"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__partner_id
 msgid "Public Partner"
-msgstr "Partner Pubblico"
+msgstr "Partner pubblico"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__user_id
 msgid "Public User"
-msgstr "Utente Pubblico"
+msgstr "Utente pubblico"
 
 #. module: website
 #. openerp-web
@@ -4265,12 +4265,12 @@ msgstr "Traceback"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Track clicks on UTM links"
-msgstr "Traccia i click sui link con un codice UTM "
+msgstr "Tenere traccia dei click sui link con un codice UTM "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Track visits in Google Analytics"
-msgstr "Traccia le visite con Google Analytics"
+msgstr "Tenere traccia delle visite con Google Analytics"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
