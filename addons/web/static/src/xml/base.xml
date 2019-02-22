@@ -147,7 +147,7 @@
             <i class="fa fa-clipboard mr8"/>Copy the full error to clipboard
         </button>
         <p><b>An error occurred</b></p>
-        <p>Please use the copy button to report the error to your support service.</p>
+        <p>Usare il pulsante copia per riportare l'errore al <a href="https://takobi.online/page/nuovo-ticket" target="_blank">servizio di supporto</a>.</p>
     </div>
 
     <t t-set="errUID" t-value="_.uniqueId()"/>
