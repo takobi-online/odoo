@@ -19,7 +19,7 @@
             <table style="width: 100%; max-width: 600px; border-spacing: 0; border: 1px solid #e7e7e7; border-bottom: none; color: #6e7172; line-height: 23px; text-align: left;">
                 <tr>
                     <td style="border-collapse: collapse; padding: 10px 40px; text-align: left;">
-                        <strong style="margin-left: -22px; color: #000000; font-size: 22px; line-height: 32px;">${company.name} at a glance</strong>
+                        <strong style="margin-left: -22px; color: #000000; font-size: 22px; line-height: 32px;">${company.name} a colpo d'occhio</strong>
                         <div style="color: #000000; font-size: 15px; margin-left:-22px;">${datetime.date.today().strftime('%B %d, %Y')}</div>
                     </td>
                     <td style="text-align: right; padding: 10px 40px">
@@ -51,7 +51,7 @@
                                             <tr>
                                                 <td style="border-collapse: collapse; padding: 20px; text-align: center;">
                                                     <span style="color: #56b3b5; font-size: 35px; font-weight: bold; text-decoration: none; line-height: 36px;">${data['yesterday'][kpi][kpi]}</span><br/>
-                                                    <span style="color: #888888; display: inline-block; font-size: 12px; line-height: 18px; text-transform: uppercase;">Yesterday</span>
+                                                    <span style="color: #888888; display: inline-block; font-size: 12px; line-height: 18px; text-transform: uppercase;">Ieri</span>
                                                     % if data['yesterday'][kpi]['margin'] != 0.0:
                                                         <span style="color: #888888; display: block; font-size: 12px; line-height: 18px; text-transform: uppercase;">
                                                             % if data['yesterday'][kpi]['margin'] > 0.0:
@@ -71,7 +71,7 @@
                                             <tr>
                                                 <td style="border-collapse: collapse; padding: 20px; text-align: center;">
                                                     <span style="color: #9a5b82; font-size: 35px; font-weight: bold; text-decoration: none; line-height: 36px;">${data['lastweek'][kpi][kpi]}</span><br/>
-                                                    <span style="color: #888888; display: inline-block; font-size: 12px; line-height: 18px; text-transform: uppercase;">Last 7 Days</span>
+                                                    <span style="color: #888888; display: inline-block; font-size: 12px; line-height: 18px; text-transform: uppercase;">Ultimi 7 giorni</span>
                                                     % if data['lastweek'][kpi]['margin'] != 0.0:
                                                         <span style="color: #888888; display: block; font-size: 12px; line-height: 18px; text-transform: uppercase;">
                                                             % if data['lastweek'][kpi]['margin'] > 0.0:
@@ -91,7 +91,7 @@
                                             <tr>
                                                 <td style="border-collapse: collapse; margin: 0; padding: 20; text-align: center;">
                                                     <span style="color: #56b3b5; font-size: 35px; font-weight: bold; text-decoration: none; line-height: 36px">${data['lastmonth'][kpi][kpi]}</span><br/>
-                                                    <span style="color: #888888; display: inline-block; font-size: 12px; line-height: 18px; text-transform: uppercase;">Last 30 Days</span>
+                                                    <span style="color: #888888; display: inline-block; font-size: 12px; line-height: 18px; text-transform: uppercase;">Ultimi 30 giorni</span>
                                                     % if data['lastmonth'][kpi]['margin'] != 0.0:
                                                         <span style="color: #888888; display: block; font-size: 12px; line-height: 18px; text-transform: uppercase;">
                                                              % if data['lastmonth'][kpi]['margin'] > 0.0:
@@ -121,33 +121,20 @@
                     </tr>
                 </table>
             % endif
-            <table style="width: 100%; max-width: 600px; margin-top: 5px; border: 1px solid #e7e7e7;">
-                <tr>
-                    <td style="border-collapse: collapse; background-color: #ffffff; line-height: 21px; padding: 0 20px 10px 20px; text-align: center;"><br/>
-                        <div style="color: #3d466e; font-size: 16px; font-weight: 600; line-height: 23px;">Run your business from anywhere with Odoo Mobile.</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div style="text-align: center;"><a href="https://play.google.com/store/apps/details?id=com.odoo.mobile" target="_blank"><img src="/digest/static/src/img/google_play.png" style="display: inline-block; height: 30px; margin-left: auto; margin-right: 12px;"/></a><a href="https://itunes.apple.com/us/app/odoo/id1272543640" target="_blank"><img src="/digest/static/src/img/app_store.png" style="display: inline-block; height: 30px; margin-left: 12px; margin-right: auto;"/></a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
             <table style="margin-top: 5px; border: 1px solid #e7e7e7; font-size: 15px; width: 100%; max-width: 600px;">
                 <tr>
                     <td style="border-collapse: collapse; margin: 0; padding: 10px 20px;">
                         % if user.has_group('base.group_system'):
-                            <div style="margin-top: 20px;"> 
-                                Want to customize the email?
-                                <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #875A7B;">Choose the metrics you care about</a>
+                            <div style="margin-top: 20px;">
+                                Vuoi personalizzare l'email?
+                                <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #875A7B;">Scegli le metriche che ti interessano</a>
                             </div>
                             <br />
                         % endif
                         <p style="font-size: 11px; margin-top: 10px;">
                             <strong>
                                 Sent by
-                                <a href="https://www.odoo.com" style="text-decoration: none; color: #875A7B;">Odoo</a> - <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #888888;">Unsubscribe</a>
+                                <a href="https://takobi.online" style="text-decoration: none; color: #875A7B;">Takobi</a> - <a href="/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}" target="_blank" style="color: #888888;">Unsubscribe</a>
                             </strong>
                         </p>
                     </td>
