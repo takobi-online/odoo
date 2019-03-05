@@ -7203,10 +7203,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on <i>apply</i>\n"
-"                        Odoo will process all the <i>reserved</i> quantities."
+"                        TAKOBI will process all the <i>reserved</i> quantities."
 msgstr ""
 "Non hai ancora registrato le quantità <i>effettuate</i> cliccando su <i>Applica</i>\n"
-"                        Odoo tratterà tutte le quantità <i>prenotate</i>."
+"                        TAKOBI tratterà tutte le quantità <i>prenotate</i>."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
