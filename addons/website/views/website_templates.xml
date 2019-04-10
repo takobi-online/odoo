@@ -291,8 +291,7 @@
 
 <template id="brand_promotion" name="Brand Promotion">
     <div class="o_brand_promotion">
-        Create a <a target="_blank" href="http://www.odoo.com/page/website-builder?utm_source=db&amp;utm_medium=website">free website</a> with
-        <a target="_blank" class="badge badge-danger" href="http://www.odoo.com/page/website-builder?utm_source=db&amp;utm_medium=website">Odoo</a>
+        Powered by <a target="_blank" class="badge badge-danger" href="https://takobi.online/page/ecommerce/?utm_source=db&amp;utm_medium=website">TAKOBI</a>
     </div>
 </template>
 
