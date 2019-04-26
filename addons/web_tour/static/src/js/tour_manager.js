@@ -405,7 +405,7 @@ return core.Class.extend(mixins.EventDispatcherMixin, ServicesMixin, {
         SHOW_APPS_MENU_ITEM: {
             edition: 'community',
             trigger: '.o_menu_apps a',
-            auto: true,
+            content: _t('Fare click sulla <i>icona Home</i> per navigare fra le applicazioni.'),
             position: "bottom",
         },
 
