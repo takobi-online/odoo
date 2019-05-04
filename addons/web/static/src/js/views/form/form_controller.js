@@ -6,6 +6,7 @@ var dialogs = require('web.view_dialogs');
 var core = require('web.core');
 var Dialog = require('web.Dialog');
 var Sidebar = require('web.Sidebar');
+var DebugManager = require('web.DebugManager');
 
 var _t = core._t;
 var qweb = core.qweb;
@@ -192,6 +193,10 @@ var FormController = BasicController.extend({
                 otherItems.push({
                     label: _t('Duplicate'),
                     callback: this._onDuplicateRecord.bind(this),
+                });
+                otherItems.push({
+                    label: _t('Imposta predefiniti'),
+                    callback: this._onSetDefaults.bind(this),
                 });
             }
             this.sidebar = new Sidebar(this, {
@@ -554,6 +559,20 @@ var FormController = BasicController.extend({
                 self._updateEnv();
                 self._setMode('edit');
             });
+    },
+    /**
+     * Called when the user clicks on 'Imposta predefiniti' in the sidebar
+     *
+     * @private
+     */
+    _onSetDefaults: function () {
+        var self = this;
+        var parent = self.getParent();
+        var debugManager = new DebugManager(self);
+        var action = parent.actions[Object.keys(parent.actions)[0]];
+        debugManager._controller = self;
+        debugManager._action = action;
+        debugManager.set_defaults();
     },
     /**
      * Called when the user wants to edit the current record -> @see _setMode
