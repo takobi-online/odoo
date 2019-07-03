@@ -9034,6 +9034,12 @@ msgid "Cannot aggregate field %r."
 msgstr ""
 
 #. module: base
+#: code:addons/base/models/ir_translation.py:256
+#, python-format
+msgid "Cannot be translated; record not accessible."
+msgstr ""
+
+#. module: base
 #: code:addons/base/models/res_lang.py:228
 #, python-format
 msgid "Cannot deactivate a language that is currently used by users."
@@ -13217,7 +13223,7 @@ msgstr "HTML"
 #. module: base
 #: model:ir.model,name:base.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "HTTP irányítás"
 
 #. module: base
 #: model:res.country,name:base.ht
@@ -15740,7 +15746,7 @@ msgstr "Marketing"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_marketing_automation
 msgid "Marketing Automation"
-msgstr ""
+msgstr "Marketing automatizálás"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_marketing_automation

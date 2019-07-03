@@ -172,7 +172,7 @@ msgstr ""
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__model
 msgid "Model"
-msgstr ""
+msgstr "ម៉ូដែល"
 
 #. module: snailmail
 #: code:addons/snailmail/models/snailmail_letter.py:211
@@ -229,7 +229,7 @@ msgstr ""
 #. module: snailmail
 #: selection:snailmail.letter,state:0
 msgid "Sent"
-msgstr ""
+msgstr "បានផ្ងើរ"
 
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_snailmail_letter
