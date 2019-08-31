@@ -32,7 +32,6 @@
 # lucasdeliege <deliegelucas@gmail.com>, 2018
 # Xavier Symons <xsy@openerp.com>, 2018
 # Lucas Deliege <lud@odoo.com>, 2018
-# Melanie Bernard <mbe@odoo.com>, 2018
 # Alexis de Lattre <alexis@via.ecp.fr>, 2018
 # Xavier Belmere <Info@cartmeleon.com>, 2018
 # f5f0a0dac17dde787a1d812a6989680e, 2018
@@ -52,10 +51,12 @@
 # 44fd1b7fd1ad5b321e37d151521961ad, 2019
 # Eloïse Stilmant <est@odoo.com>, 2019
 # William Olhasque <william.olhasque@scopea.fr>, 2019
-# Satish kumar <Satishafd@gmail.com>, 2019
 # Doryan R, 2019
 # Mohamed BENKIRANE <benkirane.med.ali@gmail.com>, 2019
 # Martin Trigaux, 2019
+# Melanie Bernard <mbe@odoo.com>, 2019
+# Valaeys Stéphane <svalaeys@fiefmanage.ch>, 2019
+# Aurélien Pillevesse <aurelienpillevesse@hotmail.fr>, 2019
 # Moka Tourisme <hello@mokatourisme.fr>, 2019
 # 
 msgid ""
@@ -7967,7 +7968,7 @@ msgstr "Titulaire de compte"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_bank__acc_holder_name
 msgid "Account Holder Name"
-msgstr "Ancien nom du compte"
+msgstr "Nom du détenteur du compte si différent du partenaire"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_invoice_extract
@@ -8015,8 +8016,8 @@ msgid ""
 "Account holder name, in case it is different than the name of the Account "
 "Holder"
 msgstr ""
-"Compte le nom du titulaire, dans le cas où il est différent du nom du "
-"titulaire du compte."
+"Nom du détenteur du compte, dans le cas où il est différent du nom du "
+"partenaire lié au compte du compte."
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_accounting
@@ -8598,7 +8599,7 @@ msgstr "Autoriser les notifications push pour les appareils"
 #: model:ir.module.module,summary:base.module_website_sale_comparison
 msgid "Allow shoppers to compare products based on their attributes"
 msgstr ""
-"Autorisez les acheteurs à comparer les articles en se basant sur leurs "
+"Autorisez les clients à comparer les articles en se basant sur leurs "
 "attributs"
 
 #. module: base
@@ -15379,7 +15380,7 @@ msgstr "Est une société"
 #: model:ir.model.fields,field_description:base.field_res_partner__is_company
 #: model:ir.model.fields,field_description:base.field_res_users__is_company
 msgid "Is a Company"
-msgstr "Est une Entreprise"
+msgstr "Est une entreprise"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner__customer
@@ -22318,7 +22319,7 @@ msgstr "Adresse d'expédition"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_wishlist
 msgid "Shopper's Wishlist"
-msgstr "Liste d'envies des acheteurs"
+msgstr "Liste d'envies des clients"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_module_uninstall__show_all
@@ -22968,7 +22969,7 @@ msgstr "TLS (STARTTLS)"
 #. module: base
 #: model:ir.module.module,summary:base.module_point_of_sale
 msgid "Tablet POS: shops and restaurants"
-msgstr ""
+msgstr "Caisse mobile : Boutiques et restaurants"
 
 #. module: base
 #: selection:report.paperformat,format:0
@@ -26408,8 +26409,8 @@ msgstr "Ex. : fr_FR"
 #: model_terms:ir.ui.view,arch_db:base.view_company_form
 #: model_terms:ir.ui.view,arch_db:base.view_partner_address_form
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
-msgid "e.g. www.odoo.com"
-msgstr "Ex. : www.odoo.com"
+msgid "e.g. https://www.odoo.com"
+msgstr "e.x. https://www.odoo.com"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_ebay
