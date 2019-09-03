@@ -6,13 +6,15 @@
 # Sengtha Chay <sengtha@gmail.com>, 2016
 # Samkhann Seang <seangsamkhann@gmail.com>, 2016
 # Chan Nath <channath@gmail.com>, 2016
+# Lux Sok <sok.lux@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-09-07 08:57+0000\n"
-"Last-Translator: Chan Nath <channath@gmail.com>, 2016\n"
+"PO-Revision-Date: 2016-09-07 09:32+0000\n"
+"Last-Translator: Lux Sok <sok.lux@gmail.com>, 2019\n"
 "Language-Team: Khmer (https://www.transifex.com/odoo/teams/41243/km/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -151,7 +153,7 @@ msgstr ""
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.event_track_proposal
 msgid "Application"
-msgstr ""
+msgstr "កម្មវិធី"
 
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_search
@@ -188,7 +190,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_color
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_tag_color
 msgid "Color Index"
-msgstr ""
+msgstr "ការកំណត់ព័ណ៌"
 
 #. module: website_event_track
 #: selection:event.track,state:0
@@ -221,7 +223,7 @@ msgstr "កាលបរិច្ឆេត"
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_kanban
 msgid "Delete"
-msgstr ""
+msgstr "លុប"
 
 #. module: website_event_track
 #: model:event.track,name:website_event_track.event_track6
@@ -257,7 +259,7 @@ msgstr "ឯកសារ"
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_duration
 msgid "Duration"
-msgstr ""
+msgstr "អំឡុងពេល"
 
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_kanban
@@ -341,7 +343,7 @@ msgstr ""
 #. module: website_event_track
 #: model:event.sponsor.type,name:website_event_track.event_sponsor_type3
 msgid "Gold"
-msgstr ""
+msgstr "មាស"
 
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_search
@@ -351,7 +353,7 @@ msgstr "Group By"
 #. module: website_event_track
 #: selection:event.track,priority:0
 msgid "High"
-msgstr ""
+msgstr "ខ្ពស់"
 
 #. module: website_event_track
 #: selection:event.track,priority:0
@@ -446,17 +448,17 @@ msgstr "ផ្លាស់ប្តូរចុងក្រោយ"
 #. module: website_event_track
 #: model:ir.ui.menu,name:website_event_track.menu_event_track_location
 msgid "Locations"
-msgstr ""
+msgstr "ទីតាំង"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_sponsor_image_medium
 msgid "Logo"
-msgstr ""
+msgstr "រូបសញ្ញា"
 
 #. module: website_event_track
 #: selection:event.track,priority:0
 msgid "Low"
-msgstr ""
+msgstr "ខាត"
 
 #. module: website_event_track
 #: model:event.track,name:website_event_track.event_track31
@@ -575,7 +577,7 @@ msgstr ""
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_partner_name
 msgid "Partner Name"
-msgstr ""
+msgstr "ឈ្មោះដៃគូ"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_partner_phone
@@ -590,7 +592,7 @@ msgstr ""
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_priority
 msgid "Priority"
-msgstr ""
+msgstr "អតិភាព"
 
 #. module: website_event_track
 #: selection:event.track,state:0
@@ -634,13 +636,13 @@ msgstr ""
 #. module: website_event_track
 #: selection:event.track,state:0
 msgid "Refused"
-msgstr ""
+msgstr "បដិសេធ"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_user_id
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_search
 msgid "Responsible"
-msgstr ""
+msgstr "ការទទួលខុសត្រូវ"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_location_id_8539
@@ -717,7 +719,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_state
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_search
 msgid "Status"
-msgstr ""
+msgstr "ស្ថានភាព"
 
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.event_track_proposal
@@ -737,7 +739,7 @@ msgstr "ធែក"
 #. module: website_event_track
 #: sql_constraint:event.track.tag:0
 msgid "Tag name already exists !"
-msgstr ""
+msgstr "មានស្លាកឈ្មោះរួចហើយ!"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track_tag_ids
@@ -909,7 +911,7 @@ msgstr ""
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.event_track_proposal
 msgid "Your Email"
-msgstr ""
+msgstr "អ៊ីម៉ែលរបស់អ្នក"
 
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.event_track_proposal
@@ -940,7 +942,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_form
 #: model:ir.ui.view,arch_db:website_event_track.view_event_track_kanban
 msgid "hours"
-msgstr ""
+msgstr "ម៉ោង"
 
 #. module: website_event_track
 #: model:ir.ui.view,arch_db:website_event_track.agenda
