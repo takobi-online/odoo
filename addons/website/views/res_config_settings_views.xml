@@ -90,7 +90,7 @@
                                         Display this website when users visit this domain
                                     </div>
                                     <div class="mt8">
-                                        <field name="website_domain" placeholder="www.odoo.com"/>
+                                        <field name="website_domain" placeholder="www.takobi.online"/>
                                     </div>
                                     <div class="mt8 text-muted" title="You can have 2 websites with same domain AND a condition on country group to select wich website use.">
                                         Once the selection of available websites by domain is done, you can filter by country group.
@@ -137,7 +137,7 @@
                                     </div>
                                     <div attrs="{'invisible': [('has_google_analytics', '=', False)]}">
                                         <a href="https://www.odoo.com/documentation/user/12.0/website/optimize/google_analytics.html"
-                                                class="oe_link" target="_blank">
+                                                class="oe_link" target="_blank" style="display:none">
                                             <i class="fa fa-arrow-right"/>
                                             How to get my Tracking ID
                                         </a>
@@ -166,7 +166,7 @@
                                     </div>
                                     <div attrs="{'invisible': [('has_google_analytics_dashboard', '=', False)]}">
                                         <a href="https://www.odoo.com/documentation/user/online/website/optimize/google_analytics_dashboard.html"
-                                            class="oe_link" target="_blank">
+                                            class="oe_link" target="_blank" style="display:none">
                                             <i class="fa fa-arrow-right"/>
                                             How to get my Client ID
                                         </a>
