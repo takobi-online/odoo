@@ -3105,11 +3105,11 @@ msgstr ""
 #: model:ir.module.module,description:base.module_website_crm
 msgid ""
 "\n"
-"Generate leads or opportunities in the CRM app from a contact form published on the Contact us page of your website. This form can be customized thanks to the *Form Builder* module (available in Odoo Enterprise).\n"
+"Generate leads or opportunities in the CRM app from a contact form published on the Contact us page of your website.\n"
 "    "
 msgstr ""
 "\n"
-"Genera dei lead o delle opportunità nell'applicazione CRM da un modulo di contatto pubblicato sulla pagina Contatti del tuo sito Web. Questo modulo può essere personalizzato grazie al modulo *Generatore di moduli* (disponibile in Odoo Enterprise)\n"
+"Genera dei lead o delle opportunità nell'applicazione CRM da un modulo di contatto pubblicato sulla pagina Contatti del tuo sito Web.\n"
 "    "
 
 #. module: base
