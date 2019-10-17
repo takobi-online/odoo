@@ -90,7 +90,7 @@ class PaymentAcquirer(models.Model):
         help="Make this payment acquirer available (Customer invoices, etc.)")
     # Formerly associated to `authorize` option from auto_confirm
     capture_manually = fields.Boolean(string="Capture Amount Manually",
-        help="Capture the amount from Odoo, when the delivery is completed.")
+        help="Capture the amount from TAKOBI, when the delivery is completed.")
     journal_id = fields.Many2one(
         'account.journal', 'Payment Journal', domain=[('type', 'in', ['bank', 'cash'])],
         help="""Payments will be registered into this journal. If you get paid straight on your bank account,
@@ -167,7 +167,7 @@ class PaymentAcquirer(models.Model):
 
     payment_icon_ids = fields.Many2many('payment.icon', string='Supported Payment Icons')
     payment_flow = fields.Selection(selection=[('form', 'Redirection to the acquirer website'),
-        ('s2s','Payment from Odoo')],
+        ('s2s','Payment from TAKOBI')],
         default='form', required=True, string='Payment Flow',
         help="""Note: Subscriptions does not take this field in account, it uses server to server by default.""")
     inbound_payment_method_ids = fields.Many2many('account.payment.method', related='journal_id.inbound_payment_method_ids', readonly=False)

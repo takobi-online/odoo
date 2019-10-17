@@ -1370,8 +1370,8 @@ msgstr ""
 
 #. module: payment
 #: selection:payment.acquirer,payment_flow:0
-msgid "Payment from Odoo"
-msgstr "Pagamento da Odoo"
+msgid "Payment from TAKOBI"
+msgstr "Pagamento da TAKOBI"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.onboarding_payment_acquirer_step
@@ -1836,8 +1836,8 @@ msgstr "Tipo"
 #. openerp-web
 #: code:addons/payment/static/src/xml/payment_processing.xml:138
 #, python-format
-msgid "Unable to contact the Odoo server."
-msgstr "Impossibile contattare il server Odoo."
+msgid "Unable to contact the TAKOBI server."
+msgstr "Impossibile contattare il server TAKOBI."
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__qr_code
