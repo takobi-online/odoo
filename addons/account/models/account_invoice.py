@@ -216,7 +216,7 @@ class AccountInvoice(models.Model):
                 amount_to_show = amount_currency
             else:
                 currency = payment.company_id.currency_id
-                amount_to_show = currency._convert(amount, self.currency_id, payment.company_id, self.date or fields.Date.today())
+                amount_to_show = currency._convert(amount, self.currency_id, payment.company_id, payment.date or fields.Date.today())
             if float_is_zero(amount_to_show, precision_rounding=self.currency_id.rounding):
                 continue
             payment_ref = payment.move_id.name
@@ -648,6 +648,17 @@ class AccountInvoice(models.Model):
         self.ensure_one()
         template = self.env.ref('account.email_template_edi_invoice', False)
         compose_form = self.env.ref('account.account_invoice_send_wizard_form', False)
+        # have model_description in template language
+        lang = self.env.context.get('lang')
+        if template and template.lang:
+            lang = template._render_template(template.lang, 'account.invoice', self.id)
+        self = self.with_context(lang=lang)
+        TYPES = {
+            'out_invoice': _('Invoice'),
+            'in_invoice': _('Vendor Bill'),
+            'out_refund': _('Credit Note'),
+            'in_refund': _('Vendor Credit note'),
+        }
         ctx = dict(
             default_model='account.invoice',
             default_res_id=self.id,
@@ -655,6 +666,7 @@ class AccountInvoice(models.Model):
             default_template_id=template and template.id or False,
             default_composition_mode='comment',
             mark_invoice_as_sent=True,
+            model_description=TYPES[self.type],
             custom_layout="mail.mail_notification_paynow",
             force_email=True
         )
@@ -1509,10 +1521,7 @@ class AccountInvoice(models.Model):
 
         values['type'] = TYPE2REFUND[invoice['type']]
         values['date_invoice'] = date_invoice or fields.Date.context_today(invoice)
-        if values.get('date_due', False) and values['date_invoice']:
-            # To ensure that the date_invoice is a date object
-            if self._fields['date_invoice'].to_date(values['date_invoice']) > values['date_due']:
-                values['date_due'] = values['date_invoice']
+        values['date_due'] = values['date_invoice']
         values['state'] = 'draft'
         values['number'] = False
         values['origin'] = invoice.number
