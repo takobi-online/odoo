@@ -36,7 +36,8 @@ class PaymentAcquirerStripeSCA(models.Model):
             + "?reference=%s" % tx_values["reference"],
             "cancel_url": urls.url_join(base_url, StripeController._cancel_url)
             + "?reference=%s" % tx_values["reference"],
-            "customer_email": tx_values["partner_email"] or tx_values["billing_partner_email"],
+            "payment_intent_data[description]": tx_values["reference"],
+            "customer_email": tx_values.get("partner_email") or tx_values.get("billing_partner_email"),
         }
         tx_values["session_id"] = self._create_stripe_session(stripe_session_data)
 
@@ -237,7 +238,7 @@ class PaymentTransactionStripeSCA(models.Model):
     def _stripe_form_get_tx_from_data(self, data):
         """ Given a data dict coming from stripe, verify it and find the related
         transaction record. """
-        reference = data.get('metadata', data).get("reference")
+        reference = data.get("reference")
         if not reference:
             stripe_error = data.get("error", {}).get("message", "")
             _logger.error(
