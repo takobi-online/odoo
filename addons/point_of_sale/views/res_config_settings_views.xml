@@ -70,8 +70,8 @@
                             </div>
                         </div>
                     </div>
-                    <h2>Payments</h2>
-                    <div class="row mt16 o_settings_container">
+                    <h2 style="display:none">Payments</h2>
+                    <div class="row mt16 o_settings_container" style="display:none">
                         <div class="col-12 col-lg-6 o_setting_box" title="The transactions are processed by Vantiv. Set your Vantiv credentials on the related payment journal.">
                             <div class="o_setting_left_pane">
                                 <field name="module_pos_mercury"/>

@@ -109,8 +109,8 @@
                             </div>
                         </div>
                     </div>
-                    <h2>IoT Box</h2>
-                    <div class="row mt16 o_settings_container" id="posbox_reference">
+                    <h2 style="display:none">IoT Box</h2>
+                    <div class="row mt16 o_settings_container" id="posbox_reference" style="display:none">
                         <div class="col-12 col-lg-6 o_setting_box">
                             <div class="o_setting_left_pane">
                                 <field name="is_posbox"/>
@@ -211,7 +211,7 @@
                     </div>
                     <h2>Pricing</h2>
                     <div class="row mt16 o_settings_container">
-                        <div class="col-xs-12 col-lg-6 o_setting_box" id="product_prices"> 
+                        <div class="col-xs-12 col-lg-6 o_setting_box" id="product_prices" style="display:none">
                             <div class="o_setting_right_pane"> 
                                 <label for="iface_tax_included" string="Product Prices"/>  
                                 <div class="text-muted">   
@@ -354,7 +354,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="col-12 col-lg-6 o_setting_box" style="display:none">
                             <div class="o_setting_left_pane">
                                 <field name="is_header_or_footer"/>
                             </div>
@@ -375,7 +375,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 o_setting_box" id="auto_printing">
+                        <div class="col-12 col-lg-6 o_setting_box" id="auto_printing" style="display:none">
                             <div class="o_setting_left_pane">
                                 <field name="iface_print_auto"/>
                             </div>
