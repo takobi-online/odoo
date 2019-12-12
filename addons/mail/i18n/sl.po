@@ -530,7 +530,7 @@ msgstr "Dodaj"
 #: code:addons/mail/static/src/xml/chatter.xml:30
 #, python-format
 msgid "Add Attachments"
-msgstr ""
+msgstr "Dodaj priponke"
 
 #. module: mail
 #. openerp-web
@@ -1746,7 +1746,7 @@ msgstr ""
 #: code:addons/mail/static/src/js/chatter.js:498
 #, python-format
 msgid "Do you really want to delete %s?"
-msgstr ""
+msgstr "Ali res želite izbrisati %s?"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_document_file_kanban
@@ -5794,7 +5794,7 @@ msgid ""
 " If you remove a follower, he won't be notified of any email or discussion on this document.\n"
 " Do you really want to remove this follower ?"
 msgstr ""
-"Warning! \n"
+"Opozorilo! \n"
 "Če odstranite sledilca, v tem dokumentu ne bo obveščen o kakršni koli e-pošti ali razpravi.\n"
 "  Ali res želite odstraniti sledilca?"
 
@@ -6122,7 +6122,7 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_origin_link
 msgid "created"
-msgstr ""
+msgstr "ustvarjen"
 
 #. module: mail
 #: selection:mail.activity.type,delay_unit:0
@@ -6391,4 +6391,4 @@ msgstr "z uporabo"
 #. module: mail
 #: selection:mail.activity.type,delay_unit:0
 msgid "weeks"
-msgstr ""
+msgstr "tedni"
