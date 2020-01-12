@@ -15,6 +15,7 @@
 # nurbakhit nurka <nurbakhit@bumanit.mn>, 2019
 # Minj P <pminj322@gmail.com>, 2019
 # Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019
+# Bayarkhuu Bataa, 2019
 # Batmunkh Ganbat <batmunkh.g@bumanit.mn>, 2019
 # 
 msgid ""
@@ -175,7 +176,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.stock_move_view_kanban
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_inventory_kanban
 msgid "<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Date\" title=\"Date\"/>"
-msgstr "<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Огноо\" title=\"Огноо\"/>"
+msgstr "<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Date\" title=\"Date\"/>"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_scrap_view_kanban
@@ -247,7 +248,7 @@ msgstr "<span class=\"o_stat_text\">Гарт байгаа</span>"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid "<span class=\"o_stat_text\">Operations</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Үйл ажиллагаа</span>"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_mrp_line
@@ -360,7 +361,7 @@ msgstr "<strong>Баглаа</strong>"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_track_confirmation
 msgid "<strong>Product(s) tracked: </strong>"
-msgstr "<strong>Барааг мөшгих: </strong>"
+msgstr "<strong>Бараа(нууд) мөшгих: </strong>"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_delivery_document
@@ -450,7 +451,8 @@ msgstr ""
 #. module: stock
 #: model:res.groups,name:stock.group_warning_stock
 msgid "A warning can be set on a partner (Stock)"
-msgstr "Агуулахын анхааруулах мэдээллийг харилцагч дээр тохируулах боломжтой"
+msgstr ""
+"Агуулахын анхааруулах мэдээллийг харилцагч(Бараа) дээр тохируулах боломжтой"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_rule__action
@@ -6455,7 +6457,7 @@ msgstr "Хэмжих нэгж"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Units Of Measure"
-msgstr ""
+msgstr "Хэмжих нэгж"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_unit_measure_stock
@@ -6476,7 +6478,7 @@ msgstr "Хэмжих нэгж"
 #: code:addons/stock/models/stock_picking.py:885
 #, python-format
 msgid "Unknow stream."
-msgstr ""
+msgstr "Тодорхойгүй урсгал"
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:348
@@ -6527,12 +6529,12 @@ msgstr "Хэмжих нэгж"
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_uom_categ_form_action
 msgid "UoM Categories"
-msgstr ""
+msgstr "Хэмжих нэгжийн ангилал"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_line__product_uom_category_id
 msgid "Uom category"
-msgstr ""
+msgstr "Хэмжих нэгжийн ангилал"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_change_product_quantity
@@ -6550,7 +6552,7 @@ msgstr "Гарт байгаа тоо хэмжээг шинэчлэх"
 #: code:addons/stock/models/product.py:563
 #, python-format
 msgid "Update quantity on hand"
-msgstr ""
+msgstr "Гарт буй тоо хэмжээг шинэчлэх"
 
 #. module: stock
 #: selection:stock.move,priority:0 selection:stock.picking,priority:0
@@ -6805,7 +6807,7 @@ msgstr ""
 #. module: stock
 #: selection:stock.picking,move_type:0
 msgid "When all products are ready"
-msgstr ""
+msgstr "Бүх бараа бэлэн үед"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location_route__product_selectable
@@ -7119,7 +7121,7 @@ msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on <i>apply</i>\n"
 "                        Odoo will process all the <i>reserved</i> quantities."
 msgstr ""
-"Та зарим барааны ажилбар дээр<i>дууссан</i> тоо хэмжээг хараахан тодорхойлоогүй байна, <i>хэрэгжүүлэх</i>товч дээр\n"
+"Та зарим барааны ажилбар дээр<i> дууссан </i> тоо хэмжээг хараахан тодорхойлоогүй байна, <i> хэрэгжүүлэх</i> товч дээр\n"
 "                        дарснаар Odoo систем <i>нөөцлөгдсөн</i> тоо хэмжээний дагуу дууссан тоог тодорхойлж боловсруулах болно."
 
 #. module: stock
@@ -7165,13 +7167,13 @@ msgstr ""
 #: code:addons/stock/models/stock_location.py:109
 #, python-format
 msgid "You have to set a name for this location."
-msgstr ""
+msgstr "Байрлал дээр нэр тодорхойлно уу."
 
 #. module: stock
 #: code:addons/stock/wizard/stock_picking_return.py:47
 #, python-format
 msgid "You may only return Done pickings."
-msgstr ""
+msgstr "Хийгдсэн бэлтгэх баримтыг буцаах боломжтой."
 
 #. module: stock
 #: code:addons/stock/wizard/stock_picking_return.py:38
@@ -7237,7 +7239,7 @@ msgstr "өдөр"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "days to be propagated"
-msgstr ""
+msgstr "Түгээх өдрүүд"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_inventory_form
@@ -7286,7 +7288,7 @@ msgstr "ын"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.exception_on_picking
 msgid "processed instead of"
-msgstr ""
+msgstr "оронд нь боловсруулсан"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_inventory_form

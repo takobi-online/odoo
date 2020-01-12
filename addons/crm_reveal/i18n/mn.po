@@ -11,6 +11,8 @@
 # Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2019
 # Baasansuren Sharavsuren <baasansuren@bumanit.mn>, 2019
 # tserendavaa tsogtoo <tseegii011929@gmail.com>, 2019
+# Minj P <pminj322@gmail.com>, 2019
+# Батболд Цэнд-Аюуш <batbold.ts@gmail.com>, 2019
 # Batmunkh Ganbat <batmunkh.g@bumanit.mn>, 2019
 # 
 msgid ""
@@ -828,7 +830,7 @@ msgstr ""
 #. module: crm_reveal
 #: model:crm.reveal.industry,name:crm_reveal.crm_reveal_industry_66
 msgid "Import & Export"
-msgstr ""
+msgstr "Импорт ба экспорт"
 
 #. module: crm_reveal
 #: model:crm.reveal.industry,name:crm_reveal.crm_reveal_industry_168
@@ -1462,7 +1464,7 @@ msgstr ""
 #. module: crm_reveal
 #: model:ir.model.fields,field_description:crm_reveal.field_crm_reveal_role__name
 msgid "Role Name"
-msgstr ""
+msgstr "Дүрийн нэр"
 
 #. module: crm_reveal
 #: sql_constraint:crm.reveal.role:0
@@ -1692,7 +1694,7 @@ msgstr "Орчуулга"
 #. module: crm_reveal
 #: model:crm.reveal.industry,name:crm_reveal.crm_reveal_industry_136
 msgid "Transportation"
-msgstr ""
+msgstr "Тээвэр"
 
 #. module: crm_reveal
 #: model:crm.reveal.industry,name:crm_reveal.crm_reveal_industry_137
