@@ -7,8 +7,8 @@
             <form string="Immediate transfer?">
                 <group>
                     <p>
-                        You have not recorded <i>done</i> quantities yet, by clicking on <i>apply</i>
-                        TAKOBI will process all the <i>reserved</i> quantities.
+                        Non hai ancora registrato le quantità <i>effettuate</i> cliccando su <i>Applica</i>
+                        TAKOBI tratterà tutte le quantità <i>prenotate</i>.
                     </p>
                 </group>
                 <footer>
