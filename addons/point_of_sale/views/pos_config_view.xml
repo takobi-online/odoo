@@ -110,8 +110,8 @@
                         </div>
                     </div>
                     <h2 style="display:none">IoT Box</h2>
-                    <div class="row mt16 o_settings_container" id="posbox_reference" style="display:none">
-                        <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="row mt16 o_settings_container" id="posbox_reference" >
+                        <div class="col-12 col-lg-6 o_setting_box" style="display:none">
                             <div class="o_setting_left_pane">
                                 <field name="is_posbox"/>
                             </div>
