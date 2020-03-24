@@ -383,11 +383,11 @@ msgstr "Aggiungi una nota"
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
 msgid ""
-"For websites built with the Odoo CMS, please install the website_livechat "
+"For websites built with the TAKOBI CMS, please install the website_livechat "
 "module. Then go to Website &gt; Configuration &gt; Settings and select the "
 "Website Live Chat Channel you want to add on your website."
 msgstr ""
-"Nei siti web creati con il CMS Odoo installare il modulo website_livechat. "
+"Nei siti web creati con il CMS TAKOBI installare il modulo website_livechat. "
 "Andare quindi su Sito web → Impostazioni e selezionare il canale per la "
 "diretta chat da aggiungere al sito web."
 
@@ -707,10 +707,10 @@ msgstr ""
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
 msgid ""
-"Operators that do not show any activity In Odoo for more than 30 minutes "
+"Operators that do not show any activity In TAKOBI for more than 30 minutes "
 "will be considered as disconnected."
 msgstr ""
-"Gli operatori che risultano inattivi all'interno di Odoo per più di 30 "
+"Gli operatori che risultano inattivi all'interno di TAKOBI per più di 30 "
 "minuti saranno considerati disconnessi."
 
 #. module: im_livechat
