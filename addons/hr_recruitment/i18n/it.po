@@ -1451,19 +1451,19 @@ msgstr "Numero di messaggi non letti"
 #. module: hr_recruitment
 #: model_terms:ir.actions.act_window,help:hr_recruitment.action_hr_job_applications
 msgid ""
-"Odoo helps you track applicants in the recruitment\n"
+"TAKOBI helps you track applicants in the recruitment\n"
 "                process and follow up all operations: meetings, interviews, etc."
 msgstr ""
-"Odoo aiuta a tenere traccia dei candidati durante\n"
+"TAKOBI aiuta a tenere traccia dei candidati durante\n"
 "                la selezione e dare seguito a tutte le attività: incontri, colloqui ecc."
 
 #. module: hr_recruitment
 #: model_terms:ir.actions.act_window,help:hr_recruitment.crm_case_categ0_act_job
 msgid ""
-"Odoo helps you track applicants in the recruitment\n"
+"TAKOBI helps you track applicants in the recruitment\n"
 "            process and follow up all operations: meetings, interviews, etc."
 msgstr ""
-"Odoo aiuta a tenere traccia dei candidati durante\n"
+"TAKOBI aiuta a tenere traccia dei candidati durante\n"
 "            la selezione e dare seguito a tutte le attività: incontri, colloqui ecc."
 
 #. module: hr_recruitment

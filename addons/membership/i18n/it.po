@@ -552,10 +552,10 @@ msgstr "Non iscritti/Cancellati/Vecchi/In attesa"
 #. module: membership
 #: model_terms:ir.actions.act_window,help:membership.action_membership_members
 msgid ""
-"Odoo helps you easily track all activities related to a member: \n"
+"TAKOBI helps you easily track all activities related to a member: \n"
 "                  Current Membership Status, Discussions and History of Membership, etc."
 msgstr ""
-"Odoo consente di tenere traccia facilmente delle attività di un socio: \n"
+"TAKOBI consente di tenere traccia facilmente delle attività di un socio: \n"
 "                 stato corrente dell'iscrizione, discussioni, cronologia delle iscrizioni ecc."
 
 #. module: membership
