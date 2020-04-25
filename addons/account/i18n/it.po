@@ -508,8 +508,8 @@ msgstr "<span role=\"separator\">Visualizza</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
-msgid "<span title=\"Balance in Odoo\">Balance in General Ledger</span>"
-msgstr "<span title=\"Saldo in Odoo\">Saldo nel libro mastro</span>"
+msgid "<span title=\"Balance in TAKOBI\">Balance in General Ledger</span>"
+msgstr "<span title=\"Saldo in TAKOBI\">Saldo nel libro mastro</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
@@ -3935,10 +3935,10 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in TAKOBI. It is the date of the "
 "opening entry."
 msgstr ""
-"Data di inizio gestione della contabilità con Odoo. Corrisponde alla "
+"Data di inizio gestione della contabilità con TAKOBI. Corrisponde alla "
 "registrazione di apertura."
 
 #. module: account
@@ -6798,40 +6798,40 @@ msgstr "Imposte manuali in fattura"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_ids
 msgid ""
-"Manual: Get paid by cash, check or any other method outside of Odoo.\n"
+"Manual: Get paid by cash, check or any other method outside of TAKOBI.\n"
 "Electronic: Get paid automatically through a payment acquirer by requesting a transaction on a card saved by the customer when buying or subscribing online (payment token).\n"
-"Batch Deposit: Encase several customer checks at once by generating a batch deposit to submit to your bank. When encoding the bank statement in Odoo,you are suggested to reconcile the transaction with the batch deposit. Enable this option from the settings."
+"Batch Deposit: Encase several customer checks at once by generating a batch deposit to submit to your bank. When encoding the bank statement in TAKOBI,you are suggested to reconcile the transaction with the batch deposit. Enable this option from the settings."
 msgstr ""
-"Manuale: incasso contante, assegno o altro metodo al di fuori di Odoo.\n"
+"Manuale: incasso contante, assegno o altro metodo al di fuori di TAKOBI.\n"
 "Elettronico: incasso automatico attraverso un sistema di pagamento. Viene richiesta una transazione su una carta salvata dal cliente durante un acquisto o una sottoscrizione (token di pagamento).\n"
-"Versamento raggruppato: raccolta di vari assegni cliente e generazione di un unico versamento da inviare alla banca. Durante l'elaborazione degli estratti conto in Odoo si consiglia di riconciliare la transazione con il versamento raggruppato. Abilitare questa opzione nelle impostazioni."
+"Versamento raggruppato: raccolta di vari assegni cliente e generazione di un unico versamento da inviare alla banca. Durante l'elaborazione degli estratti conto in TAKOBI si consiglia di riconciliare la transazione con il versamento raggruppato. Abilitare questa opzione nelle impostazioni."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_abstract_payment__payment_method_id
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_id
 #: model:ir.model.fields,help:account.field_account_register_payments__payment_method_id
 msgid ""
-"Manual: Get paid by cash, check or any other method outside of Odoo.\n"
+"Manual: Get paid by cash, check or any other method outside of TAKOBI.\n"
 "Electronic: Get paid automatically through a payment acquirer by requesting a transaction on a card saved by the customer when buying or subscribing online (payment token).\n"
-"Check: Pay bill by check and print it from Odoo.\n"
-"Batch Deposit: Encase several customer checks at once by generating a batch deposit to submit to your bank. When encoding the bank statement in Odoo, you are suggested to reconcile the transaction with the batch deposit.To enable batch deposit, module account_batch_payment must be installed.\n"
+"Check: Pay bill by check and print it from TAKOBI.\n"
+"Batch Deposit: Encase several customer checks at once by generating a batch deposit to submit to your bank. When encoding the bank statement in TAKOBI, you are suggested to reconcile the transaction with the batch deposit.To enable batch deposit, module account_batch_payment must be installed.\n"
 "SEPA Credit Transfer: Pay bill from a SEPA Credit Transfer file you submit to your bank. To enable sepa credit transfer, module account_sepa must be installed "
 msgstr ""
-"Manuale: incasso contante, assegno o altro metodo al di fuori di Odoo.\n"
+"Manuale: incasso contante, assegno o altro metodo al di fuori di TAKOBI.\n"
 "Elettronico: incasso automatico attraverso un sistema di pagamento. Viene richiesta una transazione su una carta salvata dal cliente durante un acquisto o una sottoscrizione (token di pagamento).\n"
-"Assegno: pagamento fattura con assegno e relativa stampa da Odoo.\n"
-"Versamento raggruppato: raccolta di vari assegni cliente e generazione di un unico versamento da inviare alla banca. Durante l'elaborazione degli estratti conto in Odoo si consiglia di riconciliare la transazione con il versamento raggruppato. Per abilitare questa opzione installare il modulo account_batch_payment.\n"
+"Assegno: pagamento fattura con assegno e relativa stampa da TAKOBI.\n"
+"Versamento raggruppato: raccolta di vari assegni cliente e generazione di un unico versamento da inviare alla banca. Durante l'elaborazione degli estratti conto in TAKOBI si consiglia di riconciliare la transazione con il versamento raggruppato. Per abilitare questa opzione installare il modulo account_batch_payment.\n"
 "Bonifico SEPA: pagamento fattura con bonifico SEPA attraverso un file da inviare alla banca. Per abilitare questa opzione installare il modulo account_sepa"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_ids
 msgid ""
-"Manual:Pay bill by cash or any other method outside of Odoo.\n"
-"Check:Pay bill by check and print it from Odoo.\n"
+"Manual:Pay bill by cash or any other method outside of TAKOBI.\n"
+"Check:Pay bill by check and print it from TAKOBI.\n"
 "SEPA Credit Transfer: Pay bill from a SEPA Credit Transfer file you submit to your bank. Enable this option from the settings."
 msgstr ""
-"Manuale: pagamento fattura in contanti o con altro metodo al di fuori di Odoo.\n"
-"Assegno: pagamento fattura con assegno e relativa stampa da Odoo.\n"
+"Manuale: pagamento fattura in contanti o con altro metodo al di fuori di TAKOBI.\n"
+"Assegno: pagamento fattura con assegno e relativa stampa da TAKOBI.\n"
 "Bonifico SEPA: pagamento fattura con bonifico SEPA attraverso un file da inviare alla banca. Abilitare questa opzione dalle impostazioni."
 
 #. module: account
@@ -7413,19 +7413,19 @@ msgstr "Ottobre"
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_line
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"TAKOBI allows you to reconcile a statement line directly with\n"
 "                the related sale or puchase invoice(s)."
 msgstr ""
-"Odoo consente di riconciliare direttamente una riga di estratto\n"
+"TAKOBI consente di riconciliare direttamente una riga di estratto\n"
 "                conto con le relative fatture di vendita o acquisto."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"TAKOBI allows you to reconcile a statement line directly with\n"
 "                the related sale or puchase invoices."
 msgstr ""
-"Odoo consente di riconciliare direttamente una riga di estratto\n"
+"TAKOBI consente di riconciliare direttamente una riga di estratto\n"
 "                conto con le relative fatture di vendita o acquisto."
 
 #. module: account
@@ -11978,7 +11978,7 @@ msgstr "Cronologia comunicazioni sito web"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid ""
-"When receiving an email with a bill, or uploading scanned bills, Odoo will "
+"When receiving an email with a bill, or uploading scanned bills, TAKOBI will "
 "parse them (OCR) and auto-complete (AI) Draft Bills to validate."
 msgstr ""
 
