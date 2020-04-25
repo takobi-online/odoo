@@ -1401,7 +1401,7 @@ msgstr ""
 #: code:addons/mail/models/mail_thread.py:400
 #, python-format
 msgid "Create a new %(document)s"
-msgstr "Crie um novo%(document)s"
+msgstr "Crie um novo %(document)s"
 
 #. module: mail
 #: code:addons/mail/models/mail_thread.py:392
@@ -2442,7 +2442,7 @@ msgstr "Ocultado"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_message_subtype__hidden
 msgid "Hide the subtype in the follower options"
-msgstr "Esconder o subtipo nas opcções do seguidor"
+msgstr "Esconder o subtipo nas opções do seguidor"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_email_template_preview__id

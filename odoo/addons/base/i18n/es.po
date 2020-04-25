@@ -65,8 +65,11 @@
 # Jesús Alan Ramos Rodríguez <alan.ramos@jarsa.com.mx>, 2020
 # Oscar Soto <oscar.soto.ochoa@gmail.com>, 2020
 # Marco Alejandro Martinez <martinezsuarezmarcoalejandro@gmail.com>, 2020
-# Pedro M. Baeza <pedro.baeza@gmail.com>, 2020
 # gpi odoo <gpi@odoo.com>, 2020
+# Osiris Román <osiris.roman@yachaytech.edu.ec>, 2020
+# Pedro M. Baeza <pedro.baeza@gmail.com>, 2020
+# Elena Aguirre Claeyssens <eac@odoo.com>, 2020
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
@@ -74,7 +77,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:44+0000\n"
 "PO-Revision-Date: 2018-08-24 09:14+0000\n"
-"Last-Translator: gpi odoo <gpi@odoo.com>, 2020\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1804,6 +1807,10 @@ msgid ""
 "Configure your own methods with a pricing grid or integrate with carriers for a fully automated shipping process.\n"
 "    "
 msgstr ""
+"\n"
+"Añada una selección de métodos de entrega a su tienda de comercio electrónico.\n"
+"Configure sus propios métodos con una tabla de precios o intégrelos con transportistas para un proceso de entrega completamente automatizado.\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_contract
@@ -1930,6 +1937,9 @@ msgid ""
 "Advanced features for the PoS like better views \n"
 "for IoT Box config.   \n"
 msgstr ""
+"\n"
+"Características avanzadas para el PdV como mejores vistas \n"
+"para la configuración de la IoT Box.   \n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_calendar
@@ -1980,6 +1990,9 @@ msgid ""
 "Allow shoppers of your eCommerce store to create personalized collections of products they want to buy and save them for future reference.\n"
 "    "
 msgstr ""
+"\n"
+"Permita a los compradores de su comercio electrónico crear colecciones personalizadas de productos que quieren comprar y guardarlos para futuras referencias.\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_auth_oauth
@@ -3034,6 +3047,9 @@ msgid ""
 "E-invoice implementation\n"
 "    "
 msgstr ""
+"\n"
+"Implementación E-invoice\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_mx_edi
@@ -5208,7 +5224,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Vende entradas para eventos a través de la aplicación de comercio electrónico."
+"Venda entradas para eventos a través de la aplicación de comercio electrónico."
 
 #. module: base
 #: model:ir.module.module,description:base.module_digest
@@ -5217,6 +5233,9 @@ msgid ""
 "Send KPI Digests periodically\n"
 "=============================\n"
 msgstr ""
+"\n"
+"Envíe los KPI Digests periódicamente\n"
+"=============================\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_bpost
@@ -6508,6 +6527,16 @@ msgid ""
 "trigger an automatic reminder email.\n"
 "    "
 msgstr ""
+"\n"
+"Este módulo permite implementar reglas de acción para cualquier objeto.\n"
+"============================================================\n"
+"\n"
+"Utilice acciones automatizadas para activar automáticamente acciones para varias pantallas.\n"
+"\n"
+"**Ejemplo:** Una oportunidad de venta creada por un usuario específico puede ser asignada a un \n"
+"equipo de ventas específico, o una oportunidad que aún esté en estado pendiente después de 14 días puede\n"
+"generar automáticamente un correo electrónico de recordatorio automático. \n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_us_check_printing
@@ -6547,6 +6576,17 @@ msgid ""
 "- Check on bottom: ADP standard\n"
 "    "
 msgstr ""
+"\n"
+"Este módulo permite imprimir sus pagos en papel de cheque preimpreso.\n"
+"Puede configurar el formato (diseño, información de pagos, etc.) en la configuración de la compañía y\n"
+"comprueba la numeración (si utiliza cheques sin numeración) con la configuración del diario.\n"
+"\n"
+"Formatos soportados\n"
+"----------------------------\n"
+"- Comprobar en la parte superior : Quicken / QuickBooks standard\n"
+"- Comprobar en la parte media: Peachtree standard\n"
+"- Comprobar en la parte inferior: ADP standard\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_crm_partner_assign
@@ -7123,6 +7163,10 @@ msgid ""
 "============================\n"
 "    "
 msgstr ""
+"\n"
+"Ucrania - Plan Contable.\n"
+"============================\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ae
@@ -7159,6 +7203,9 @@ msgid ""
 "Use budgets to compare actual with expected revenues and costs\n"
 "--------------------------------------------------------------\n"
 msgstr ""
+"\n"
+"Use presupuestos para comparar los ingresos y costos reales con los esperados\n"
+"--------------------------------------------------------------\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sales_team
@@ -7914,9 +7961,9 @@ msgid ""
 "                                <span colspan=\"2\">Week of the Year: %(woy)s</span>\n"
 "                                <span colspan=\"2\">Day of the Week (0:Monday): %(weekday)s</span>"
 msgstr ""
-"Día del Año: %(doy)s</span>\n"
-"                                <span colspan=\"2\">Semana del Año: %(woy)s</span>\n"
-"                                <span colspan=\"2\">Día de la Semana (0:Lunes: %(weekday)s</span>"
+"<span colspan=\"2\">Día del año: %(doy)s</span>\n"
+"                                <span colspan=\"2\">Semana del año: %(woy)s</span>\n"
+"                                <span colspan=\"2\">Día de la semana (0: Lunes): %(weekday)s</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.sequence_view
@@ -8481,6 +8528,8 @@ msgstr "Un módulo para generar excepciones."
 #: model:ir.module.module,description:base.module_test_lint
 msgid "A module to test Odoo code with various linters."
 msgstr ""
+"Un módulo para comprobar el código Odoo con varias comprobaciones de "
+"sintaxis (linters)."
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_impex
@@ -8884,17 +8933,17 @@ msgstr "Uso de la acción"
 #. module: base
 #: model:ir.model,name:base.model_ir_actions_act_window
 msgid "Action Window"
-msgstr "Ventana de acciones"
+msgstr "Acción de ventana"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_actions_act_window_close
 msgid "Action Window Close"
-msgstr ""
+msgstr "Cierre de acción de ventana"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_actions_act_window_view
 msgid "Action Window View"
-msgstr "Vista de la ventana de acciones"
+msgstr "Vista de acción de ventana"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.ir_sequence_actions
@@ -9972,7 +10021,7 @@ msgstr "Código de barras"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_barcode_quality_control
 msgid "Barcode Quality bridge module"
-msgstr "Módulo puente de Cualidad del Código de barras"
+msgstr "Módulo puente entre calidad y código de barras"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_scanner
@@ -10675,7 +10724,7 @@ msgstr "Chatea con los visitantes de tu sitio web"
 #. module: base
 #: model:ir.module.module,summary:base.module_mail
 msgid "Chat, mail gateway and private channels"
-msgstr ""
+msgstr "Chat, puerta de enlace al correo y canales privados"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_check_printing
@@ -13653,7 +13702,7 @@ msgstr "Vista de extensión"
 #. module: base
 #: model:ir.module.module,summary:base.module_snailmail_account_reports_followup
 msgid "Extension to send follow-up documents by post"
-msgstr ""
+msgstr "Extensión para enviar documentos de seguimiento por correo postal"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_url__xml_id
@@ -13902,7 +13951,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__failures_count
 msgid "Failures Count"
-msgstr ""
+msgstr "Nº de fallos"
 
 #. module: base
 #: model:res.country,name:base.fk
@@ -14600,7 +14649,7 @@ msgstr "GPL-3 o versión posterior"
 #. module: base
 #: model:res.country,vat_label:base.sg
 msgid "GST No."
-msgstr ""
+msgstr "GST No."
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_in_purchase
@@ -14689,7 +14738,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_website_links
 msgid "Generate trackable & short URLs"
-msgstr ""
+msgstr "Genere URL cortos y rastreables"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_property_view_search
@@ -16328,7 +16377,7 @@ msgstr "Criterio de búsqueda no valido"
 #: code:addons/base/models/ir_ui_view.py:612
 #, python-format
 msgid "Invalid specification for moved nodes: '%s'"
-msgstr "Especificación no válida para nódulos movidos: '%s'"
+msgstr "Especificación no válida para módulos movidos: '%s'"
 
 #. module: base
 #: code:addons/base/models/ir_property.py:68
@@ -16346,7 +16395,7 @@ msgstr "Valor no válido para %s.%s:%s"
 #: code:addons/base/models/ir_ui_view.py:353
 #, python-format
 msgid "Invalid view %s definition in %s"
-msgstr ""
+msgstr "Definición de vista %s no válida en %s"
 
 #. module: base
 #: code:addons/base/models/ir_ui_view.py:355
@@ -16355,7 +16404,7 @@ msgid ""
 "Invalid view %s definition in %s \n"
 "%s"
 msgstr ""
-"Vista no válida %s definición en %s \n"
+"Definición de vista %s no válida en %s \n"
 "%s"
 
 #. module: base
@@ -16491,7 +16540,7 @@ msgstr "Italia - Contabilidad"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_edi
 msgid "Italy - E-invoicing"
-msgstr ""
+msgstr "Italia - Facturación Electrónica"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_J
@@ -17175,7 +17224,7 @@ msgstr "Campo usando un enlace"
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_iot
 msgid "Link your PoS configuration with an IoT Box"
-msgstr ""
+msgstr "Enlace la configuración de su PdV con un IoT Box"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_restaurant_iot
@@ -17392,7 +17441,7 @@ msgstr "Tests de Correo"
 #. module: base
 #: model:ir.module.module,summary:base.module_test_mail
 msgid "Mail Tests: performances and tests specific to mail"
-msgstr ""
+msgstr " Tests de Correo: rendimiento y tests específicos para el correo"
 
 #. module: base
 #: code:addons/base/models/ir_mail_server.py:487
@@ -17654,7 +17703,7 @@ msgstr "Fabricación"
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp
 msgid "Manufacturing Orders & BOMs"
-msgstr ""
+msgstr "Fabricar Órdenes & Listas de Materiales"
 
 #. module: base
 #: selection:ir.property,type:0
@@ -17866,7 +17915,7 @@ msgstr "Combinar contactos"
 #. module: base
 #: model:ir.model,name:base.model_base_partner_merge_line
 msgid "Merge Partner Line"
-msgstr ""
+msgstr "Línea de fusionado de empresas"
 
 #. module: base
 #: model:ir.model,name:base.model_base_partner_merge_automatic_wizard
@@ -18053,7 +18102,7 @@ msgstr "El Modelo '%s' contiene un módulo de datos y no puede ser eliminado."
 #. module: base
 #: model:ir.model,name:base.model_ir_model_access
 msgid "Model Access"
-msgstr ""
+msgstr "Acceso al  Modelo"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_model_constraint
@@ -18265,7 +18314,7 @@ msgstr "Mongolia - Contabilidad"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mn_reports
 msgid "Mongolia - Accounting Reports"
-msgstr ""
+msgstr "Mongolia - Informes de Contabilidad"
 
 #. module: base
 #: model:res.country,name:base.me
@@ -18419,7 +18468,7 @@ msgstr "Holanda - Informes contables"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nl_intrastat
 msgid "Netherlands Intrastat Declaration"
-msgstr ""
+msgstr "Declaración Intrastat de Holanda"
 
 #. module: base
 #: model:res.country,name:base.nc
@@ -18457,7 +18506,7 @@ msgstr "Nueva Zelanda - Contabilidad"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_mass_mailing
 msgid "Newsletter Subscribe Button"
-msgstr ""
+msgstr "Botón de suscripción al boletín de noticias"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron__nextcall
@@ -20224,7 +20273,7 @@ msgstr "Treball en línia"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_membership
 msgid "Online Members Directory"
-msgstr "DIrectorio de Miembros en línea"
+msgstr "Directorio de miembros en línea"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_form_project
@@ -20872,12 +20921,12 @@ msgstr "Empresa"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_partner_autocomplete
 msgid "Partner Autocomplete"
-msgstr "Partner Autocomplete"
+msgstr "Autocompletado de empresa"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_partner_autocomplete_address_extended
 msgid "Partner Autocomplete extends Address autocomplete"
-msgstr "Partner Autocomplete se extiende a Address autocomplete"
+msgstr "Extensión de autocompletado de empresa para la dirección extendida"
 
 #. module: base
 #: model:ir.model,name:base.model_res_partner_category
@@ -20898,12 +20947,12 @@ msgstr "Formas jurídicas de empresa"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users__active_partner
 msgid "Partner is Active"
-msgstr "La empresa es activa"
+msgstr "La empresa está activada"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_partner
 msgid "Partner module for website"
-msgstr ""
+msgstr "Módulo de empresas para el sitio web"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_users__partner_id
@@ -20943,7 +20992,7 @@ msgstr "Política de contraseñas"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_password_policy_signup
 msgid "Password Policy support for Signup"
-msgstr ""
+msgstr "Soporte de la política de contraseñas para el registro"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging__path
@@ -21267,7 +21316,7 @@ msgstr "Presente los detalles de su empleado en línea"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_twitter_wall
 msgid "Pretty Way to Display Tweets for Event"
-msgstr ""
+msgstr "Forma estética de mostrar Tweets para el evento"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_currency_form
@@ -21292,7 +21341,7 @@ msgstr "Imprima la cantidad en palabras en los cheques emitidos para gastos"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_paperformat__print_page_height
 msgid "Print page height (mm)"
-msgstr ""
+msgstr "Altura de la página de impresión (mm)"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_paperformat__print_page_width
@@ -21392,7 +21441,7 @@ msgstr "Proyecto"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_enterprise
 msgid "Project Enterprise"
-msgstr ""
+msgstr "Proyecto Enterprise"
 
 #. module: base
 #: model:ir.module.module,description:base.module_project
@@ -21547,7 +21596,7 @@ msgstr " "
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event
 msgid "Publish events, sell tickets"
-msgstr "Publique eventos, venda tiquetes"
+msgstr "Publique eventos, venda entradas"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_slides
@@ -21562,7 +21611,7 @@ msgstr "Publique las preferencias de su cliente"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_membership
 msgid "Publish your members directory"
-msgstr ""
+msgstr "Publique su directorio de miembros"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_crm_partner_assign
@@ -21735,7 +21784,7 @@ msgstr "Fecha del Campo Qweb"
 #. module: base
 #: model:ir.model,name:base.model_ir_qweb_field_datetime
 msgid "Qweb Field Datetime"
-msgstr ""
+msgstr "Campo Qweb Fecha-Hora"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_qweb_field_duration
@@ -21770,7 +21819,7 @@ msgstr "Campo Qweb entero"
 #. module: base
 #: model:ir.model,name:base.model_ir_qweb_field_many2one
 msgid "Qweb Field Many to One"
-msgstr ""
+msgstr "Campo Qweb Muchos a Uno"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_qweb_field_monetary
@@ -21795,7 +21844,7 @@ msgstr "Texto de Campo Qweb"
 #. module: base
 #: model:ir.model,name:base.model_ir_qweb_field_qweb
 msgid "Qweb Field qweb"
-msgstr ""
+msgstr "Qweb del campo qweb"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_qweb_field_many2many
@@ -22754,7 +22803,7 @@ msgstr "Vende productos digitales en tu tienda de comercio electrónico"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_sale
 msgid "Sell event tickets online"
-msgstr "Venda entradas a eventos online"
+msgstr "Venda en línea entradas para eventos"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale
@@ -27454,7 +27503,7 @@ msgstr "Selección"
 #. module: base
 #: selection:ir.model.fields,ttype:0
 msgid "serialized"
-msgstr ""
+msgstr "serializado"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_snailmail_account
