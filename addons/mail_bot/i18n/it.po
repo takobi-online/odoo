@@ -195,7 +195,7 @@ msgstr "Takobi ha ora il permesso di inviare notifiche sul tuo dispositivo"
 msgid ""
 "Takobi will not have the permission to send native notifications on this "
 "device."
-msgstr "Takobi ha ora il permesso di inviare notifiche sul tuo dispositivo"
+msgstr "Takobi non avrà il permesso di inviare notifiche sul tuo dispositivo"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
