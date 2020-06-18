@@ -96,6 +96,10 @@ class Pricelist(models.Model):
                 results[product_id][pricelist.id] = price
         return results
 
+    def _check_additional_applicability(self, rule, product, date=None, quantity=None):
+        # To override
+        return True
+
     @api.multi
     def _compute_price_rule(self, products_qty_partner, date=False, uom_id=False):
         """ Low-level method - Mono pricelist, multi products
@@ -207,6 +211,9 @@ class Pricelist(models.Model):
                         cat = cat.parent_id
                     if not cat:
                         continue
+
+                if not self._check_additional_applicability(rule, product, date, qty_in_product_uom):
+                    continue
 
                 if rule.base == 'pricelist' and rule.base_pricelist_id:
                     price_tmp = rule.base_pricelist_id._compute_price_rule([(product, qty, partner)], date, uom_id)[product.id][0]  # TDE: 0 = price, 1 = rule
