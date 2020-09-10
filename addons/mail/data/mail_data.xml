@@ -97,7 +97,7 @@
     <span t-if="not website_url" t-esc="company.name"/>
     </span>
     using
-    <a target="_blank" href="https://takobi.online?utm_source=db&amp;utm_medium=email" style="text-decoration:none; color: #875A7B;">Takobi</a>.
+    <a target="_blank" href="https://takobi.online?utm_source=db&amp;utm_medium=email" style="text-decoration:none; color: #875A7B;">TAKOBI</a>.
 </p>
 </div>
         </template>
