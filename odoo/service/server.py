@@ -16,6 +16,7 @@ import sys
 import threading
 import time
 import unittest
+import configparser
 
 import psutil
 import werkzeug.serving
@@ -1061,8 +1062,14 @@ class WorkerCron(Worker):
         rpc_request_flag = rpc_request.isEnabledFor(logging.DEBUG)
         _logger.debug("WorkerCron (%s) polling for jobs", self.pid)
         db_names = self._db_list()
-        allowed_cron_db = config.get('allowed_cron_db')
-        skip_cron_db = config.get('skip_cron_db')
+        # reading config because, while upgrading saas, this changes
+        # frequently and we avoid to restart odoo server
+        # odoo.cfg path is fixed, see also update-allowed-cron-db.py
+        cfg_path = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(sys.argv[0]))), 'odoo.cfg')
+        new_config = configparser.ConfigParser()
+        new_config.read(cfg_path)
+        allowed_cron_db = new_config['options'].get('allowed_cron_db')
+        skip_cron_db = new_config['options'].get('skip_cron_db')
         if len(db_names):
             self.db_index = (self.db_index + 1) % len(db_names)
             db_name = db_names[self.db_index]
