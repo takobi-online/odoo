@@ -39,7 +39,7 @@
                 <tr><td valign="top" style="font-size: 13px;">
                     <div>
                         Gentile ${object.name},<br/><br/>
-                        Un reset della password è stato richiesto per l'account Takobi collegato a questa email.
+                        Un reset della password è stato richiesto per l'account TAKOBI collegato a questa email.
                         Puoi modificare la tua password seguendo questo link entro le prossime 24 ore:<br/>
                         <div style="margin: 16px 0px 16px 0px;">
                             <a href="${object.signup_url}"
