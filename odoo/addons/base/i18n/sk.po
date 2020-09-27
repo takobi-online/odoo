@@ -3384,6 +3384,16 @@ msgid ""
 "\n"
 "        "
 msgstr ""
+"\n"
+"Podpora živého chatu\n"
+"==========================\n"
+"\n"
+"Umožnite spustenie widgetov okamžitých správ na každú webovú stránku, ktorá bude komunikovať\n"
+"so súčasným serverom a požiadavkou na odoslanie z niekoľkých živých návštevníkov\n"
+"operátori chatu.\n"
+"Pomôžte svojim zákazníkom s týmto chatom a analyzujte ich spätnú väzbu.\n"
+"\n"
+"        "
 
 #. module: base
 #: model:ir.module.module,description:base.module_mrp_maintenance
@@ -4102,6 +4112,13 @@ msgid ""
 "(N+1, N+2, direct subordinates)\n"
 "        "
 msgstr ""
+"\n"
+"Organizačná štruktúra pre HR\n"
+"=======================\n"
+"\n"
+"Tento modul rozširuje formulár zamestnancov o organizačnú schému.\n"
+"(N+1, N+2, priami podriadení)\n"
+"        "
 
 #. module: base
 #: model:ir.module.module,description:base.module_event
@@ -5560,6 +5577,10 @@ msgid ""
 "On a simple click, your visitors can subscribe to mailing lists managed in the Email Marketing app.\n"
 "    "
 msgstr ""
+"\n"
+"Tento modul prináša nový stavebný blok s prepojením na mailingový zoznam, ktorý je možné umiestniť na ľubovoľnú stránku vášho webu. \n"
+"Návštevníci sa môžu jednoduchým kliknutím prihlásiť na odber mailových zoznamov spravovaných v aplikácii email marketing.\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale
@@ -6163,6 +6184,7 @@ msgid ""
 " another model requires the record being deleted. If possible, archive it "
 "instead."
 msgstr ""
+"iný model vyžaduje vymazanie záznamu. Ak je to možné, radšej to archivujte."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_lang_form
@@ -6469,6 +6491,8 @@ msgid ""
 "<code>records</code>: recordset of all records on which the action is "
 "triggered in multi mode; may be void"
 msgstr ""
+"<code>záznamy</code>: sada záznamov všetkých záznamov, pri ktorých sa spustí"
+" akcia v režime viacerých režimov; môže byť neplatný"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_fields_form
@@ -7598,6 +7622,8 @@ msgstr "Pridá 'Tlač' ponuku"
 #: model:ir.module.module,summary:base.module_mass_mailing_crm
 msgid "Add lead / opportunities UTM info on mass mailing"
 msgstr ""
+"Pridajte informácie o potenciálnych zákazníkoch / príležitostiach UTM pri "
+"hromadnom zasielaní"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
@@ -7608,6 +7634,7 @@ msgstr ""
 #: model:ir.module.module,summary:base.module_mass_mailing_sale
 msgid "Add sale order UTM info on mass mailing"
 msgstr ""
+"Pridajte informácie o objednávke UTM na predaj pri hromadnom zasielaní"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.contact
@@ -7868,7 +7895,7 @@ msgstr "Povolí predavačovi tlačiť kópie účteniek"
 #. module: base
 #: model:ir.module.module,summary:base.module_ocn_client
 msgid "Allow push notification to devices"
-msgstr ""
+msgstr "Povoliť push notifikáciu zariadeniam"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_comparison
@@ -8633,7 +8660,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_iap
 msgid "Basic models and helpers to support In-App purchases."
-msgstr ""
+msgstr "Základné modely a pomocníci na podporu nákupov v aplikácii."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_iot
@@ -9216,7 +9243,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_mail
 msgid "Chat, mail gateway and private channels"
-msgstr ""
+msgstr "Chat, poštová brána a súkromné kanály"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_check_printing
@@ -12400,7 +12427,7 @@ msgstr ""
 #. module: base
 #: model:ir.actions.server,name:base.demo_failure_action
 msgid "Failed to install demo data for some modules, demo disabled"
-msgstr ""
+msgstr "Inštalácia demo údajov pre niektoré moduly zlyhala, demo blokované"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__failures_count
@@ -13057,7 +13084,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_in_purchase
 msgid "GST Purchase Report"
-msgstr ""
+msgstr "Správa o nákupe GST"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_in_sale
@@ -13541,7 +13568,7 @@ msgstr "Haiti"
 #. module: base
 #: model:ir.module.module,summary:base.module_lunch
 msgid "Handle lunch orders of your employees"
-msgstr ""
+msgstr "Vybavujte svojim zamestnancom objednávky na obed"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hw_scanner
@@ -13782,7 +13809,7 @@ msgstr "Tu je exportovaný prekladový súbor:"
 #: code:addons/base/models/ir_qweb_fields.py:631
 #, python-format
 msgid "Hide badges"
-msgstr ""
+msgstr "Skryť odznaky"
 
 #. module: base
 #: code:addons/base/models/ir_qweb_fields.py:226
@@ -14760,7 +14787,7 @@ msgstr "Neplatné kritérium hľadania"
 #: code:addons/base/models/ir_ui_view.py:612
 #, python-format
 msgid "Invalid specification for moved nodes: '%s'"
-msgstr ""
+msgstr "Neplatná špecifikácia pre presunuté uzly: '%s'"
 
 #. module: base
 #: code:addons/base/models/ir_property.py:68
@@ -15963,7 +15990,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_account_accountant
 msgid "Manage financial and analytic accounting"
-msgstr ""
+msgstr "Riadiť finančné a analytické účtovníctvo"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_stock
@@ -16092,12 +16119,12 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_mass_mailing
 msgid "Mass Mail Tests"
-msgstr ""
+msgstr "Testy hromadnej pošty"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_mass_mailing
 msgid "Mass Mail Tests: feature and performance tests for mass mailing"
-msgstr ""
+msgstr "Testy hromadnej pošty: testy funkcií a výkonu hromadnej pošty"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_themes
@@ -16107,22 +16134,23 @@ msgstr "Témy hromadných mailov"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_event
 msgid "Mass mailing on attendees"
-msgstr ""
+msgstr "Hromadné zasielanie pošty na účastníkov"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_crm
 msgid "Mass mailing on lead / opportunities"
 msgstr ""
+"Hromadné zasielanie informácií o potenciálnych zákazníkoch / príležitosti"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_sale
 msgid "Mass mailing on sale orders"
-msgstr ""
+msgstr "Hromadné zasielanie objednávok na predaj"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_event_track
 msgid "Mass mailing on track speakers"
-msgstr ""
+msgstr "Hromadné zasielanie pošty na stopové reproduktory"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_mps
@@ -18669,12 +18697,12 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_project
 msgid "Organize and schedule your projects "
-msgstr ""
+msgstr "Usporiadajte a naplánujte svoje projekty"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_note
 msgid "Organize your work with memos"
-msgstr ""
+msgstr "Zorganizovať prácu pomocou poznámok"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_paperformat__orientation
@@ -19679,7 +19707,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_purchase
 msgid "Purchase orders, tenders and agreements"
-msgstr ""
+msgstr "Nákupné objednávky, tendre a zmluvné dohody"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_purchase_management
@@ -20490,7 +20518,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_purchase
 msgid "Sale Purchase"
-msgstr ""
+msgstr "Zľava na nákup"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_subscription_dashboard
@@ -20615,7 +20643,7 @@ msgstr "Uložiť ako príloha predpony"
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_maintenance
 msgid "Schedule and manage maintenance on machine and tools."
-msgstr ""
+msgstr "Plánujte a spravujte údržbu strojov a nástrojov."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_calendar
@@ -23132,6 +23160,9 @@ msgid ""
 "are contained in a separate module to use specific test models defined in\n"
 "test_mail. "
 msgstr ""
+"Tento modul obsahuje testy týkajúce sa hromadnej pošty. Tých\n"
+"sú obsiahnuté v samostatnom module na použitie špecifických testovacích modelov definovaných v\n"
+"test_mail."
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_website
@@ -23168,6 +23199,14 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_upgrade
 msgid "This module will trigger the uninstallation of below modules."
 msgstr "Tento modul spustí odinštalovanie nasledujúcich modulov."
+
+#. module: base
+#: code:addons/base/ir/ir_sequence.py:56
+#, python-format
+msgid ""
+"This transaction wasn't executed because another transaction is already "
+"using the same no-gap sequence. Please try again later."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__thousands_sep
@@ -23712,7 +23751,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_mass_mailing_sale
 msgid "UTM and mass mailing on sale orders"
-msgstr ""
+msgstr "UTM a hromadné zasielanie objednávok na predaj"
 
 #. module: base
 #: model:res.country,name:base.ug

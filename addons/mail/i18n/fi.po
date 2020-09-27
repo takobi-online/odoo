@@ -1424,7 +1424,7 @@ msgstr ""
 #. module: mail
 #: selection:ir.actions.server,state:0
 msgid "Create a new Record"
-msgstr ""
+msgstr "Luo uusi tietue"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_search
@@ -4496,7 +4496,7 @@ msgstr "Tietueen keskustelun ID"
 #: code:addons/mail/models/mail_message.py:899
 #, python-format
 msgid "Records:"
-msgstr ""
+msgstr "Tietueet:"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__references
