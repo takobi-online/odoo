@@ -1373,7 +1373,9 @@ class AccountInvoiceLine(models.Model):
             return
         if not self.product_id:
             fpos = self.invoice_id.fiscal_position_id
-            self.invoice_line_tax_ids = fpos.map_tax(self.account_id.tax_ids, partner=self.partner_id).ids
+            taxes = fpos.map_tax(self.account_id.tax_ids, partner=self.partner_id).ids
+            if taxes:
+                self.invoice_line_tax_ids = taxes
         elif not self.price_unit:
             self._set_taxes()
 
