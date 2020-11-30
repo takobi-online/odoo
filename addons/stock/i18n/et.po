@@ -1606,13 +1606,13 @@ msgstr "Saada kaup otse kliendile (1 samm)"
 #: code:addons/stock/models/stock_warehouse.py:526
 #, python-format
 msgid "Deliver in 1 step (ship)"
-msgstr ""
+msgstr "Tarne 1 sammuga (saatmine)"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:526
 #, python-format
 msgid "Deliver in 2 steps (pick + ship)"
-msgstr ""
+msgstr "Tarne 2 etapiga (pealevõtt ja saatmine)"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:527
@@ -1707,7 +1707,7 @@ msgstr "Kirjeldus tarnetellimustel"
 #: model:ir.model.fields,field_description:stock.field_product_product__description_picking
 #: model:ir.model.fields,field_description:stock.field_product_template__description_picking
 msgid "Description on Picking"
-msgstr "Toodete vastuvõtmise kirjeldus"
+msgstr "Sisemiste siirete kirjeldus"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__description_pickingin
@@ -2408,18 +2408,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_picking__immediate_transfer
 #: model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "Immediate Transfer"
-msgstr "Kohene siire"
+msgstr "Siirde kinnitamine"
 
 #. module: stock
 #: code:addons/stock/models/stock_picking.py:718
 #, python-format
 msgid "Immediate Transfer?"
-msgstr "Kohene siire?"
+msgstr "Kas kinnitan siirde?"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid "Immediate transfer?"
-msgstr "Kohene siire?"
+msgstr "Kas kinnitan siirde?"
 
 #. module: stock
 #: selection:res.config.settings,module_procurement_jit:0
@@ -4130,7 +4130,7 @@ msgstr "Eelistatud pakendamine"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__route_ids
 msgid "Preferred Routes"
-msgstr ""
+msgstr "Eelistatud marsruut"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move__route_ids
@@ -4689,13 +4689,13 @@ msgstr ""
 #: code:addons/stock/models/stock_warehouse.py:524
 #, python-format
 msgid "Receive in 1 step (stock)"
-msgstr ""
+msgstr "Kauba vastuvõtt 1 sammuga (ladustamine)"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:524
 #, python-format
 msgid "Receive in 2 steps (input + stock)"
-msgstr ""
+msgstr "Vastuvõtt 2 etapis (sisend + varu)"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:525
@@ -4905,7 +4905,7 @@ msgstr "Varustamine"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__resupply_wh_ids
 msgid "Resupply From"
-msgstr ""
+msgstr "Täienda varusid"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__resupply_route_ids
@@ -7044,6 +7044,8 @@ msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on <i>apply</i>\n"
 "                        Odoo will process all the <i>reserved</i> quantities."
 msgstr ""
+"Sa ei ole määranud <i>tehtud</i> koguseid. Kui sa klikid <i>kinnita</i>,\n"
+"                       siis Odoo märgib tehtuks <i>reserveeritud</i> kogused."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
