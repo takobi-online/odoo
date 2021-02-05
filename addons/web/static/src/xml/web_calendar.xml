@@ -15,7 +15,6 @@
     <t t-name="calendar-box">
         <t t-set="color" t-value="widget.getColor(event.color_index)"/>
         <div t-att-style="typeof color === 'string' ? ('background-color:'+color)+';' : ''" t-attf-class="#{record.is_highlighted ? 'o_event_hightlight' : ''} #{typeof color === 'number' ? 'o_calendar_color_'+color : ''}">
-            <div class="fc-time"/>
             <div class="o_fields">
                 <t t-foreach="widget.displayFields" t-as="name">
                     <div t-attf-class="o_field_#{name} o_field_type_#{fields[name].type}">
@@ -32,6 +31,7 @@
                     </div>
                 </t>
             </div>
+            <div class="fc-time"/>
         </div>
     </t>
 
