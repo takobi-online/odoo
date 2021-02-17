@@ -1044,9 +1044,6 @@ class GroupsView(models.Model):
                                     key=lambda t: t[0].xml_id != 'base.module_category_user_type')
             for app, kind, gs in sorted_triples:  # we process the user type first
                 attrs = {}
-                # hide groups in categories 'Hidden' and 'Extra' (except for group_no_one)
-                if app.xml_id in ('base.module_category_hidden', 'base.module_category_extra', 'base.module_category_usability'):
-                    attrs['groups'] = 'base.group_no_one'
 
                 # User type (employee, portal or public) is a separated group. This is the only 'selection'
                 # group of res.groups without implied groups (with each other).
@@ -1056,7 +1053,6 @@ class GroupsView(models.Model):
                     user_type_field_name = field_name
                     user_type_readonly = str({'readonly': [(user_type_field_name, '!=', group_employee.id)]})
                     attrs['widget'] = 'radio'
-                    attrs['groups'] = 'base.group_no_one'
                     xml1.append(E.field(name=field_name, **attrs))
                     xml1.append(E.newline())
 
