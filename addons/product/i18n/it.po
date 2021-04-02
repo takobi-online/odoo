@@ -2853,8 +2853,8 @@ msgstr "es. Lampade"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
-msgid "e.g. Odoo Enterprise Subscription"
-msgstr "es. Abbonamento a Odoo Enterprise"
+msgid "e.g. TAKOBI Subscription"
+msgstr "es. Abbonamento a TAKOBI"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
