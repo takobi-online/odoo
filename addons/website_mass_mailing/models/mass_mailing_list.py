@@ -9,7 +9,7 @@ class MassMailingList(models.Model):
 
     def _default_popup_content(self):
         return """<div class="modal-header text-center">
-    <h3 class="modal-title mt8">Odoo Presents</h3>
+    <h3 class="modal-title mt8">TAKOBI Presents</h3>
 </div>
 <div class="o_popup_message">
     <font>7</font>
