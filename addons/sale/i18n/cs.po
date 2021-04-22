@@ -10,8 +10,8 @@
 # Jaroslav Helemik Nemec <nemec@helemik.cz>, 2018
 # Martin Trigaux, 2019
 # Michal Veselý <michal@veselyberanek.net>, 2019
-# Rastislav Brencic <rastislav.brencic@azet.sk>, 2020
 # karolína schusterová <karolina.schusterova@vdp.sk>, 2021
+# Rastislav Brencic <rastislav.brencic@azet.sk>, 2021
 # trendspotter, 2021
 # 
 msgid ""
@@ -804,7 +804,7 @@ msgstr "Zrušeno"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "Capture Transaction"
-msgstr ""
+msgstr "Zachycení transakce"
 
 #. module: sale
 #: model:product.template,name:sale.product_product_1_product_template
@@ -2043,7 +2043,7 @@ msgstr "Metoda aktualizace dodaného množství"
 #. module: sale
 #: sql_constraint:sale.order.line:0
 msgid "Missing required fields on accountable sale order line."
-msgstr ""
+msgstr "Na řádku odpovědné prodejní objednávky chybí povinná pole."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__multi_sales_price
@@ -2189,7 +2189,7 @@ msgstr "Počet nabídek na fakturu"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_crm_team__sales_to_invoice_count
 msgid "Number of sales to invoice"
-msgstr ""
+msgstr "Počet prodejů na fakturu"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_unread_counter
@@ -2288,7 +2288,7 @@ msgstr "Číslo objednávky"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv__count
 msgid "Order Count"
-msgstr ""
+msgstr "Počet objednávek"
 
 #. module: sale
 #: code:addons/sale/controllers/portal.py:51
@@ -2371,6 +2371,8 @@ msgid ""
 "Ordered Quantity: Invoice quantities ordered by the customer.\n"
 "Delivered Quantity: Invoice quantities delivered to the customer."
 msgstr ""
+"Objednané množství: Fakturovaná množství objednaná zákazníkem.\n"
+"Dodané množství: Fakturovaná množství dodaná zákazníkovi."
 
 #. module: sale
 #: selection:product.template,invoice_policy:0
@@ -2679,7 +2681,7 @@ msgstr "Atribut produktu"
 #. module: sale
 #: model:ir.model,name:sale.model_product_attribute_custom_value
 msgid "Product Attribute Custom Value"
-msgstr ""
+msgstr "Vlastní hodnota atributu produktu"
 
 #. module: sale
 #: model:ir.model,name:sale.model_product_template_attribute_value
@@ -2780,7 +2782,7 @@ msgstr "Množ. k fakturaci"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Quantities to invoice from sales orders"
-msgstr ""
+msgstr "Množství k fakturaci z prodejních objednávek"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.product_configurator_configure_optional_products
@@ -2946,7 +2948,7 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Request an online payment to confirm orders"
-msgstr ""
+msgstr "Požádejte o online platbu za účelem potvrzení objednávky"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__require_payment
@@ -2959,13 +2961,13 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Request an online signature to confirm orders"
-msgstr ""
+msgstr "Vyžádejte si online podpis k potvrzení objednávek"
 
 #. module: sale
 #: code:addons/sale/models/sale.py:359
 #, python-format
 msgid "Requested date is too soon."
-msgstr ""
+msgstr "Požadované datum je příliš brzy."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__activity_user_id
@@ -3394,7 +3396,7 @@ msgstr ""
 #. module: sale
 #: selection:product.pricelist,discount_policy:0
 msgid "Show public price & discount to the customer"
-msgstr ""
+msgstr "Zobrazit veřejnou cenu a slevu zákazníkovi"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -3427,7 +3429,7 @@ msgstr "Chybí podpis."
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__signature
 msgid "Signature received through the portal."
-msgstr ""
+msgstr "Podpis přijatý prostřednictvím portálu."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__signed_by
