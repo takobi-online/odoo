@@ -111,6 +111,7 @@
                                 <div class="content-group" attrs="{'invisible': [('group_manage_vendor_price', '=', False)]}">
                                     <div class="mt16">
                                         <a role="button" class="btn-link" target="_blank" href="https://takobi.online/r/PTi">
+
                                             <i class="fa fa-arrow-right"/>
                                             How to import
                                         </a>
