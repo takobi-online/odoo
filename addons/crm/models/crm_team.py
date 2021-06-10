@@ -149,7 +149,7 @@ class Team(models.Model):
     as a member of one of the Sales Team.
 </p>""")
             if user_team_id:
-                action['help'] += "<p>Siccome non appartieni ad alcun team di vendita, TAKOBI apre il primo per default.</p>"
+                action['help'] += _("<p>Siccome non appartieni ad alcun team di vendita, TAKOBI apre il primo per default.</p>")
 
         action_context = safe_eval(action['context'], {'uid': self.env.uid})
         if user_team_id:
