@@ -913,8 +913,8 @@ msgstr "Nome"
 
 #. module: portal
 #: model:mail.template,subject:portal.mail_template_data_portal_welcome
-msgid "Your Odoo account at ${object.user_id.company_id.name}"
-msgstr "Account Odoo per ${object.user_id.company_id.name}"
+msgid "Your TAKOBI account at ${object.user_id.company_id.name}"
+msgstr "Il tuo Account TAKOBI per ${object.user_id.company_id.name}"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_contact
