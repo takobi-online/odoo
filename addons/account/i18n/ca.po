@@ -2814,7 +2814,7 @@ msgstr "Plantilles de pla comptable"
 #: model_terms:ir.ui.view,arch_db:account.onboarding_chart_of_account_step
 #, python-format
 msgid "Chart of Accounts"
-msgstr "Resum de comptes"
+msgstr "Pla comptable"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_chart_template_form
@@ -3194,7 +3194,7 @@ msgstr "Configurar un producte"
 #. module: account
 #: model:ir.actions.act_window,name:account.action_open_account_onboarding_invoice_layout
 msgid "Configure your document layout"
-msgstr ""
+msgstr "Configura la disposició del document"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_bnk_stmt_cashbox
