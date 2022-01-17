@@ -300,7 +300,7 @@ msgstr "Partecipante n. %s"
 #. module: website_event
 #: model_terms:ir.ui.view,arch_db:website_event.registration_template
 msgid "Available seats: "
-msgstr ""
+msgstr "Posti disponibili: "
 
 #. module: website_event
 #: model_terms:ir.ui.view,arch_db:website_event.registration_attendee_details
