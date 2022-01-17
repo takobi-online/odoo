@@ -6452,8 +6452,9 @@ msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
-msgid "You have not recorded <i>done</i> quantities yet, by clicking on <i>apply</i>\n"
-"                        Odoo will process all the <i>reserved</i> quantities."
+msgid ""
+"You have not recorded <i>done</i> quantities yet, by clicking on <i>apply</i>\n"
+"                        TAKOBI will process all the <i>reserved</i> quantities."
 msgstr ""
 
 #. module: stock
