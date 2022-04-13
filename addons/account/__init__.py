@@ -56,4 +56,4 @@ def _auto_install_l10n(cr, registry):
                 module_list.append('account_sepa')
                 module_list.append('account_bank_statement_import_camt')
         module_ids = env['ir.module.module'].search([('name', 'in', module_list), ('state', '=', 'uninstalled')])
-        module_ids.sudo().button_install()
+        # module_ids.sudo().button_install()
