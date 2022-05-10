@@ -336,6 +336,9 @@ class MassMailing(models.Model):
     replied_ratio = fields.Integer(compute="_compute_statistics", string='Replied Ratio')
     bounced_ratio = fields.Integer(compute="_compute_statistics", String='Bounced Ratio')
     next_departure = fields.Datetime(compute="_compute_next_departure", string='Next Departure')
+    mail_server_id = fields.Many2one(
+        'ir.mail_server', string='Mail Server',
+         help="Use a specific mail server in priority. Otherwise Odoo relies on the first outgoing mail server available (based on their sequencing) as it does for normal mails.")
 
     def _compute_total(self):
         for mass_mailing in self:
@@ -578,6 +581,7 @@ class MassMailing(models.Model):
                 'mailing_list_ids': [(4, l.id) for l in mailing.contact_list_ids],
                 'no_auto_thread': mailing.reply_to_mode != 'thread',
                 'template_id': None,
+                'mail_server_id': mailing.mail_server_id.id,
             }
             if mailing.reply_to_mode == 'email':
                 composer_values['reply_to'] = mailing.reply_to
