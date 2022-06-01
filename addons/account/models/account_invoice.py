@@ -1894,7 +1894,7 @@ class AccountInvoiceLine(models.Model):
     def _onchange_account_id(self):
         if not self.account_id:
             return
-        if not self.product_id:
+        if not self.product_id and not self.invoice_line_tax_ids:
             fpos = self.invoice_id.fiscal_position_id
             if self.invoice_id.type in ('out_invoice', 'out_refund'):
                 default_tax = self.invoice_id.company_id.account_sale_tax_id
