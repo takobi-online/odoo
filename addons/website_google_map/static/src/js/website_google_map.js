@@ -7,6 +7,7 @@ function initialize_map() {
         center: {lat: 0.0, lng: 0.0},
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+    this.map = map
 
     // ENABLE ADRESS GEOCODING
     var Geocoder = new google.maps.Geocoder();
