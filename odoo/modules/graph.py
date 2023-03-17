@@ -52,6 +52,10 @@ class Graph(dict):
     def add_module(self, cr, module, force=None):
         self.add_modules(cr, [module], force)
 
+    def takobi_module_info_hook(self, cr, module, module_info):
+        """Allow to edit module info based on what is in the DB."""
+        return module_info
+
     def add_modules(self, cr, module_list, force=None):
         if force is None:
             force = []
@@ -62,6 +66,7 @@ class Graph(dict):
             # NOTE The call to load_information_from_description_file is already
             # done by db.initialize, so it is possible to not do it again here.
             info = odoo.modules.module.load_information_from_description_file(module)
+            self.takobi_module_info_hook(cr, module, info)
             if info and info['installable']:
                 packages.append((module, info)) # TODO directly a dict, like in get_modules_with_version
             elif module != 'studio_customization':
