@@ -16,7 +16,7 @@ msgstr ""
 "POT-Creation-Date: 2021-08-16 09:00+0000\n"
 "PO-Revision-Date: 2020-09-07 08:19+0000\n"
 "Last-Translator: Alina Lisnenko <alina.lisnenko@erp.co.ua>, 2022\n"
-"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"Language-Team: Ukrainian (https://app.transifex.com/odoo/teams/41243/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -3162,6 +3162,13 @@ msgid "Invalid domain right operand %s"
 msgstr "Невірний правий операнд домену %s"
 
 #. module: stock
+#: code:addons/stock/models/product.py:0
+#, python-format
+msgid ""
+"Invalid rule's configuration, the following rule causes an endless loop: %s"
+msgstr ""
+
+#. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__inventory_quantity
 msgid "Inventoried Quantity"
 msgstr "Інвентаризовані кількості"
@@ -5183,6 +5190,14 @@ msgstr "Кількість"
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
+msgid ""
+"Quants are auto-deleted when appropriate. If you must manually delete them, "
+"please ask a stock manager to do it."
+msgstr ""
+
+#. module: stock
+#: code:addons/stock/models/stock_quant.py:0
+#, python-format
 msgid "Quant's creation is restricted, you can't do this operation."
 msgstr "Створення кількостей є обмеженим, ви не можете виконати цю операцію."
 
@@ -7020,6 +7035,14 @@ msgstr ""
 "замість нього нового."
 
 #. module: stock
+#: code:addons/stock/models/product.py:0
+#, python-format
+msgid ""
+"This product's company cannot be changed as long as there are quantities of "
+"it belonging to another company."
+msgstr ""
+
+#. module: stock
 #: model:ir.model.fields,help:stock.field_stock_change_product_qty__new_quantity
 msgid ""
 "This quantity is expressed in the Default Unit of Measure of the product."
@@ -7398,8 +7421,8 @@ msgstr "Одиниці вимірювання"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_uom_id
-msgid "Unity of measure"
-msgstr "Одиниця вимірювання"
+msgid "Unit of measure"
+msgstr ""
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -8171,6 +8194,12 @@ msgstr ""
 "Неможливо зарезервувати складське переміщення, встановлене на \"Виконано\"."
 
 #. module: stock
+#: code:addons/stock/models/stock_move.py:0
+#, python-format
+msgid "You cannot change a cancelled stock move, create a new line instead."
+msgstr ""
+
+#. module: stock
 #: code:addons/stock/models/stock_move_line.py:0
 #: code:addons/stock/models/stock_move_line.py:0
 #, python-format
@@ -8430,3 +8459,11 @@ msgstr "report_stock_quantity_graph"
 #, python-format
 msgid "should be replenished to reach the maximum of"
 msgstr "слід дозамовити, щоб досягнути максимум"
+
+#. module: stock
+#: code:addons/stock/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"It is not allow to import reserved quantity, you have to use the quantity "
+"directly."
+msgstr ""

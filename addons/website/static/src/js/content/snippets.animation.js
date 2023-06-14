@@ -12,7 +12,6 @@ var core = require('web.core');
 const dom = require('web.dom');
 var mixins = require('web.mixins');
 var publicWidget = require('web.public.widget');
-var utils = require('web.utils');
 const wUtils = require('website.utils');
 
 var qweb = core.qweb;
@@ -982,13 +981,25 @@ registry.anchorSlide = publicWidget.Widget.extend({
      * @private
      */
     _onAnimateClick: function (ev) {
-        if (this.$target[0].pathname !== window.location.pathname) {
-            return;
-        }
         var hash = this.$target[0].hash;
-        if (!utils.isValidAnchor(hash)) {
+        if (hash === '#top' || hash === '#bottom') {
+            // If the anchor targets #top or #bottom, directly call the
+            // "scrollTo" function. The reason is that the header or the footer
+            // could have been removed from the DOM. By receiving a string as
+            // parameter, the "scrollTo" function handles the scroll to the top
+            // or to the bottom of the document even if the header or the
+            // footer is removed from the DOM.
+            dom.scrollTo(hash, {
+                duration: 500,
+                extraOffset: this._computeExtraOffset(),
+            });
             return;
         }
+        if (!hash.length) {
+            return;
+        }
+        // Escape special characters to make the jQuery selector to work.
+        hash = '#' + $.escapeSelector(hash.substring(1));
         var $anchor = $(hash);
         const scrollValue = $anchor.attr('data-anchor');
         if (!$anchor.length || !scrollValue) {
@@ -1113,6 +1124,42 @@ registry.FooterSlideout = publicWidget.Widget.extend({
         this._super(...arguments);
         this.el.classList.remove('o_footer_effect_enable');
         this.__pixelEl.remove();
+    },
+});
+
+registry.TopMenuCollapse = publicWidget.Widget.extend({
+    selector: "header #top_menu_collapse",
+
+    /**
+     * @override
+     */
+    async start() {
+        this.throttledResize = _.throttle(() => this._onResize(), 25);
+        window.addEventListener("resize", this.throttledResize);
+        return this._super(...arguments);
+    },
+    /**
+     * @override
+     */
+    destroy() {
+        this._super(...arguments);
+        window.removeEventListener("resize", this.throttledResize);
+    },
+
+    //--------------------------------------------------------------------------
+    // Handlers
+    //--------------------------------------------------------------------------
+
+    /**
+     * @private
+     */
+    _onResize() {
+        if (this.el.classList.contains("show")) {
+            const togglerEl = this.el.closest("nav").querySelector(".navbar-toggler");
+            if (getComputedStyle(togglerEl).display === "none") {
+                this.$el.collapse("hide");
+            }
+        }
     },
 });
 

@@ -32,7 +32,9 @@
 # Evgeniia Kotova, 2022
 # Martin Trigaux, 2022
 # valmasone, 2022
-# Сергей Шебанин <sergey@shebanin.ru>, 2022
+# Alena Vlasova, 2023
+# Сергей Шебанин <sergey@shebanin.ru>, 2023
+# alenafairy, 2023
 # 
 msgid ""
 msgstr ""
@@ -40,8 +42,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-25 10:15+0000\n"
 "PO-Revision-Date: 2020-09-07 08:09+0000\n"
-"Last-Translator: Сергей Шебанин <sergey@shebanin.ru>, 2022\n"
-"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"Last-Translator: alenafairy, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -5634,7 +5636,7 @@ msgstr "Генерировать проводки"
 #: code:addons/account/wizard/account_tour_upload_bill.py:0
 #, python-format
 msgid "Generated Documents"
-msgstr ""
+msgstr "Созданные документы"
 
 #. module: account
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
@@ -6612,7 +6614,7 @@ msgstr "Счета"
 #: model_terms:ir.ui.view,arch_db:account.portal_my_home_invoice
 #: model_terms:ir.ui.view,arch_db:account.portal_my_home_menu_invoice
 msgid "Invoices &amp; Bills"
-msgstr ""
+msgstr "Закрывающие документы"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_invoice_report_all
@@ -13009,6 +13011,9 @@ msgid ""
 "including from the Technical menu in the Settings, in order to preserve "
 "storage space of your Odoo database."
 msgstr ""
+"Эта опция навсегда удаляет любые следы электронной почты после ее отправки, "
+"в том числе из Технического меню в Настройках, чтобы сохранить место для "
+"хранения вашей базы данных."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_template__chart_template_id
@@ -13407,6 +13412,12 @@ msgstr "Неоплаченные Счета-фактуры"
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Unposted"
 msgstr "Не проведено"
+
+#. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Unposted Entries"
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
@@ -14179,6 +14190,12 @@ msgstr ""
 "существуют"
 
 #. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Please contact your accountant to print the Hash integrity result."
+msgstr ""
+
+#. module: account
 #: code:addons/account/models/account_account.py:0
 #, python-format
 msgid ""
@@ -14232,8 +14249,9 @@ msgstr ""
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid ""
-"You cannot edit the following fields due to restrict mode being activated on"
-" the journal: %s."
+"You cannot edit the following fields: %s.\n"
+"The following entries are already hashed:\n"
+"%s"
 msgstr ""
 
 #. module: account
@@ -14648,6 +14666,14 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account.view_partner_property_form
 msgid "the parent company"
 msgstr "родительская компания"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid ""
+"The Unit of Measure (UoM) '%s' you have selected for product '%s', is "
+"incompatible with its category : %s."
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_analytic_default_kanban

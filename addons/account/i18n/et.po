@@ -24,7 +24,7 @@
 # Oliver Ernest, 2022
 # Algo Kärp <algokarp@gmail.com>, 2022
 # Eneli Õigus <enelioigus@gmail.com>, 2022
-# Jana Jaakson, 2023
+# JanaAvalah, 2023
 # Anna, 2023
 # 
 msgid ""
@@ -34,7 +34,7 @@ msgstr ""
 "POT-Creation-Date: 2021-02-25 10:15+0000\n"
 "PO-Revision-Date: 2020-09-07 08:09+0000\n"
 "Last-Translator: Anna, 2023\n"
-"Language-Team: Estonian (https://www.transifex.com/odoo/teams/41243/et/)\n"
+"Language-Team: Estonian (https://app.transifex.com/odoo/teams/41243/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -13560,6 +13560,12 @@ msgid "Unposted"
 msgstr "Sisestamata"
 
 #. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Unposted Entries"
+msgstr ""
+
+#. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 msgid "Unposted Journal Entries"
 msgstr "Postitamata andmike kanded"
@@ -14317,6 +14323,12 @@ msgstr ""
 "Ettevõtte valuutat ei saa enam muuta, sest juba on tehtud andmike kanderead."
 
 #. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Please contact your accountant to print the Hash integrity result."
+msgstr ""
+
+#. module: account
 #: code:addons/account/models/account_account.py:0
 #, python-format
 msgid ""
@@ -14369,8 +14381,9 @@ msgstr ""
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid ""
-"You cannot edit the following fields due to restrict mode being activated on"
-" the journal: %s."
+"You cannot edit the following fields: %s.\n"
+"The following entries are already hashed:\n"
+"%s"
 msgstr ""
 
 #. module: account

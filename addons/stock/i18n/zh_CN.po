@@ -45,6 +45,7 @@
 # Chris H, 2021
 # 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2022
 # Jeffery CHEN <jeffery9@gmail.com>, 2022
+# Emily Jia <eji@odoo.com>, 2023
 # 
 msgid ""
 msgstr ""
@@ -52,8 +53,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-16 09:00+0000\n"
 "PO-Revision-Date: 2020-09-07 08:19+0000\n"
-"Last-Translator: Jeffery CHEN <jeffery9@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"Last-Translator: Emily Jia <eji@odoo.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -3101,6 +3102,13 @@ msgid "Invalid domain right operand %s"
 msgstr "非法的域右作业符 %s"
 
 #. module: stock
+#: code:addons/stock/models/product.py:0
+#, python-format
+msgid ""
+"Invalid rule's configuration, the following rule causes an endless loop: %s"
+msgstr "无效规则配置，以下规则导致无限循环：%s"
+
+#. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__inventory_quantity
 msgid "Inventoried Quantity"
 msgstr "盘点的数量"
@@ -5095,6 +5103,14 @@ msgstr "即时库存"
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
+msgid ""
+"Quants are auto-deleted when appropriate. If you must manually delete them, "
+"please ask a stock manager to do it."
+msgstr ""
+
+#. module: stock
+#: code:addons/stock/models/stock_quant.py:0
+#, python-format
 msgid "Quant's creation is restricted, you can't do this operation."
 msgstr "即时库存创建是被限制的，你不能做此作业。"
 
@@ -6819,6 +6835,14 @@ msgid ""
 msgstr "该产品已至少在库存移动中使用过一次。 不建议更改产品类型，因为它可能导致不一致。 更好的解决方案是将产品存档，然后创建一个新产品。"
 
 #. module: stock
+#: code:addons/stock/models/product.py:0
+#, python-format
+msgid ""
+"This product's company cannot be changed as long as there are quantities of "
+"it belonging to another company."
+msgstr "如果此产品有部分数量属于另一家公司，则不能更改产品的所属公司。"
+
+#. module: stock
 #: model:ir.model.fields,help:stock.field_stock_change_product_qty__new_quantity
 msgid ""
 "This quantity is expressed in the Default Unit of Measure of the product."
@@ -7179,8 +7203,8 @@ msgstr "计量单位"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_uom_id
-msgid "Unity of measure"
-msgstr "计量单位"
+msgid "Unit of measure"
+msgstr ""
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -7883,6 +7907,12 @@ msgid "You cannot unreserve a stock move that has been set to 'Done'."
 msgstr "你无法取消状态已标记为“完成”的库存移动。"
 
 #. module: stock
+#: code:addons/stock/models/stock_move.py:0
+#, python-format
+msgid "You cannot change a cancelled stock move, create a new line instead."
+msgstr "不能更改已取消的库存移动，应创建新行。"
+
+#. module: stock
 #: code:addons/stock/models/stock_move_line.py:0
 #: code:addons/stock/models/stock_move_line.py:0
 #, python-format
@@ -8122,3 +8152,11 @@ msgstr "报告_库存_数量_图"
 #, python-format
 msgid "should be replenished to reach the maximum of"
 msgstr "应该补充到最大数量"
+
+#. module: stock
+#: code:addons/stock/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"It is not allow to import reserved quantity, you have to use the quantity "
+"directly."
+msgstr ""

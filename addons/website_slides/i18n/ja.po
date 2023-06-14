@@ -31,7 +31,7 @@ msgstr ""
 "POT-Creation-Date: 2020-11-16 13:33+0000\n"
 "PO-Revision-Date: 2020-09-07 08:22+0000\n"
 "Last-Translator: Andy Yiu, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
+"Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -2266,7 +2266,7 @@ msgstr "スライドを共有時に使われるメールテンプレート"
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_slide__embed_code
 msgid "Embed Code"
-msgstr ""
+msgstr "埋め込みコード"
 
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_slide__embedcount_ids
@@ -5227,6 +5227,14 @@ msgstr ""
 #, python-format
 msgid "Yes"
 msgstr "はい"
+
+#. module: website_slides
+#: code:addons/website_slides/wizard/slide_channel_invite.py:0
+#, python-format
+msgid ""
+"You are not allowed to add members to this course. Please contact the course"
+" responsible or an administrator."
+msgstr ""
 
 #. module: website_slides
 #. openerp-web

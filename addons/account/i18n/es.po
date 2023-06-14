@@ -36,7 +36,7 @@ msgstr ""
 "POT-Creation-Date: 2021-02-25 10:15+0000\n"
 "PO-Revision-Date: 2020-09-07 08:09+0000\n"
 "Last-Translator: Pedro M. Baeza <pedro.baeza@tecnativa.com>, 2023\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -13931,7 +13931,7 @@ msgstr "Sin asentar"
 #: code:addons/account/models/company.py:0
 #, python-format
 msgid "Unposted Entries"
-msgstr ""
+msgstr "Asientos sin publicar"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
@@ -14768,6 +14768,8 @@ msgstr ""
 #, python-format
 msgid "Please contact your accountant to print the Hash integrity result."
 msgstr ""
+"Contacte con su contable para imprimir el resultado de la integridad de "
+"hash."
 
 #. module: account
 #: code:addons/account/models/account_account.py:0
@@ -14831,6 +14833,9 @@ msgid ""
 "The following entries are already hashed:\n"
 "%s"
 msgstr ""
+"No puede editar los siguientes campos: %s.\n"
+"Los siguientes campos ya están en un hash:\n"
+"%s"
 
 #. module: account
 #: code:addons/account/models/account_move.py:0

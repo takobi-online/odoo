@@ -19,7 +19,9 @@
 # Matteo Boscolo <matteo.boscolo.76@gmail.com>, 2020
 # Friederike Fasterling-Nesselbosch, 2022
 # Martin Trigaux, 2022
+# Sebastiano Picchi, 2023
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -27,8 +29,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-07 14:40+0000\n"
 "PO-Revision-Date: 2020-09-07 08:20+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2023\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -47,6 +49,12 @@ msgstr "Aggiungi immagini"
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "\" alert with a"
 msgstr "\" con un"
+
+#. module: website
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "\"URL from\" can not be empty."
+msgstr ""
 
 #. module: website
 #: code:addons/website/models/website_rewrite.py:0
@@ -502,6 +510,8 @@ msgid ""
 "<br/><br/>\n"
 "                    Example of rule:<br/>"
 msgstr ""
+"<br/><br/>\n"
+"                    Esempio di regola:<br/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_carousel
@@ -836,7 +846,7 @@ msgid ""
 "label=\"Address\" title=\"Address\"/>"
 msgstr ""
 "<span class=\"fa fa-map-marker fa-fw mt16\" role=\"img\" aria-"
-"label=\"Address\" title=\"Indirizzo\"/>"
+"label=\"Indirizzo\" title=\"Indirizzo\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -851,7 +861,9 @@ msgstr "<span class=\"fa fa-plus mr-2\"/>Nuovo"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.list_website_pages
 msgid "<span class=\"fa fa-sort fa-lg\" role=\"img\" aria-label=\"Sort\" title=\"Sort\"/>"
-msgstr "<span class=\"fa fa-sort fa-lg\" role=\"img\" aria-label=\"Sort\" title=\"Ordina\"/>"
+msgstr ""
+"<span class=\"fa fa-sort fa-lg\" role=\"img\" aria-label=\"Ordina\" "
+"title=\"Ordina\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery
@@ -1003,7 +1015,7 @@ msgid ""
 "class=\"fa fa-mobile\"/>"
 msgstr ""
 "<span title=\"Anteprima dispositivi mobili\" role=\"img\" aria-"
-"label=\"Mobile preview\" class=\"fa fa-mobile\"/>"
+"label=\"Anteprima dispositivi mobili\" class=\"fa fa-mobile\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_publisher
@@ -1043,6 +1055,8 @@ msgid ""
 "A Google Map error occurred. Make sure to read the key configuration popup "
 "carefully."
 msgstr ""
+"Si è verificato un errore nella mappa Google. Controllare di aver letto "
+"attentamente la finestra di configurazione della chiave."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_image
@@ -1489,7 +1503,7 @@ msgstr "Arch"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__arch_db
 msgid "Arch Blob"
-msgstr ""
+msgstr "Arch Blob"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__arch_fs
@@ -3622,7 +3636,7 @@ msgstr "modulo"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
 msgid "Form Builder"
-msgstr "Generatore modulo"
+msgstr "Creatore schede"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -4405,7 +4419,7 @@ msgstr "Informazioni sull'istanza"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_theme_ir_ui_view__inherit_id
 msgid "Inherit"
-msgstr "Eredita"
+msgstr "Ereditata"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__inherit_id
@@ -4640,7 +4654,7 @@ msgstr "Offerta di lavoro"
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
 msgid "Join us and make your company a better place."
-msgstr "Unisciti a noi e migliora la tua azienda."
+msgstr "Unisciti a noi e rendi la tua azienda un posto migliore."
 
 #. module: website
 #. openerp-web
@@ -5075,7 +5089,7 @@ msgstr "Azioni principali"
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "Make sure billing is enabled"
-msgstr ""
+msgstr "Assicurati che la fatturazione sia attiva"
 
 #. module: website
 #. openerp-web
@@ -5091,7 +5105,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "Make sure your settings are properly configured:"
-msgstr ""
+msgstr "Assicurati che le impostazioni siano configurate nel modo giusto:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -5118,14 +5132,14 @@ msgstr "Gestisci pagina"
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "Maps JavaScript API"
-msgstr ""
+msgstr "API JavaScript delle mappe"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "Maps Static API"
-msgstr ""
+msgstr "API statica delle mappe"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_google_map_options
@@ -5241,7 +5255,7 @@ msgstr "Al centro"
 #: code:addons/website/static/src/js/editor/snippets.options.js:0
 #, python-format
 msgid "Min-Height"
-msgstr ""
+msgstr "Altezza min."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_blockquote_options
@@ -5262,6 +5276,13 @@ msgstr "Minuti"
 #, python-format
 msgid "Mobile"
 msgstr "Cellulare"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/js/editor/snippets.options.js:0
+#, python-format
+msgid "Mobile Alignment"
+msgstr "Allineamento disp. mobile"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__mobile
@@ -6778,7 +6799,7 @@ msgstr ""
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__customize_show
 msgid "Show As Optional Inherit"
-msgstr "Mostra come eredità opzionale"
+msgstr "Mostra come ereditata opzionale"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -7230,7 +7251,7 @@ msgstr "Colore testo"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_highlight
 msgid "Text Highlight"
-msgstr ""
+msgstr "Testo in evidenza"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown_options
@@ -7491,7 +7512,9 @@ msgstr "Questo campo è identico al campo \"arch\" senza traduzioni"
 #. module: website
 #: model:ir.model.fields,help:website.field_res_config_settings__website_default_lang_code
 msgid "This field is used to set/get locales for user"
-msgstr "Questo campo è usato per impostare/leggere fuso locale per utente"
+msgstr ""
+"Campo che viene utilizzato per impostare/ottenere la localizzazione per "
+"l'utente"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_page__arch
@@ -7499,8 +7522,8 @@ msgid ""
 "This field should be used when accessing view arch. It will use translation.\n"
 "                               Note that it will read `arch_db` or `arch_fs` if in dev-xml mode."
 msgstr ""
-"Questo campo deve essere usato quando si accede all'architettura della vista, userà la traduzione.\n"
-"                               Nota: se in modalità dex-xml, leggerà `arch_db` o `arch_fs`."
+"Questo campo deve essere usato quando si accede all'architettura della vista, utilizzerà la traduzione.\n"
+"                               Nota: se in modalità dex-xml, legge `arch_db` o `arch_fs`."
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_page__arch_db
@@ -7518,6 +7541,18 @@ msgstr ""
 
 #. module: website
 #. openerp-web
+#: code:addons/website/static/src/js/editor/snippets.options.js:0
+#, python-format
+msgid ""
+"This font already exists, you can only add it as a local font to replace the"
+" server version."
+msgstr ""
+"Questo font esiste già, puoi aggiungerlo solo come font locale per "
+"rimpiazzare la versione del server."
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/js/editor/snippets.options.js:0
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "This font is hosted and served to your visitors by Google servers"
@@ -7576,6 +7611,9 @@ msgid ""
 "This value will be escaped to be compliant with all major browsers and used "
 "in url. Keep it empty to use the default name of the record."
 msgstr ""
+"Il valore sarà sottoposto a escape per essere conforme a tutti i principali "
+"browser e utilizzato nell'url. Mantenielo vuoto per utilizzare il nome "
+"predefinito dell'elemento registrato."
 
 #. module: website
 #. openerp-web
@@ -7789,6 +7827,13 @@ msgstr "Transizione"
 #, python-format
 msgid "Translate Attribute"
 msgstr "Attributo traduzione"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/js/editor/wysiwyg_multizone_translate.js:0
+#, python-format
+msgid "Translate Selection Option"
+msgstr ""
 
 #. module: website
 #. openerp-web
@@ -9540,4 +9585,4 @@ msgstr "⌙ Larghezza"
 #: code:addons/website/static/src/js/editor/snippets.options.js:0
 #, python-format
 msgid "└ Height"
-msgstr ""
+msgstr "└ Altezza"

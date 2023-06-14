@@ -8,6 +8,7 @@ from odoo.tools import html_escape
 from odoo.exceptions import RedirectWarning
 
 from lxml import etree
+from struct import error as StructError
 import base64
 import io
 import logging
@@ -393,7 +394,7 @@ class AccountEdiFormat(models.Model):
         try:
             for xml_name, content in pdf_reader.getAttachments():
                 to_process.extend(self._decode_xml(xml_name, content))
-        except NotImplementedError as e:
+        except (NotImplementedError, StructError) as e:
             _logger.warning("Unable to access the attachments of %s. Tried to decrypt it, but %s." % (filename, e))
 
         # Process the pdf itself.
@@ -438,12 +439,12 @@ class AccountEdiFormat(models.Model):
         content = base64.b64decode(attachment.with_context(bin_size=False).datas)
         to_process = []
 
-        # XML attachments received by mail have a 'text/plain' mimetype.
-        # Therefore, if content start with '<?xml', it is considered as XML.
-        is_text_plain_xml = 'text/plain' in attachment.mimetype and content.startswith(b'<?xml')
+        # XML attachments received by mail have a 'text/plain' mimetype (cfr. context key: 'attachments_mime_plainxml')
+        # Therefore, if content start with '<?xml', or if the filename ends with '.xml', it is considered as XML.
+        is_text_plain_xml = 'text/plain' in attachment.mimetype and (content.startswith(b'<?xml') or attachment.name.endswith('.xml'))
         if 'pdf' in attachment.mimetype:
             to_process.extend(self._decode_pdf(attachment.name, content))
-        elif 'xml' in attachment.mimetype or is_text_plain_xml:
+        elif attachment.mimetype.endswith('/xml') or is_text_plain_xml:
             to_process.extend(self._decode_xml(attachment.name, content))
         else:
             to_process.extend(self._decode_binary(attachment.name, content))
@@ -470,7 +471,7 @@ class AccountEdiFormat(models.Model):
                 except RedirectWarning as rw:
                     raise rw
                 except Exception as e:
-                    _logger.exception("Error importing attachment \"%s\" as invoice with format \"%s\"", file_data['filename'], edi_format.name, str(e))
+                    _logger.exception("Error importing attachment \"%s\" as invoice with format \"%s\"", file_data['filename'], edi_format.name, exc_info=True)
                 if res:
                     if 'extract_state' in res:
                         # Bypass the OCR to prevent overwriting data when an EDI was succesfully imported.
@@ -497,7 +498,7 @@ class AccountEdiFormat(models.Model):
                     else:  # file_data['type'] == 'binary'
                         res = edi_format._update_invoice_from_binary(file_data['filename'], file_data['content'], file_data['extension'], invoice)
                 except Exception as e:
-                    _logger.exception("Error importing attachment \"%s\" as invoice with format \"%s\"", file_data['filename'], edi_format.name, str(e))
+                    _logger.exception("Error importing attachment \"%s\" as invoice with format \"%s\"", file_data['filename'], edi_format.name, exc_info=True)
                 if res:
                     if 'extract_state' in res:
                         # Bypass the OCR to prevent overwriting data when an EDI was succesfully imported.

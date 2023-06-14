@@ -8,6 +8,8 @@
 # Link Up링크업 <linkup.way@gmail.com>, 2020
 # Linkup <link-up@naver.com>, 2021
 # JH CHOI <hwangtog@gmail.com>, 2021
+# Sarah Park, 2023
+# Daye Jeong, 2023
 # 
 msgid ""
 msgstr ""
@@ -15,8 +17,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-27 11:23+0000\n"
 "PO-Revision-Date: 2020-09-07 08:17+0000\n"
-"Last-Translator: JH CHOI <hwangtog@gmail.com>, 2021\n"
-"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+"Last-Translator: Daye Jeong, 2023\n"
+"Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -1216,11 +1218,15 @@ msgstr ""
 #: model:ir.model.fields,help:project.field_project_project__privacy_visibility
 #: model:ir.model.fields,help:project.field_project_task__project_privacy_visibility
 msgid ""
-"Defines the visibility of the tasks of the project:\n"
-"- Invited internal users: employees may only see the followed project and tasks.\n"
-"- All internal users: employees may see all project and tasks.\n"
-"- Invited portal and all internal users: employees may see everything.   Portal users may see project and tasks followed by\n"
-"   them or by someone of their company."
+"People to whom this project and its tasks will be visible.\n"
+"\n"
+"- Invited internal users: when following a project, internal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+" A user with the project > administrator access right level can still access this project and its tasks, even if they are not explicitly part of the followers.\n"
+"\n"
+"- All internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"\n"
+"- Invited portal users and all internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"When following a project, portal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following."
 msgstr ""
 
 #. module: project
@@ -1739,7 +1745,7 @@ msgstr "프로젝트의 등급 환경 설정이 '단계 변경 시 평가하기'
 msgid ""
 "If set, this content will automatically be sent out to unauthorized users "
 "instead of the default message."
-msgstr ""
+msgstr "설정하면, 권한이 없는 사용자에게 기본 메시지 대신 이 내용을 전송합니다. "
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__active
@@ -2197,7 +2203,7 @@ msgstr "중립적인 얼굴"
 #: model:project.task.type,name:project.project_stage_0
 #, python-format
 msgid "New"
-msgstr "새로운"
+msgstr "신규"
 
 #. module: project
 #. openerp-web

@@ -19,7 +19,7 @@ msgstr ""
 "POT-Creation-Date: 2021-02-25 10:15+0000\n"
 "PO-Revision-Date: 2020-09-07 08:09+0000\n"
 "Last-Translator: Alina Lisnenko <alina.lisnenko@erp.co.ua>, 2023\n"
-"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"Language-Team: Ukrainian (https://app.transifex.com/odoo/teams/41243/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -13822,7 +13822,7 @@ msgstr "Залишок"
 #: code:addons/account/models/company.py:0
 #, python-format
 msgid "Unposted Entries"
-msgstr ""
+msgstr "Неопубліковані записи"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
@@ -14654,6 +14654,8 @@ msgstr ""
 #, python-format
 msgid "Please contact your accountant to print the Hash integrity result."
 msgstr ""
+"Будь ласка, зверніться до свого бухгалтера, щоб надрукувати результат "
+"цілісності хешу."
 
 #. module: account
 #: code:addons/account/models/account_account.py:0
@@ -14717,6 +14719,9 @@ msgid ""
 "The following entries are already hashed:\n"
 "%s"
 msgstr ""
+"Ви не можете редагувати наступні поля: %s.\n"
+"Наступні записи вже хешовані:\n"
+"%s"
 
 #. module: account
 #: code:addons/account/models/account_move.py:0

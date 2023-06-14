@@ -579,7 +579,7 @@ class WebsiteSale(http.Controller):
         # prevent name change if invoices exist
         if data.get('partner_id'):
             partner = request.env['res.partner'].browse(int(data['partner_id']))
-            if partner.exists() and partner.name and not partner.sudo().can_edit_vat() and 'name' in data and (data['name'] or False) != (partner.name or False):
+            if partner.exists() and partner.sudo().name and not partner.sudo().can_edit_vat() and 'name' in data and (data['name'] or False) != (partner.sudo().name or False):
                 error['name'] = 'error'
                 error_message.append(_('Changing your name is not allowed once invoices have been issued for your account. Please contact us directly for this operation.'))
 
@@ -639,12 +639,21 @@ class WebsiteSale(http.Controller):
         return partner_id
 
     def values_preprocess(self, order, mode, values):
-        # Convert the values for many2one fields to integer since they are used as IDs
+        new_values = dict()
         partner_fields = request.env['res.partner']._fields
-        return {
-            k: (bool(v) and int(v)) if k in partner_fields and partner_fields[k].type == 'many2one' else v
-            for k, v in values.items()
-        }
+
+        for k, v in values.items():
+            # Convert the values for many2one fields to integer since they are used as IDs
+            if k in partner_fields and partner_fields[k].type == 'many2one':
+                new_values[k] = bool(v) and int(v)
+            # Store empty fields as `False` instead of empty strings `''` for consistency with other applications like
+            # Contacts.
+            elif v == '':
+                new_values[k] = False
+            else:
+                new_values[k] = v
+
+        return new_values
 
     def values_postprocess(self, order, mode, values, errors, error_msg):
         new_values = {}
@@ -742,7 +751,7 @@ class WebsiteSale(http.Controller):
                             (not order.only_services and (mode[0] == 'edit' and '/shop/checkout' or '/shop/address'))
                     # We need to update the pricelist(by the one selected by the customer), because onchange_partner reset it
                     # We only need to update the pricelist when it is not redirected to /confirm_order
-                    if kw.get('callback', '') != '/shop/confirm_order':
+                    if kw.get('callback', False) != '/shop/confirm_order':
                         request.website.sale_get_order(update_pricelist=True)
                 elif mode[1] == 'shipping':
                     order.partner_shipping_id = partner_id
@@ -1049,6 +1058,12 @@ class WebsiteSale(http.Controller):
         """
         if sale_order_id is None:
             order = request.website.sale_get_order()
+            if not order and 'sale_last_order_id' in request.session:
+                # Retrieve the last known order from the session if the session key `sale_order_id`
+                # was prematurely cleared. This is done to prevent the user from updating their cart
+                # after payment in case they don't return from payment through this route.
+                last_order_id = request.session['sale_last_order_id']
+                order = request.env['sale.order'].sudo().browse(last_order_id).exists()
         else:
             order = request.env['sale.order'].sudo().browse(sale_order_id)
             assert order.id == request.session.get('sale_last_order_id')

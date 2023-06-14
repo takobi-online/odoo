@@ -392,7 +392,7 @@ class AccountMove(models.Model):
 
         if self.is_sale_document(include_receipts=True):
             return invoice_date
-        elif self.is_purchase_document(include_receipts=True):
+        else:
             highest_name = self.highest_name or self._get_last_sequence(relaxed=True, lock=False)
             number_reset = self._deduce_sequence_number_reset(highest_name)
             if not highest_name or number_reset == 'month':
@@ -749,8 +749,9 @@ class AccountMove(models.Model):
                 self.company_id,
                 self.date or fields.Date.context_today(self),
             )
+            amount_currency = currency.round(taxes_map_entry['amount'])
             to_write_on_line = {
-                'amount_currency': taxes_map_entry['amount'],
+                'amount_currency': amount_currency,
                 'currency_id': taxes_map_entry['grouping_dict']['currency_id'],
                 'debit': balance > 0.0 and balance or 0.0,
                 'credit': balance < 0.0 and -balance or 0.0,
@@ -988,6 +989,7 @@ class AccountMove(models.Model):
                 domain = [
                     ('company_id', '=', self.company_id.id),
                     ('internal_type', '=', 'receivable' if self.move_type in ('out_invoice', 'out_refund', 'out_receipt') else 'payable'),
+                    ('deprecated', '=', False),
                 ]
                 return self.env['account.account'].search(domain, limit=1)
 
@@ -1189,23 +1191,33 @@ class AccountMove(models.Model):
             )
         )
         self = self.sorted(lambda m: (m.date, m.ref or '', m.id))
-        highest_name = self[0]._get_last_sequence(lock=False) if self else False
 
         # Group the moves by journal and month
         for move in self:
-            if not highest_name and move == self[0] and not move.posted_before and move.date:
-                # In the form view, we need to compute a default sequence so that the user can edit
-                # it. We only check the first move as an approximation (enough for new in form view)
-                pass
-            elif (move.name and move.name != '/') or move.state != 'posted':
+            move_has_name = move.name and move.name != '/'
+            if move_has_name or move.state != 'posted':
                 try:
                     if not move.posted_before:
+                        # The move was never posted, so the name can potentially be changed.
                         move._constrains_date_sequence()
-                    # Has already a name or is not posted, we don't add to a batch
-                    continue
+                    # Either the move was posted before, or the name already matches the date (or no name or date).
+                    # We can skip recalculating the name when either
+                    # - the move already has a name, or
+                    # - the move has no name, but is in a period with other moves (so name should be `/`), or
+                    # - the move has (temporarily) no date set
+                    if (
+                        move_has_name and move.posted_before
+                        or not move_has_name and move._get_last_sequence(lock=False)
+                        or not move.date
+                    ):
+                        continue
                 except ValidationError:
-                    # Has never been posted and the name doesn't match the date: recompute it
-                    pass
+                    # The move was never posted and the current name doesn't match the date. We should calculate the
+                    # name later on, unless ...
+                    if move._get_last_sequence(lock=False):
+                        # ... we are in a period already containing moves: reset the name to `/` (draft)
+                        move.name = '/'
+                        continue
             group = grouped[journal_key(move)][date_key(move)]
             if not group['records']:
                 # Compute all the values needed to sequence this whole group
@@ -3216,8 +3228,11 @@ class AccountMove(models.Model):
         self.ensure_one()
         if self.move_type != 'entry':
             for group_name, _group_method, group_data in groups:
-                if group_name == 'portal_customer':
+                if group_name in ('portal_customer', 'customer'):
                     group_data['has_button_access'] = True
+
+                    # 'notification_is_customer' is used to determine whether the group should be sent the access_token
+                    group_data['notification_is_customer'] = True
 
         return groups
 
@@ -3515,20 +3530,16 @@ class AccountMoveLine(models.Model):
             # Out invoice.
             if self.product_id.taxes_id:
                 tax_ids = self.product_id.taxes_id.filtered(lambda tax: tax.company_id == self.move_id.company_id)
-            elif self.account_id.tax_ids:
-                tax_ids = self.account_id.tax_ids
             else:
-                tax_ids = self.env['account.tax']
+                tax_ids = self.account_id.tax_ids.filtered(lambda tax: tax.type_tax_use == 'sale')
             if not tax_ids and not self.exclude_from_invoice_tab:
                 tax_ids = self.move_id.company_id.account_sale_tax_id
         elif self.move_id.is_purchase_document(include_receipts=True):
             # In invoice.
             if self.product_id.supplier_taxes_id:
                 tax_ids = self.product_id.supplier_taxes_id.filtered(lambda tax: tax.company_id == self.move_id.company_id)
-            elif self.account_id.tax_ids:
-                tax_ids = self.account_id.tax_ids
             else:
-                tax_ids = self.env['account.tax']
+                tax_ids = self.account_id.tax_ids.filtered(lambda tax: tax.type_tax_use == 'purchase')
             if not tax_ids and not self.exclude_from_invoice_tab:
                 tax_ids = self.move_id.company_id.account_purchase_tax_id
         else:
@@ -3966,7 +3977,7 @@ class AccountMoveLine(models.Model):
         for record in self:
             record.cumulated_balance = result[record.id]
 
-    @api.depends('debit', 'credit', 'amount_currency', 'account_id', 'currency_id', 'move_id.state', 'company_id',
+    @api.depends('debit', 'credit', 'amount_currency', 'account_id', 'currency_id', 'parent_state', 'company_id',
                  'matched_debit_ids', 'matched_credit_ids')
     def _compute_amount_residual(self):
         """ Computes the residual amount of a move line from a reconcilable account in the company currency and the line's currency.

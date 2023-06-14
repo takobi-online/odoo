@@ -28,7 +28,7 @@ msgstr ""
 "POT-Creation-Date: 2020-11-16 13:33+0000\n"
 "PO-Revision-Date: 2020-09-07 08:22+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
-"Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
+"Language-Team: Danish (https://app.transifex.com/odoo/teams/41243/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -541,6 +541,13 @@ msgstr "<span>Din betaling er blevet godkendt.</span>"
 #: model_terms:ir.ui.view,arch_db:website_sale.suggested_products_list
 msgid "<strong>Add to Cart</strong>"
 msgstr "<strong>Tilføj til kurv</strong>"
+
+#. module: website_sale
+#: model_terms:ir.ui.view,arch_db:website_sale.payment
+msgid ""
+"<strong>No suitable payment option could be found.</strong><br/>\n"
+"                                    If you believe that it is an error, please contact the website administrator."
+msgstr ""
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.confirmation
