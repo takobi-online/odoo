@@ -483,8 +483,8 @@ class HolidaysRequest(models.Model):
             employee = self.env['hr.employee'].browse(employee_id)
             if employee.tz:
                 tz = timezone(employee.tz)
-                date_from = date_from.replace(tzinfo=tz)
-                date_to = date_to.replace(tzinfo=tz)
+                date_from = tz.localize(datetime.combine(date_from, time.min))
+                date_to = tz.localize(datetime.combine(date_to, time.max))
             return employee.get_work_days_data(date_from, date_to)['days']
 
         today_hours = self.env.user.company_id.resource_calendar_id.get_work_hours_count(
