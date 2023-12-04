@@ -161,6 +161,9 @@ function _buildCollapseElement(title, options) {
 
     const togglerEl = document.createElement('we-toggler');
     togglerEl.classList.add('o_we_collapse_toggler');
+    if (_t.database.parameters.direction === 'rtl') {
+        togglerEl.classList.add('o_we_collapse_toggler_rtl');
+    }
     groupEl.appendChild(togglerEl);
 
     const containerEl = document.createElement('div');
@@ -2514,6 +2517,7 @@ const SnippetOptionWidget = Widget.extend({
 
                 const styles = window.getComputedStyle(this.$target[0]);
                 const cssProps = weUtils.CSS_SHORTHANDS[params.cssProperty] || [params.cssProperty];
+                const borderWidthCssProps = weUtils.CSS_SHORTHANDS['border-width'];
                 const cssValues = cssProps.map(cssProp => {
                     let value = styles[cssProp].trim();
                     if (cssProp === 'box-shadow') {
@@ -2522,6 +2526,11 @@ const SnippetOptionWidget = Widget.extend({
                         const color = values.find(s => !s.match(/^\d/));
                         values = values.join(' ').replace(color, '').trim();
                         value = `${color} ${values}${inset ? ' inset' : ''}`;
+                    }
+                    if (borderWidthCssProps.includes(cssProp) && value.endsWith('px')) {
+                        // Rounding value up avoids zoom-in issues.
+                        // Zoom-out issues are not an expected use case.
+                        value = `${Math.ceil(parseFloat(value))}px`;
                     }
                     return value;
                 });
@@ -3615,8 +3624,13 @@ registry.BackgroundOptimize = ImageHandlerOption.extend({
      */
     async _loadImageInfo() {
         this.img = new Image();
+        // In the case of a parallax, the background of the snippet is actually
+        // set on a child <span> and should be focused here. This is necessary
+        // because, at this point, the $target has not yet been updated in the
+        // notify() method ("option_update" event), although the event is
+        // properly fired from the parallax.
         const targetEl = this.$target[0].classList.contains("oe_img_bg")
-            ? this.$target[0] : this.$target[0].querySelector(".oe_img_bg");
+            ? this.$target[0] : this.$target[0].querySelector(":scope > .s_parallax_bg.oe_img_bg");
         if (targetEl) {
             Object.entries(targetEl.dataset).filter(([key]) =>
                 isBackgroundImageAttribute(key)).forEach(([key, value]) => {
@@ -3661,6 +3675,7 @@ registry.BackgroundOptimize = ImageHandlerOption.extend({
      * @private
      */
     async _onBackgroundChanged(ev, previewMode) {
+        ev.stopPropagation();
         if (!previewMode) {
             this.trigger_up('snippet_edition_request', {exec: async () => {
                 await this._autoOptimizeImage();

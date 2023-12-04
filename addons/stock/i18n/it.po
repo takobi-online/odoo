@@ -19,8 +19,7 @@
 # Alessandro Fiorino <alessandro.fiorino@digitaldomus.it>, 2021
 # Stefano Consolaro <stefano.consolaro@mymage.it>, 2022
 # Friederike Fasterling-Nesselbosch, 2022
-# Francesco Foresti <francesco.foresti@ooops404.com>, 2022
-# Marianna Ciofani, 2023
+# francesco.foresti <francesco.foresti@ooops404.com>, 2022
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
 # 
 msgid ""
@@ -83,7 +82,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Transferimenti %s: è necessario fornire un lotto/numero di serie per i prodotti %s."
+"Trasferimenti %s: è necessario fornire un lotto/numero di serie per i prodotti %s."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking__state
@@ -132,7 +131,7 @@ msgstr ""
 #: code:addons/stock/models/stock_warehouse.py:0
 #, python-format
 msgid "%(warehouse)s: Supply Product from %(supplier)s"
-msgstr "%(warehouse)s: rifornimento prodotto da %(supplier)s"
+msgstr "%(warehouse)s: fornitura prodotto da %(supplier)s"
 
 #. module: stock
 #: code:addons/stock/models/stock_inventory.py:0
@@ -1026,7 +1025,7 @@ msgstr "Codice a barre"
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_wms_barcode_nomenclature_all
 msgid "Barcode Nomenclatures"
-msgstr "Nomenclature codici a barre"
+msgstr "Nomenclature codice a barre"
 
 #. module: stock
 #: model:ir.model,name:stock.model_barcode_rule
@@ -2312,6 +2311,12 @@ msgid ""
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
 msgstr ""
+"Goditi un'esperienza frenetica con l'applicazione per codici a barre di "
+"Odoo. È incredibilmente veloce e funziona anche senza una connessione "
+"Internet stabile. Supporta tutti i flussi: rettifiche di inventario, "
+"prelievo raggruppato, spostamento di lotti o bancali, controlli sotto scorta"
+" ecc... Per attivare l'interfaccia codice a barre vai al menù delle "
+"applicazioni."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__tracking
@@ -2735,7 +2740,7 @@ msgstr "Contiene righe movimento"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__move_line_exist
 msgid "Has Pack Operations"
-msgstr "Contiene operazioni di imballaggio"
+msgstr "Contiene operazioni di confezionamento"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__has_packages
@@ -3170,16 +3175,18 @@ msgid "Invalid domain left operand %s"
 msgstr "Operando sinistro %s non valido per il dominio"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
 msgid "Invalid domain operator %s"
 msgstr "Operatore %s non valido per il dominio"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
-msgid "Invalid domain right operand %s"
-msgstr "Operando destro %s non valido per il dominio"
+msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
+msgstr ""
+"Operando destro \"%s\" non valido per il dominio. Deve essere di tipo "
+"intero/virgola mobile"
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
@@ -3366,6 +3373,8 @@ msgid ""
 "It is not allowed to import reserved quantity, you have to use the quantity "
 "directly."
 msgstr ""
+"L'importazione delle quantità prenotate non è consentita, deve essere "
+"utilizzata direttamente la quantità."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -5630,7 +5639,7 @@ msgstr "Quantità resoconto"
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_warehouse_report
 msgid "Reporting"
-msgstr "Rendiconto"
+msgstr "Rendicontazione"
 
 #. module: stock
 #: model:res.groups,name:stock.group_stock_sign_delivery
@@ -6116,7 +6125,7 @@ msgid ""
 "location if you subcontract the manufacturing operations."
 msgstr ""
 "Imposta un'ubicazione fissa per la produzione. Se le operazioni vengono "
-"gestite in conto lavoro può essere l'ubicazione del partner."
+"gestite in subfornitura può essere l'ubicazione del partner."
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_stock_config_settings
@@ -6553,18 +6562,18 @@ msgstr "Stoccare in"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_route__supplied_wh_id
 msgid "Supplied Warehouse"
-msgstr "Magazzino approvvigionato"
+msgstr "Magazzino rifornito"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__procure_method
 #: model:ir.model.fields,field_description:stock.field_stock_rule__procure_method
 msgid "Supply Method"
-msgstr "Metodo di approvvigionamento"
+msgstr "Metodo di fornitura"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_route__supplier_wh_id
 msgid "Supplying Warehouse"
-msgstr "Magazzino di approvvigionamento"
+msgstr "Magazzino di fornitura"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_rule__procure_method__make_to_stock
@@ -6612,7 +6621,7 @@ msgid ""
 "Technical field used for resupply routes between warehouses that belong to "
 "this company"
 msgstr ""
-"Campo tecnico usato per percorsi di approvvigionamento tra magazzini che "
+"Campo tecnico usato per percorsi di rifornimento tra magazzini che "
 "appartengono alla stessa azienda."
 
 #. module: stock
@@ -7464,7 +7473,7 @@ msgstr "Unità di misura"
 #. module: stock
 #: model:ir.ui.menu,name:stock.product_uom_menu
 msgid "Units of Measures"
-msgstr "Unità di misure"
+msgstr "Unità di misura"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_uom_id
@@ -8225,9 +8234,10 @@ msgstr ""
 #. module: stock
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
-msgid "You cannot split a stock move that has been set to 'Done'."
+msgid "You cannot split a stock move that has been set to 'Done' or 'Cancel'."
 msgstr ""
-"Impossibile suddividere un movimento di magazzino con stato \"Completato\"."
+"Non è possibile suddividere un movimento di magazzino impostato a "
+"\"Completato\" o \"Annullato\"."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0

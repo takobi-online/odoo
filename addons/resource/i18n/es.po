@@ -286,6 +286,8 @@ msgstr ""
 #, python-format
 msgid "Impossible to switch calendar type for the default company schedule."
 msgstr ""
+"Es imposible cambiar el tipo de calendario por el horario predeterminado de "
+"la compañía. "
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0

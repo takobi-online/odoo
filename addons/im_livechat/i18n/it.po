@@ -10,7 +10,6 @@
 # Paolo Valier, 2020
 # Léonie Bouchat <lbo@odoo.com>, 2020
 # Luigia Cimmino Caserta <lcc@odoo.com>, 2020
-# Friederike Fasterling-Nesselbosch, 2022
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
 # 
 msgid ""
@@ -505,7 +504,7 @@ msgstr "Colore predefinito del titolo del canale una volta aperto"
 #. module: im_livechat
 #: model_terms:ir.actions.act_window,help:im_livechat.im_livechat_channel_action
 msgid "Define a new website live chat channel"
-msgstr "Definisci un nuovo canale di chat dal vivo del sito web"
+msgstr "Definisci un nuovo canale di chat dal vivo nel sito web"
 
 #. module: im_livechat
 #: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule__auto_popup_timer
@@ -670,7 +669,7 @@ msgstr "Data/ora avvio sessione"
 #: code:addons/im_livechat/static/src/legacy/public_livechat.js:0
 #, python-format
 msgid "How may I help you?"
-msgstr "Come posso aiutarla?"
+msgstr "Come posso aiutarti?"
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
@@ -748,17 +747,17 @@ msgstr "Entra nel canale"
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_digest_digest__kpi_livechat_conversations_value
 msgid "Kpi Livechat Conversations Value"
-msgstr "Valore delle conversazioni Kpi Livechat"
+msgstr "ICP chat dal vivo - Valore conversazioni"
 
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_digest_digest__kpi_livechat_rating_value
 msgid "Kpi Livechat Rating Value"
-msgstr "Kpi Livechat Valore di valutazione"
+msgstr "ICP chat dal vivo - Valore valutazione"
 
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_digest_digest__kpi_livechat_response_value
 msgid "Kpi Livechat Response Value"
-msgstr ""
+msgstr "ICP chat dal vivo - Valore risposta"
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
@@ -1481,7 +1480,7 @@ msgstr "Testo suggerito all'utente per avviare una chat."
 #: code:addons/im_livechat/static/src/legacy/public_livechat.js:0
 #, python-format
 msgid "Thank you for your feedback"
-msgstr "Grazie per il suo riscontro"
+msgstr "Grazie per il riscontro"
 
 #. module: im_livechat
 #: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule__channel_id
@@ -1505,7 +1504,7 @@ msgstr ""
 "La regola verrà applicata solo per queste nazioni. Esempio: selezionando "
 "\"Belgio\" e \"Stati Uniti\" e impostando l'azione a \"Nascondi pulsante\", "
 "il pulsante della chat verrà nascosto, usando l'URL specificata, per i "
-"visitatori situati in questi due paesi. Questa funzionalità richiede GeoIP "
+"visitatori situati in questi due Paesi. Questa funzionalità richiede GeoIP "
 "installato nel server."
 
 #. module: im_livechat

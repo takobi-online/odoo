@@ -353,7 +353,7 @@ msgstr ""
 #: code:addons/portal/static/src/js/portal.js:0
 #, python-format
 msgid "Check failed"
-msgstr "Controllo fallito"
+msgstr "Controllo non superato"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
@@ -561,7 +561,7 @@ msgstr "Instradamento HTTP"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_breadcrumbs
 msgid "Home"
-msgstr "Home"
+msgstr "Pagina iniziale"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_ir_http__id
@@ -992,7 +992,7 @@ msgid ""
 "- Grant access only to contacts with unique emails"
 msgstr ""
 "Per risolvere l'errore è possibile: \n"
-"- correggere l'email dei contatti pertinenti\n"
+"- correggere l'e-mail dei contatti pertinenti\n"
 "- concedere l'accesso ai soli contatti con e-mail univoche"
 
 #. module: portal

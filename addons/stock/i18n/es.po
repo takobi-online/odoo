@@ -3170,16 +3170,18 @@ msgid "Invalid domain left operand %s"
 msgstr "Dominio inválido para el operante izquierdo %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
 msgid "Invalid domain operator %s"
-msgstr "Dominio inválido para el operante %s"
+msgstr "Operador de dominio inválido %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
-msgid "Invalid domain right operand %s"
-msgstr "Dominio inválido para el operante derecho %s"
+msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
+msgstr ""
+"Operando derecho de dominio inválido '%s'. Debe ser de tipo entero/coma "
+"flotante"
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
@@ -3367,6 +3369,8 @@ msgid ""
 "It is not allowed to import reserved quantity, you have to use the quantity "
 "directly."
 msgstr ""
+"No está permitido importar cantidades reservadas. Debe utilizar la cantidad "
+"directamente."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -3846,8 +3850,8 @@ msgstr "Gestionar flujos de inventario push y pull"
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Manage product packagings (e.g. pack of 6 bottles, box of 10 pieces)"
 msgstr ""
-"Administrar paquetes de productos (por ejemplo, paquete de 6 botellas, caja "
-"de 10 unidades)"
+"Administrar empaquetados de productos (por ejemplo, paquete de 6 botellas, "
+"caja de 10 unidades)"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_warehouse_orderpoint__trigger__manual
@@ -4975,7 +4979,7 @@ msgstr "Movimientos de Producto (Stock Move Line)"
 #. module: stock
 #: model:ir.actions.report,name:stock.label_product_packaging
 msgid "Product Packaging (ZPL)"
-msgstr "Paquete del producto (ZPL)"
+msgstr "Empaquetado del producto (ZPL)"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_product_packagings
@@ -7101,6 +7105,8 @@ msgid ""
 "This product's company cannot be changed as long as there are stock moves of"
 " it belonging to another company."
 msgstr ""
+"La compañía de este producto no se puede cambiar mientras haya movimientos "
+"de existencias perteneciendo a otra compañía."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_change_product_qty__new_quantity
@@ -8238,10 +8244,10 @@ msgstr ""
 #. module: stock
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
-msgid "You cannot split a stock move that has been set to 'Done'."
+msgid "You cannot split a stock move that has been set to 'Done' or 'Cancel'."
 msgstr ""
-"No puede dividir un movimiento de almacén que se haya establecido en "
-"'Listo'."
+"No puede dividir un movimiento de existencias que se haya establecido en "
+"'Realizado' o 'Cancelado'."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0

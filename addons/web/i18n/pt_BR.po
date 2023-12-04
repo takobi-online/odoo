@@ -30,7 +30,7 @@
 # Silmar <pinheirosilmar@gmail.com>, 2020
 # Kevin Harrings <kha@odoo.com>, 2020
 # Luis Malta <luiso.malta@gmail.com>, 2020
-# grazziano <gra.negocia@gmail.com>, 2020
+# grazziano <grazziano.do+transifex@gmail.com>, 2020
 # Maurício Liell <mauricio@liell.com.br>, 2021
 # Éder Brito <britoederr@gmail.com>, 2021
 # Layna Nascimento, 2023
@@ -694,7 +694,7 @@ msgstr "Entre os/as"
 #: code:addons/web/static/src/xml/crash_manager.xml:0
 #, python-format
 msgid "An error occurred"
-msgstr "Ocorreu um erro"
+msgstr "Houve um erro"
 
 #. module: web
 #. openerp-web
@@ -1299,7 +1299,7 @@ msgstr "Copiar para Área de Transferência"
 #: code:addons/web/static/src/js/core/ajax.js:0
 #, python-format
 msgid "Could not connect to the server"
-msgstr "Não pôde connectar ao servidor"
+msgstr "Não foi possível conectar ao servidor"
 
 #. module: web
 #. openerp-web
@@ -4682,7 +4682,7 @@ msgstr "Ontem"
 #: code:addons/web/controllers/main.py:0
 #, python-format
 msgid "You are not allowed to upload an attachment here."
-msgstr ""
+msgstr "Você não tem permissão para enviar um anexo aqui."
 
 #. module: web
 #. openerp-web

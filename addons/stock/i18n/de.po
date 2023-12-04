@@ -838,7 +838,7 @@ msgstr "Erlaubter Lagerort"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__allowed_route_ids
 msgid "Allowed Route"
-msgstr ""
+msgstr "Erlaubte Route"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_inventory__prefill_counted_quantity
@@ -3197,16 +3197,18 @@ msgid "Invalid domain left operand %s"
 msgstr "Ungültiger linker Domain-Operand %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
 msgid "Invalid domain operator %s"
 msgstr "Ungültiger Domain-Operator %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
-msgid "Invalid domain right operand %s"
-msgstr "Ungültiger rechter Domain-Operand %s"
+msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
+msgstr ""
+"Ungültiger rechter Bereichsoperand „%s“. Er muss vom Typ "
+"Ganzzahl/Gleitkommazahl sein."
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
@@ -3333,7 +3335,7 @@ msgstr "Lagerbestand zum Zeitpunkt"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_line__is_editable
 msgid "Is Editable"
-msgstr ""
+msgstr "Ist Editierbar"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_inventory__message_is_follower
@@ -3395,6 +3397,8 @@ msgid ""
 "It is not allowed to import reserved quantity, you have to use the quantity "
 "directly."
 msgstr ""
+"Es ist nicht möglich, reservierte Mengen zu importieren. Sie müssen die "
+"Menge direkt verwenden."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -5652,7 +5656,7 @@ msgstr "Aufstockberichtssuche"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_report_view_search
 msgid "Report Quantity"
-msgstr ""
+msgstr "Berichtsmenge"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_warehouse_report
@@ -8262,8 +8266,10 @@ msgstr ""
 #. module: stock
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
-msgid "You cannot split a stock move that has been set to 'Done'."
-msgstr "Sie können eine auf 'Erledigt' gesetzte Lagerbewegung nicht teilen."
+msgid "You cannot split a stock move that has been set to 'Done' or 'Cancel'."
+msgstr ""
+"Sie können eine auf „Erledigt“ oder „Storniert“ gesetzte Lagerbuchung nicht "
+"aufteilen."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0

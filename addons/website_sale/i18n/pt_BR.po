@@ -5,7 +5,6 @@
 # Translators:
 # Rui Andrada <shingonoide@gmail.com>, 2020
 # Emanuel Martins <emanuel.breno@gmail.com>, 2020
-# Peter Leaf <pablleaf@gmail.com>, 2020
 # Hélio Dias de Brito Teixeira <helio.dbt@gmail.com>, 2020
 # Fernanda Marques <fem@odoo.com>, 2020
 # Keli Brugalli <kbr@odoo.com>, 2020
@@ -31,13 +30,14 @@
 # danimaribeiro <danimaribeiro@gmail.com>, 2020
 # Mateus Lopes <mateus1@gmail.com>, 2020
 # Luiz Carlos de Lima <luiz.carlos@akretion.com.br>, 2020
-# grazziano <gra.negocia@gmail.com>, 2020
+# grazziano <grazziano.do+transifex@gmail.com>, 2020
 # Marcos Abreu <marcoos.abreu@gmail.com>, 2020
 # Luiz Fernando <lfpsgs@outlook.com>, 2020
 # Vanderlei P. Romera <vanderleiromera@gmail.com>, 2020
 # Éder Brito <britoederr@gmail.com>, 2021
 # Martin Trigaux, 2022
 # Layna Nascimento, 2023
+# Wil Odoo, 2023
 # 
 msgid ""
 msgstr ""
@@ -45,7 +45,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-16 13:33+0000\n"
 "PO-Revision-Date: 2020-09-07 08:22+0000\n"
-"Last-Translator: Layna Nascimento, 2023\n"
+"Last-Translator: Wil Odoo, 2023\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/odoo/teams/41243/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -72,7 +72,7 @@ msgstr "#{'Desdobrar' if c.id in category.parents_and_self.ids else 'Dobrar'}"
 #: model_terms:ir.ui.view,arch_db:website_sale.confirmation
 #: model_terms:ir.ui.view,arch_db:website_sale.payment
 msgid "&amp; Shipping"
-msgstr "&amp; Envio"
+msgstr "e Envio"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.searchbar_input_snippet_options
@@ -377,6 +377,16 @@ msgid "<i class=\"fa fa-shopping-cart\"/> Add to Cart"
 msgstr "<i class=\"fa fa-shopping-cart\"/> Adicionar ao Carrinho"
 
 #. module: website_sale
+#: model_terms:ir.ui.view,arch_db:website_sale.address
+msgid "<option value=\"\">Country...</option>"
+msgstr "<option value=\"\">País...</option>"
+
+#. module: website_sale
+#: model_terms:ir.ui.view,arch_db:website_sale.address
+msgid "<option value=\"\">State / Province...</option>"
+msgstr "<option value=\"\">Estado...</option>"
+
+#. module: website_sale
 #: code:addons/website_sale/models/crm_team.py:0
 #, python-format
 msgid ""
@@ -566,7 +576,7 @@ msgid ""
 "<strong>No suitable payment option could be found.</strong><br/>\n"
 "                                    If you believe that it is an error, please contact the website administrator."
 msgstr ""
-"<strong>Nenhuma opção de pagamento adequada foi encontrada.</strong><br/>\n"
+"<strong>Não foi possível encontrar uma opção de pagamento adequada.</strong><br/>\n"
 "                                    Se você acredita que isso é um erro, entre em contato com o administrador do site."
 
 #. module: website_sale
@@ -993,6 +1003,16 @@ msgstr ""
 "conta. Entre em contato conosco diretamente para esta operação."
 
 #. module: website_sale
+#: code:addons/website_sale/controllers/main.py:0
+#, python-format
+msgid ""
+"Changing your name is not allowed once documents have been issued for your "
+"account. Please contact us directly for this operation."
+msgstr ""
+"Não é permitido alterar seu nome após a emissão de documentos para sua "
+"conta. Entre em contato conosco diretamente para essa operação."
+
+#. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category__child_id
 msgid "Children Categories"
 msgstr "Categorias secundárias"
@@ -1149,11 +1169,6 @@ msgstr "Sofás"
 #: model_terms:ir.ui.view,arch_db:website_sale.address
 msgid "Country"
 msgstr "País"
-
-#. module: website_sale
-#: model_terms:ir.ui.view,arch_db:website_sale.address
-msgid "Country..."
-msgstr "País..."
 
 #. module: website_sale
 #: model_terms:ir.actions.act_window,help:website_sale.product_template_action_website
@@ -1644,6 +1659,18 @@ msgstr "Instala o aplicativo \"Informações de entrega do site\""
 #. module: website_sale
 #: code:addons/website_sale/controllers/main.py:0
 #, python-format
+msgid ""
+"If you are ordering for an external person, please place your order via the "
+"backend. If you wish to change your name or email address, please do so in "
+"the account settings or contact your administrator."
+msgstr ""
+"Se você estiver fazendo o pedido para uma pessoa externa, faça seu pedido "
+"por meio do back-end. Se você deseja alterar seu nome ou endereço de e-mail,"
+" faça-o nas configurações da conta ou entre em contato com o administrador."
+
+#. module: website_sale
+#: code:addons/website_sale/controllers/main.py:0
+#, python-format
 msgid "Invalid Email! Please enter a valid email address."
 msgstr "E-mail inválido! Por favor insira um endereço de e-mail válido."
 
@@ -2008,7 +2035,7 @@ msgstr "Assim que você clicar em <b>Salvar</b>, seu produto será atualizado."
 #. module: website_sale
 #: model:ir.ui.menu,name:website_sale.menu_report_sales
 msgid "Online Sales"
-msgstr "Vendas Online"
+msgstr "Vendas online"
 
 #. module: website_sale
 #: model:ir.actions.act_window,name:website_sale.sale_report_action_dashboard
@@ -2209,7 +2236,7 @@ msgstr "Método de Pagamento"
 #. module: website_sale
 #: model:ir.ui.menu,name:website_sale.menu_ecommerce_payment_transactions
 msgid "Payment Transactions"
-msgstr "Transações de Pagamento"
+msgstr "Transações de pagamento"
 
 #. module: website_sale
 #. openerp-web
@@ -2589,7 +2616,7 @@ msgstr "Rever Pedido"
 #: model:ir.model.fields,field_description:website_sale.field_product_template__website_ribbon_id
 #: model_terms:ir.ui.view,arch_db:website_sale.snippet_options
 msgid "Ribbon"
-msgstr "Fita"
+msgstr "Faixa"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_ribbon__bg_color
@@ -2931,11 +2958,6 @@ msgid "State / Province"
 msgstr "Estado"
 
 #. module: website_sale
-#: model_terms:ir.ui.view,arch_db:website_sale.address
-msgid "State / Province..."
-msgstr "Estado"
-
-#. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_res_company__website_sale_onboarding_payment_acquirer_state
 msgid "State of the website sale onboarding payment acquirer step"
 msgstr ""
@@ -2993,8 +3015,8 @@ msgstr "Sugestões"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.address_b2b
-msgid "TIN / VAT"
-msgstr "TIN / VAT"
+msgid "VAT"
+msgstr "Imposto"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.snippet_options
@@ -3535,7 +3557,7 @@ msgstr "e-Commerce"
 #: model:ir.actions.act_window,name:website_sale.product_public_category_action
 #: model:ir.ui.menu,name:website_sale.menu_catalog_categories
 msgid "eCommerce Categories"
-msgstr "Categorias de Comércio Eletrônico"
+msgstr "Categorias do e-Commerce"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_digest_digest__kpi_website_sale_total

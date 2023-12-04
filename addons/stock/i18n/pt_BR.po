@@ -23,13 +23,12 @@
 # Rodrigo de Almeida Sottomaior Macedo <rmsolucoeseminformatica@protonmail.com>, 2020
 # danimaribeiro <danimaribeiro@gmail.com>, 2020
 # Martin Trigaux, 2020
-# Marcel Savegnago <marcel.savegnago@gmail.com>, 2020
 # Emanuel Martins <emanuel.breno@gmail.com>, 2020
 # Renato Lima <renatonlima@gmail.com>, 2020
 # Mateus Lopes <mateus1@gmail.com>, 2020
 # Luiz Carlos de Lima <luiz.carlos@akretion.com.br>, 2020
 # Anderson Fratuci <ander.frat@gmail.com>, 2020
-# grazziano <gra.negocia@gmail.com>, 2020
+# grazziano <grazziano.do+transifex@gmail.com>, 2020
 # André Augusto Firmino Cordeiro <a.cordeito@gmail.com>, 2020
 # Silmar <pinheirosilmar@gmail.com>, 2020
 # Luiz Carareto Alonso <Luiz.cararetoalonso@gmail.com>, 2020
@@ -40,7 +39,9 @@
 # Luis Felipe Miléo <mileo@kmee.com.br>, 2020
 # Éder Brito <britoederr@gmail.com>, 2021
 # Kevilyn Rosa, 2023
+# adrianojprado <adrianojprado@gmail.com>, 2023
 # Layna Nascimento, 2023
+# Marcel Savegnago <marcel.savegnago@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
@@ -48,7 +49,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-16 09:00+0000\n"
 "PO-Revision-Date: 2020-09-07 08:19+0000\n"
-"Last-Translator: Layna Nascimento, 2023\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>, 2023\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/odoo/teams/41243/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2250,7 +2251,7 @@ msgstr "Concluído"
 #: model_terms:ir.ui.view,arch_db:stock.view_inventory_filter
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Draft"
-msgstr "Provisório"
+msgstr "Rascunho"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
@@ -3057,7 +3058,7 @@ msgstr "Em Andamento"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__in_type_id
 msgid "In Type"
-msgstr "No Tipo"
+msgstr "Tipo de Entrada"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_inventory__exhausted
@@ -3183,16 +3184,18 @@ msgid "Invalid domain left operand %s"
 msgstr "Operando esquerdo do domínio inválido%s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
 msgid "Invalid domain operator %s"
 msgstr "Operador de domínio inválido %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
-msgid "Invalid domain right operand %s"
-msgstr "Operando de direito de domínio inválido%s"
+msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
+msgstr ""
+"Operando à direita do domínio inválido '%s'. Ele deve ser do tipo "
+"Integer/Float"
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
@@ -3200,6 +3203,8 @@ msgstr "Operando de direito de domínio inválido%s"
 msgid ""
 "Invalid rule's configuration, the following rule causes an endless loop: %s"
 msgstr ""
+"Configuração de regra inválida, a regra seguinte provoca um ciclo "
+"interminável: %s"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__inventory_quantity
@@ -3377,6 +3382,8 @@ msgid ""
 "It is not allowed to import reserved quantity, you have to use the quantity "
 "directly."
 msgstr ""
+"Não é permitido importar quantidade reservada, você deve usar a quantidade "
+"diretamente."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -4454,7 +4461,7 @@ msgstr "Outras Informações"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__out_type_id
 msgid "Out Type"
-msgstr "Fora Tipo"
+msgstr "Tipo de Saída"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_inventory_line_search
@@ -5235,6 +5242,9 @@ msgid ""
 "Quants are auto-deleted when appropriate. If you must manually delete them, "
 "please ask a stock manager to do it."
 msgstr ""
+"As cotações são excluídas automaticamente quando apropriado. Se você "
+"precisar excluí-los manualmente, peça a um gerente de estoque para fazer "
+"isso."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -5601,7 +5611,7 @@ msgstr "Reposição"
 #. module: stock
 #: model:stock.location.route,name:stock.route_warehouse0_mto
 msgid "Replenish on Order (MTO)"
-msgstr "Reabastecer no Pedido (PSE)"
+msgstr "Reabastecer no pedido (sob demanda)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_product_replenish
@@ -6838,6 +6848,9 @@ msgid ""
 "precision defined on the unit of measure \"%s\". Please change the quantity "
 "done or the rounding precision of your unit of measure."
 msgstr ""
+"A quantidade feita para o produto \"%s\" não respeita a precisão de "
+"arredondamento definida na unidade de medida \"%s\". Altere a quantidade "
+"feita ou a precisão de arredondamento de sua unidade de medida."
 
 #. module: stock
 #: code:addons/stock/models/stock_move.py:0
@@ -7079,6 +7092,8 @@ msgid ""
 "This product's company cannot be changed as long as there are quantities of "
 "it belonging to another company."
 msgstr ""
+"A empresa desse produto não pode ser alterada enquanto houver quantidades "
+"dele pertencentes a outra empresa."
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
@@ -7087,6 +7102,8 @@ msgid ""
 "This product's company cannot be changed as long as there are stock moves of"
 " it belonging to another company."
 msgstr ""
+"A empresa desse produto não pode ser alterada enquanto houver movimentações "
+"de estoque dele pertencente a outra empresa."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_change_product_qty__new_quantity
@@ -7158,7 +7175,7 @@ msgstr "Para Backorder"
 #: model_terms:ir.ui.view,arch_db:stock.stock_move_line_view_search
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 msgid "To Do"
-msgstr "A Fazer"
+msgstr "Lista de Tarefas"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__qty_to_order
@@ -7463,7 +7480,7 @@ msgstr "Unidades de Medida"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_uom_id
 msgid "Unit of measure"
-msgstr ""
+msgstr "Unidade de medida"
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -8038,7 +8055,7 @@ msgstr ""
 #: code:addons/stock/models/product.py:0
 #, python-format
 msgid "You can not change the type of a product that was already used."
-msgstr ""
+msgstr "Não é possível alterar o tipo de um produto que já foi usado."
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:0
@@ -8215,9 +8232,10 @@ msgstr ""
 #. module: stock
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
-msgid "You cannot split a stock move that has been set to 'Done'."
+msgid "You cannot split a stock move that has been set to 'Done' or 'Cancel'."
 msgstr ""
-"Você não pode dividir um movimento de estoque definido como 'Concluído'."
+"Não é possível dividir uma movimentação de estoque que tenha sido definida "
+"como 'Concluída' ou 'Cancelada'."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
@@ -8242,6 +8260,8 @@ msgstr ""
 #, python-format
 msgid "You cannot change a cancelled stock move, create a new line instead."
 msgstr ""
+"Não é possível alterar uma movimentação de estoque cancelada, em vez disso, "
+"crie uma nova linha."
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:0

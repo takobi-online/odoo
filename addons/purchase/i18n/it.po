@@ -6,7 +6,6 @@
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2020
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2020
 # David Minneci <david@numeko.it>, 2020
-# Stefano Consolaro <stefano.consolaro@mymage.it>, 2020
 # Mario Riva <mario.riva@gmail.com>, 2020
 # Martin Trigaux, 2020
 # Luigi Di Naro <gigidn@gmail.com>, 2020
@@ -14,7 +13,6 @@
 # Cécile Collart <cco@odoo.com>, 2020
 # neveroils <maiolif@mgftools.com>, 2020
 # Léonie Bouchat <lbo@odoo.com>, 2020
-# Marianna Ciofani, 2023
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
 # 
 msgid ""
@@ -359,7 +357,7 @@ msgstr "<strong>Data conferma:</strong>"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "<strong>Date Req.</strong>"
-msgstr "<strong>Data richiesta</strong>"
+msgstr "<strong>Data rich.</strong>"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.report_purchaseorder_document
@@ -797,11 +795,11 @@ msgid ""
 "product if you directly do a Request for Quotation to one vendor or if you "
 "want a Call for Tenders to compare offers from several vendors."
 msgstr ""
-"I bandi di gara vengono utilizzati quando si desidera generare richieste di "
-"preventivi a più fornitori per un determinato insieme di prodotti. È "
-"possibile configurare per prodotto se si effettua direttamente una richiesta"
-" di preventivo a un fornitore o se si desidera fare un bando di gara per "
-"confrontare le offerte di più fornitori."
+"I bandi di gara vengono utilizzati quando, per un determinato insieme di "
+"prodotti, si vogliono generare richieste di preventivi a più fornitori. È "
+"possibile configurare per prodotto sia se viene effettuata una richiesta di "
+"preventivo direttamente a un fornitore sia se si desidera un bando di gara "
+"per confrontare le offerte di più fornitori."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -2372,7 +2370,7 @@ msgstr "Promemoria confermato"
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.purchase_report
 msgid "Reporting"
-msgstr "Rendiconto"
+msgstr "Rendicontazione"
 
 #. module: purchase
 #: code:addons/purchase/models/purchase.py:0
@@ -2840,7 +2838,7 @@ msgstr "Categorie unità di misura"
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_unit_of_measure_in_config_purchase
 msgid "Units of Measures"
-msgstr "Unità di misure"
+msgstr "Unità di misura"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form

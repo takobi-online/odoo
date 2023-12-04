@@ -444,8 +444,8 @@ msgstr ""
 #, python-format
 msgid "A next activity can only be planned on models that use the chatter"
 msgstr ""
-"Una prossima attività può essere pianificata solo su modelli che usano la "
-"chat"
+"Una prossima attività può essere pianificata solo su modelli che usano il "
+"registro comunicazioni"
 
 #. module: mail
 #: model_terms:ir.actions.act_window,help:mail.mail_shortcode_action
@@ -2230,8 +2230,8 @@ msgid ""
 "found and replaces the author_id field in the chatter."
 msgstr ""
 "Indirizzo e-mail del mittente. Questo campo è impostato quando non vengono "
-"trovati partner corrispondenti, sostituisce il campo author_id nella "
-"conversazione."
+"trovati partner corrispondenti, nel registro comunicazioni sostituisce il "
+"campo author_id."
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_notification__failure_type__bounce
@@ -2241,7 +2241,7 @@ msgstr "Indirizzo e-mail respinto dalla destinazione"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 msgid "Email address to redirect replies..."
-msgstr "Indirizzo email per reindirizzare le risposte..."
+msgstr "Indirizzo e-mail per reindirizzare le risposte..."
 
 #. module: mail
 #: model_terms:ir.actions.act_window,help:mail.mail_blacklist_action
@@ -2307,7 +2307,7 @@ msgstr "Solo dipendenti"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_ir_model_fields__tracking
 msgid "Enable Ordered Tracking"
-msgstr ""
+msgstr "Abilitare monitoraggio ordinato"
 
 #. module: mail
 #. openerp-web
@@ -2934,8 +2934,9 @@ msgid ""
 "If set every modification done to this field is tracked in the chatter. "
 "Value is used to order tracking values."
 msgstr ""
-"Se impostato, ogni modifica fatta a questo campo è tracciata nella chat. Il "
-"valore è usato per organizzare i valori di tracciamento."
+"Se impostato, ogni modifica effettuata a questo campo viene monitorata nel "
+"registro comunicazioni. Il valore è utilizzato per l'ordinamento dei valori "
+"di monitoraggio."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_mail__scheduled_date
@@ -4560,8 +4561,8 @@ msgstr ""
 #, python-format
 msgid "Only administrators are allowed to use grouped read on message model"
 msgstr ""
-"L'utilizzo della lettura raggruppata  nel modello messaggio è consentita "
-"solo agli amministratori."
+"L'utilizzo della lettura raggruppata nel modello messaggio è consentita solo"
+" agli amministratori."
 
 #. module: mail
 #: code:addons/mail/models/mail_channel.py:0
@@ -4927,7 +4928,7 @@ msgid ""
 "- Handle by Emails: notifications are sent to your email address\n"
 "- Handle in Odoo: notifications appear in your Odoo Inbox"
 msgstr ""
-"Politica su come gestire le notifiche della chat:\n"
+"Politica su come gestire le notifiche del registro comunicazioni:\n"
 "- E-mail: le notifiche vengono inviate all'indirizzo e-mail\n"
 "- Odoo: le notifiche compaiono nella posta in arrivo Odoo"
 
@@ -5475,7 +5476,7 @@ msgstr "Programma attività"
 #: code:addons/mail/static/src/xml/web_kanban_activity.xml:0
 #, python-format
 msgid "Schedule activities to help you get things done."
-msgstr "Programma delle attività per aiutarti a concludere gli affari."
+msgstr "Programma le attività per aiutare a portare a termine gli incarichi."
 
 #. module: mail
 #. openerp-web
@@ -6128,7 +6129,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_template_preview__scheduled_date
 msgid "The queue manager will send the email after the date"
-msgstr "Il gestore della coda invia l'email dopo tale data"
+msgstr "Il gestore della coda invia l'e-mail dopo tale data"
 
 #. module: mail
 #: code:addons/mail/models/mail_message.py:0
@@ -6693,6 +6694,16 @@ msgstr ""
 "già di un server di posta pronto all'uso (@mycompany.odoo.com)."
 
 #. module: mail
+#: code:addons/mail/models/ir_config_parameter.py:0
+#, python-format
+msgid ""
+"Value for `mail.catchall.domain.allowed` cannot be validated.\n"
+"It should be a comma separated list of domains e.g. example.com,example.org."
+msgstr ""
+"Impossibile convalidare il valore per `mail.catchall.domain.allowed`.\n"
+"Dovrebbe essere un elenco di domini separati da virgola es. example.com,example.org."
+
+#. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/attachment_viewer/attachment_viewer.xml:0
 #: code:addons/mail/static/src/xml/thread.xml:0
@@ -6904,8 +6915,7 @@ msgstr "Sei nel canale <b>#%s</b>."
 #, python-format
 msgid ""
 "You are the administrator of this channel. Are you sure you want to leave?"
-msgstr ""
-"Tu sei l'amministratore di questo canale. Sei sicuro di volertene andare?"
+msgstr "Si è amministratori di questo canale. Uscire veramente?"
 
 #. module: mail
 #. openerp-web
@@ -6960,7 +6970,7 @@ msgid ""
 " To create new user please go to configuration panel."
 msgstr ""
 "Impossibile creare un nuovo utente da qui.\n"
-" Per effettuare l'operazione andare al pannello di configurazione."
+" Per effettuare l'operazione andare nel pannello di configurazione."
 
 #. module: mail
 #: code:addons/mail/models/mail_channel.py:0

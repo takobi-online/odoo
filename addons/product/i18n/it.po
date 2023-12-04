@@ -14,7 +14,7 @@
 # Léonie Bouchat <lbo@odoo.com>, 2020
 # Paolo Valier, 2020
 # Friederike Fasterling-Nesselbosch, 2022
-# Francesco Foresti <francesco.foresti@ooops404.com>, 2023
+# francesco.foresti <francesco.foresti@ooops404.com>, 2023
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
 # 
 msgid ""
@@ -425,9 +425,9 @@ msgid ""
 "Barcode used for packaging identification. Scan this packaging barcode from "
 "a transfer in the Barcode app to move all the contained units"
 msgstr ""
-"Codice a barre utilizzato per l'identificazione dell'imballaggio. Scansiona "
-"questo codice a barre dell'imballaggio da un trasferimento nell'applicazione"
-" Codice a barre per spostare tutte le unità contenute"
+"Codice a barre utilizzato per l'identificazione dell'imballaggio. Per "
+"movimentare tutte le unità contenute, nell'applicazione effettuare la "
+"scansione del codice a barre da un trasferimento"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__base
@@ -503,7 +503,7 @@ msgstr "Categoria: %s"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category__child_id
 msgid "Child Categories"
-msgstr "Categorie secondarie"
+msgstr "Categorie figlie"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
@@ -2209,8 +2209,8 @@ msgid ""
 "to this category or its children categories. Keep empty otherwise."
 msgstr ""
 "Se la regola si applica solo a prodotti appartenenti a una categoria o alle "
-"sue categorie secondarie, specificare la categoria prodotto. Altrimenti "
-"lasciare vuoto."
+"sue categorie figlie, specificare la categoria prodotto. Altrimenti lasciare"
+" vuoto."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__product_id
@@ -2375,7 +2375,7 @@ msgid ""
 "categories)"
 msgstr ""
 "Il numero di prodotti in questa categoria (non comprende le categorie "
-"bambini)"
+"figlie)"
 
 #. module: product
 #: code:addons/product/models/product_template.py:0
@@ -2493,7 +2493,7 @@ msgid ""
 "current partner"
 msgstr ""
 "Listino prezzi utilizzato, al posto di quello predefinito, per vendite al "
-"partner corrente"
+"partner corrente."
 
 #. module: product
 #: code:addons/product/models/uom_uom.py:0

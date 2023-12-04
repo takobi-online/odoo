@@ -8990,7 +8990,7 @@ msgstr ""
 msgid ""
 "Please go on the %s journal and define a Loss Account. This account will be "
 "used to record cash difference."
-msgstr ""
+msgstr "%s 전표로 이동하여 손실 계정을 설정하십시오. 이 계정은 현금 차액을 기록하는데 사용합니다."
 
 #. module: account
 #: code:addons/account/models/account_bank_statement.py:0
@@ -8998,7 +8998,7 @@ msgstr ""
 msgid ""
 "Please go on the %s journal and define a Profit Account. This account will "
 "be used to record cash difference."
-msgstr ""
+msgstr "%s 전표로 이동하여 수익 계정을 설정하십시오. 이 계정은 현금 차액을 기록하는데 사용합니다."
 
 #. module: account
 #: code:addons/account/models/company.py:0
@@ -9362,7 +9362,7 @@ msgstr "QIF 가져오기"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__qr_code
 msgid "QR Code"
-msgstr ""
+msgstr "QR 코드"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -12216,6 +12216,13 @@ msgstr ""
 "예: .*N°48748 abc123.*"
 
 #. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid ""
+"The move could not be posted for the following reason: %(error_message)s"
+msgstr "이 이동은 다음과 같은 사유로 게시할 수 없습니다: %(error_message)s"
+
+#. module: account
 #: model:ir.model.fields,help:account.field_account_move_line__move_id
 msgid "The move of this entry line."
 msgstr "이 항목 라인의 이동입니다."
@@ -12819,6 +12826,8 @@ msgid ""
 "including from the Technical menu in the Settings, in order to preserve "
 "storage space of your Odoo database."
 msgstr ""
+"Odoo 데이터베이스 저장 공간 확보를 위하여, 이 옵션을 통해 설정에 있는 기술 메뉴에서 발신된 것을 포함하여 보낸 메일 기록 전체를 "
+"영구적으로 삭제합니다."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_template__chart_template_id

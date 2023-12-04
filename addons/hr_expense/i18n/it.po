@@ -10,7 +10,6 @@
 # Silvia Durisotti, 2020
 # Léonie Bouchat <lbo@odoo.com>, 2020
 # Leonardo Donelli <learts92@gmail.com>, 2020
-# Marianna Ciofani, 2023
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
 # 
 msgid ""
@@ -1197,8 +1196,8 @@ msgstr ""
 #, python-format
 msgid "Only HR Officers or the concerned employee can reset to draft."
 msgstr ""
-"La reimpostazione a bozza può essere effettuata solo dagli addetti alle "
-"risorse umane o dal dipendente interessato."
+"La reimpostazione a bozza può essere effettuata solo dagli addetti alle RU o"
+" dal dipendente interessato."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0
@@ -1427,7 +1426,7 @@ msgstr "Valuta aziendale del rendiconto"
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_reports
 msgid "Reporting"
-msgstr "Rendiconto"
+msgstr "Rendicontazione"
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_to_approve
@@ -1875,6 +1874,12 @@ msgstr "Impossibile eliminare una spesa confermata o pagata."
 #, python-format
 msgid "You cannot refuse your own expenses"
 msgstr "Impossibile respingere le proprie spese"
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:0
+#, python-format
+msgid "You cannot report expenses for different companies in the same report."
+msgstr "Impossibile rendicontare insieme le spese di aziende diverse."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0

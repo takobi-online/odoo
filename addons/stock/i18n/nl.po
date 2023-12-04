@@ -3165,16 +3165,16 @@ msgid "Invalid domain left operand %s"
 msgstr "Ongeldige linker operand %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
 msgid "Invalid domain operator %s"
 msgstr "Ongeldige domein operator %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
-msgid "Invalid domain right operand %s"
-msgstr "Ongeldige rechter operand %s"
+msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
+msgstr "Ongeldige rechter operand '%s'. Het moet een geheel getal/float zijn"
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
@@ -8228,10 +8228,10 @@ msgstr ""
 #. module: stock
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
-msgid "You cannot split a stock move that has been set to 'Done'."
+msgid "You cannot split a stock move that has been set to 'Done' or 'Cancel'."
 msgstr ""
-"Het is niet mogelijk een voorraadverplaatsing te splitsen welke in de "
-"'Gereed' fase is."
+"Je kan een voorraadverplaatsing die ingesteld is op 'Gereed' of 'Annuleren' "
+"niet splitsen."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0

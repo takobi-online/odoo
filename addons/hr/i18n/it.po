@@ -15,7 +15,7 @@
 # Lorenzo Battistini <lb@takobi.online>, 2020
 # Valeria Torrisi <valeriatorrisi93@gmail.com>, 2020
 # Stefano Consolaro <stefano.consolaro@mymage.it>, 2020
-# Francesco Foresti <francesco.foresti@ooops404.com>, 2021
+# francesco.foresti <francesco.foresti@ooops404.com>, 2021
 # Friederike Fasterling-Nesselbosch, 2022
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
 # 
@@ -818,7 +818,7 @@ msgstr "Persone a carico"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__child_ids
 #: model:ir.model.fields,field_description:hr.field_hr_employee_public__child_ids
 msgid "Direct subordinates"
-msgstr "Sottoposti diretti"
+msgstr "Subordinati diretti"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
@@ -1320,7 +1320,7 @@ msgstr "Icona per indicare un'attività eccezione."
 #: model:ir.model.fields,field_description:hr.field_hr_employee__identification_id
 #: model:ir.model.fields,field_description:hr.field_res_users__identification_id
 msgid "Identification No"
-msgstr "N° identificativo"
+msgstr "N° carta identità"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_department__message_needaction
@@ -1915,7 +1915,7 @@ msgstr "Passione per i prodotti software"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__passport_id
 #: model:ir.model.fields,field_description:hr.field_res_users__passport_id
 msgid "Passport No"
-msgstr "N. passaporto"
+msgstr "N° passaporto"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo

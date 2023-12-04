@@ -8,6 +8,7 @@
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2020
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2020
 # Maksym <ms@myodoo.pl>, 2023
+# Tadeusz Karpiński <tadeusz.karpinski@braintec.com>, 2023
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
 # 
 msgid ""
@@ -55,7 +56,7 @@ msgstr "Wytyczanie HTTP"
 #: model:ir.model.fields,field_description:mail_client_extension.field_res_partner__iap_enrich_info
 #: model:ir.model.fields,field_description:mail_client_extension.field_res_users__iap_enrich_info
 msgid "IAP Enrich Info"
-msgstr ""
+msgstr "IAP informacje o wzbogacaniu"
 
 #. module: mail_client_extension
 #: model:ir.model.fields,field_description:mail_client_extension.field_crm_lead__id
@@ -79,7 +80,7 @@ msgstr "Sygnał/Szansa"
 #. module: mail_client_extension
 #: model_terms:ir.ui.view,arch_db:mail_client_extension.app_auth
 msgid "Let"
-msgstr ""
+msgstr "Niech"
 
 #. module: mail_client_extension
 #: model:ir.actions.server,name:mail_client_extension.lead_creation_prefilled_action
@@ -97,4 +98,4 @@ msgstr ""
 #. module: mail_client_extension
 #: model_terms:ir.ui.view,arch_db:mail_client_extension.app_auth
 msgid "access your Odoo database?"
-msgstr ""
+msgstr "uzyskać dostęp do bazy danych Odoo?"

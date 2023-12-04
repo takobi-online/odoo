@@ -23,7 +23,6 @@
 # Iacopo Simonelli <lsi@odoo.com>, 2020
 # Stefano Consolaro <stefano.consolaro@mymage.it>, 2022
 # Friederike Fasterling-Nesselbosch, 2022
-# Marianna Ciofani, 2023
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
 # 
 msgid ""
@@ -115,7 +114,7 @@ msgstr "N. DiBa dove utilizzata"
 #: code:addons/mrp/models/mrp_production.py:0
 #, python-format
 msgid "%s Child MO's"
-msgstr "OdP secondari di %s"
+msgstr "OdP figlii di %s"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_production.py:0
@@ -219,7 +218,7 @@ msgstr "<span class=\"o_stat_text\">Ordini residui</span>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "<span class=\"o_stat_text\">Child MO</span>"
-msgstr "<span class=\"o_stat_text\">OdP secondario</span>"
+msgstr "<span class=\"o_stat_text\">OdP figlio</span>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_view
@@ -307,7 +306,7 @@ msgstr "<span>Prodotti non associati a un kit</span>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban
 msgid "<span>Reporting</span>"
-msgstr "<span>Rendiconto</span>"
+msgstr "<span>Rendicontazione</span>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban
@@ -2533,7 +2532,7 @@ msgstr "Produzione del prodotto"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse__manufacture_to_resupply
 msgid "Manufacture to Resupply"
-msgstr "Rifornire su produzione"
+msgstr "Rifornimento su produzione"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_product_product__mrp_product_qty
@@ -3589,7 +3588,7 @@ msgstr "Quantità:"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder__move_raw_ids
 msgid "Raw Moves"
-msgstr ""
+msgstr "Movimenti materie prime"
 
 #. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_production__reservation_state__assigned
@@ -3612,7 +3611,7 @@ msgid ""
 "in its BoM or child BoMs!"
 msgstr ""
 "Errore di ricorsività. Un prodotto con una distinta base non deve far parte "
-"della stessa DiBa o di una secondaria."
+"della stessa DiBa o di DiBa figlie."
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom__code
@@ -3661,7 +3660,7 @@ msgstr "Resoconto:"
 #. module: mrp
 #: model:ir.ui.menu,name:mrp.menu_mrp_reporting
 msgid "Reporting"
-msgstr "Rendiconto"
+msgstr "Rendicontazione"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
@@ -3790,7 +3789,7 @@ msgstr "Informazioni programmazione"
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 #, python-format
 msgid "Scrap"
-msgstr "Scarta"
+msgstr "Scarto"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__scrap_count
@@ -4138,17 +4137,17 @@ msgstr "Struttura e costo"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__child_bom_id
 msgid "Sub BoM"
-msgstr ""
+msgstr "DiBa secondaria"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
 msgid "Subcontract the production of some products"
-msgstr "Esternalizza la produzione di alcuni prodotti"
+msgstr "Affida in subfornitura la produzione di alcuni prodotti"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_res_config_settings__module_mrp_subcontracting
 msgid "Subcontracting"
-msgstr "Esternalizzazione"
+msgstr "Subfornitura"
 
 #. module: mrp
 #: model:product.product,name:mrp.product_product_computer_desk
@@ -4730,7 +4729,7 @@ msgstr "Unità di misura"
 msgid ""
 "Unit of Measure (Unit of Measure) is the unit of measurement for the "
 "inventory control"
-msgstr "UdM è l'unità di misura per il controllo dell'inventario"
+msgstr "UdM è l'unità di misura per il controllo del magazzino"
 
 #. module: mrp
 #: model:product.product,uom_name:mrp.product_product_computer_desk

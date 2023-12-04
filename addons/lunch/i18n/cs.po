@@ -11,6 +11,7 @@
 # rastislav Brencic <rastislav.brencic99@gmail.com>, 2021
 # Jiří Podhorecký, 2021
 # Rastislav Brencic <rastislav.brencic@azet.sk>, 2021
+# Jakub Smolka, 2023
 # Aleš Fiala <f.ales1@seznam.cz>, 2023
 # 
 msgid ""
@@ -450,7 +451,7 @@ msgstr "Hotovostní pohyby"
 #. module: lunch
 #: model:ir.model,name:lunch.model_lunch_cashmove_report
 msgid "Cashmoves report"
-msgstr ""
+msgstr "Výkaz hotovostních pohybů"
 
 #. module: lunch
 #: model_terms:ir.ui.view,arch_db:lunch.lunch_product_report_view_search
@@ -1225,7 +1226,7 @@ msgstr "Můj účet"
 #. module: lunch
 #: model:ir.ui.menu,name:lunch.lunch_cashmove_report_menu_form
 msgid "My Account History"
-msgstr ""
+msgstr "Má historie účtu"
 
 #. module: lunch
 #: model_terms:ir.ui.view,arch_db:lunch.lunch_cashmove_report_view_search
@@ -1855,7 +1856,7 @@ msgstr "Časové pásmo"
 #: model:ir.model.fields.selection,name:lunch.selection__lunch_order__state__new
 #, python-format
 msgid "To Order"
-msgstr ""
+msgstr "K objednání"
 
 #. module: lunch
 #: model_terms:ir.ui.view,arch_db:lunch.lunch_payment_dialog

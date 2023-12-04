@@ -10,7 +10,7 @@
 # Mateus Lopes <mateus1@gmail.com>, 2020
 # Peter Leaf <pablleaf@gmail.com>, 2020
 # falexandresilva <falexandresilva@gmail.com>, 2020
-# grazziano <gra.negocia@gmail.com>, 2020
+# grazziano <grazziano.do+transifex@gmail.com>, 2020
 # André Augusto Firmino Cordeiro <a.cordeito@gmail.com>, 2020
 # Luiz Carareto Alonso <Luiz.cararetoalonso@gmail.com>, 2020
 # Keli Brugalli <kbr@odoo.com>, 2020
@@ -18,6 +18,7 @@
 # Luiz Fernando <lfpsgs@outlook.com>, 2020
 # PopSolutions Cooperativa Digital <popsolutions.co@gmail.com>, 2020
 # Éder Brito <britoederr@gmail.com>, 2020
+# Diego Sayron, 2023
 # Kevilyn Rosa, 2023
 # Layna Nascimento, 2023
 # 
@@ -257,7 +258,7 @@ msgstr "Concluído"
 #: model:ir.model.fields.selection,name:crm_iap_lead.selection__crm_iap_lead_mining_request__state__draft
 #: model_terms:ir.ui.view,arch_db:crm_iap_lead.crm_iap_lead_mining_request_search
 msgid "Draft"
-msgstr "Provisório"
+msgstr "Rascunho"
 
 #. module: crm_iap_lead
 #: model_terms:ir.ui.view,arch_db:crm_iap_lead.enrich_company
@@ -438,7 +439,7 @@ msgstr "Solicitações de Mineração de Lead"
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__lead_total_credits
 msgid "Lead Total Credits"
-msgstr "Total de Créditos do Lead"
+msgstr "Total de créditos do lead"
 
 #. module: crm_iap_lead
 #: model:ir.model,name:crm_iap_lead.model_crm_lead
@@ -458,6 +459,8 @@ msgstr "Leads"
 msgid ""
 "Looking for more opportunities ?<br>Try the <b>Lead Generation</b> tool."
 msgstr ""
+"Procurando por mais oportunidades?<br>Experimente a ferramenta de <b>Geração"
+" de Leads</b>."
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_148
@@ -532,7 +535,7 @@ msgstr "Outras Funções"
 #. module: crm_iap_lead
 #: model:ir.model,name:crm_iap_lead.model_crm_iap_lead_role
 msgid "People Role"
-msgstr "Função das Pessoas"
+msgstr "Função das pessoas"
 
 #. module: crm_iap_lead
 #: model:ir.model,name:crm_iap_lead.model_crm_iap_lead_seniority
@@ -562,7 +565,7 @@ msgstr "Imobiliária"
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__name
 msgid "Request Number"
-msgstr "Número do Pedido"
+msgstr "Número do pedido"
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_152

@@ -2521,7 +2521,7 @@ msgstr ""
 "\n"
 "* الدفع السريع عن طريق تمرير بطاقة الائتمان عندما تكون في شاشة الدفع\n"
 "* الجمع بين الدفع عن طريق البطاقة الائتمانية والدفع النقدي\n"
-"* استرجاه النقود\n"
+"* استرجاع النقود\n"
 "* البطاقات المدعومة: Visa, MasterCard, American Express, Discover\n"
 "    "
 
@@ -3196,12 +3196,12 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"موديول وسيط لإدراج الإجازات في سجلات النشاط\n"
+"تطبيق وسيط لإدراج الإجازات في الجداول الزمنية\n"
 "================================================\n"
 "\n"
-"يسمح هذا الموديول بتسجيل سجلات النشاط تلقائيًا عندما يكون الموظفون\n"
-"في إجازات. يمكن إعداد المشروع والمهمة على مستوى المؤسسة.\n"
-"    "
+"يتيح لك هذا التطبيق تسجيل الجداول الزمنية تلقائيًا عندما يكون الموظفون\n"
+"في إجازات. يمكن تهيئة المشروع والمهمة على مستوى الشركة.\n"
+"   "
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_automation_hr_contract
@@ -5835,6 +5835,10 @@ msgid ""
 "=============================\n"
 "\n"
 msgstr ""
+"\n"
+"طريقة عرض مخطط غانت على الويب في أودو.\n"
+"=============================\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web
@@ -12170,13 +12174,13 @@ msgstr "البرازيلي - المحاسبة"
 #: model:ir.module.module,description:base.module_iap_crm
 #: model:ir.module.module,summary:base.module_iap_crm
 msgid "Bridge between IAP and CRM"
-msgstr "وسيط بين الوكيل المدرك للهوية وإدارة علاقات العملاء "
+msgstr "وسيط بين عمليات الشراء داخل التطبيق (IAP) وإدارة علاقات العملاء "
 
 #. module: base
 #: model:ir.module.module,description:base.module_iap_mail
 #: model:ir.module.module,summary:base.module_iap_mail
 msgid "Bridge between IAP and mail"
-msgstr "وسيط بين الوكيل المدرك للهوية والبريد "
+msgstr "وسيط بين عمليات الشراء داخل التطبيق (IAP) والبريد "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_account_accountant
@@ -13125,6 +13129,12 @@ msgstr "الاسم الكامل"
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__compute
 msgid "Compute"
 msgstr "احتسب"
+
+#. module: base
+#: code:addons/base/models/ir_model.py:0
+#, python-format
+msgid "Compute method cannot depend on field 'id'"
+msgstr "لا يمكن أن تعتمد طريقة الاحتساب على حقل 'المعرف' "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_crm_score
@@ -15525,6 +15535,18 @@ msgid "Error message returned when the constraint is violated."
 msgstr "رسالة خطأ تظهر عندما يتم اختراق القيود. "
 
 #. module: base
+#: code:addons/translate.py:0
+#, python-format
+msgid ""
+"Error while parsing view:\n"
+"\n"
+"%s"
+msgstr ""
+"حدث خطأ أثناء تحليل نافذة العرض:\n"
+"\n"
+"%s "
+
+#. module: base
 #: code:addons/base/models/ir_ui_view.py:0
 #, python-format
 msgid ""
@@ -16281,7 +16303,7 @@ msgid ""
 "Technical Details:\n"
 "%s"
 msgstr ""
-"تعذر استيراد الملف %r لعدم تطابق الصيغة أو لأنه لم يتم تكوين الملف بشكل صحيح. (الصيغ الصالحة هي are .csv, .po, .pot)\n"
+"تعذر استيراد الملف %r لعدم تطابق الصيغة أو لأنه لم يتم تكوين الملف بشكل صحيح. (الصيغ الصالحة هي .csv, .po, .pot)\n"
 "\n"
 "التفاصيل التقنية:\n"
 "%s"
@@ -18562,6 +18584,18 @@ msgstr ""
 #, python-format
 msgid "Invalid 'group by' parameter"
 msgstr "معامل 'تجميع حسب' غير صالح"
+
+#. module: base
+#: code:addons/template_inheritance.py:0
+#, python-format
+msgid "Invalid Expression while parsing xpath %r"
+msgstr "Invalid Expression while parsing xpath %r"
+
+#. module: base
+#: code:addons/base/models/ir_default.py:0
+#, python-format
+msgid "Invalid JSON format in Default Value field."
+msgstr "تنسيق JSON غير صالح في حقل القيمة الافتراضية. "
 
 #. module: base
 #: code:addons/models.py:0
@@ -23860,7 +23894,7 @@ msgstr "رقم الهاتف"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_phone_validation
 msgid "Phone Numbers Validation"
-msgstr "اعتماد أرقام الهواتف"
+msgstr "التحقق من أرقام الهواتف "
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -25972,6 +26006,14 @@ msgstr "أرسل شحناتك عبر Fedex وتتبعهم أونلاين"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_ups
+msgid ""
+"This is the legacy integration with UPS that is no longer supported. Please "
+"install the new \"UPS Shipping\" module and uninstall this one as soon as "
+"possible. This integration will stop working in 2024."
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_delivery_ups_rest
 msgid "Send your shippings through UPS and track them online"
 msgstr "أرسل شحناتك عبر UPS وتتبعهم أونلاين"
 
@@ -27143,7 +27185,7 @@ msgstr "Test Belgian Payroll"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_mail_server_form
 msgid "Test Connection"
-msgstr "اختبار اتصال"
+msgstr "اختبار الاتصال "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_data_cleaning
@@ -28314,7 +28356,7 @@ msgstr "To return an action, assign: <code>action = {...}</code>"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_actions_todo_tree
 msgid "Todo"
-msgstr "المطلوب تنفيذه"
+msgstr "قائمة المهام "
 
 #. module: base
 #: model:res.country,name:base.tg
@@ -28695,6 +28737,11 @@ msgstr "أكواد منتجات UNSPSC "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_ups
+msgid "UPS Shipping (Legacy)"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_ups_rest
 msgid "UPS Shipping"
 msgstr "شحن UPS"
 
@@ -30238,6 +30285,12 @@ msgid "You cannot deactivate the user you're currently logged in as."
 msgstr "لا يمكنك تعطيل المستخدم المُسجل منه دخولك حاليًا."
 
 #. module: base
+#: code:addons/base/models/ir_config_parameter.py:0
+#, python-format
+msgid "You cannot delete the %s record."
+msgstr "لا يمكنك حذف سجل %s. "
+
+#. module: base
 #: code:addons/base/models/res_lang.py:0
 #, python-format
 msgid ""
@@ -30258,6 +30311,12 @@ msgstr "لا يمكنك حذف لغة المستخدم المفضلة."
 #, python-format
 msgid "You cannot merge a contact with one of his parent."
 msgstr "لا يمكنك دمج جهة اتصال مع إحدى عناصره الأصلية."
+
+#. module: base
+#: code:addons/base/models/ir_config_parameter.py:0
+#, python-format
+msgid "You cannot rename config parameters with keys %s"
+msgstr "لا يمكنك إعادة تسمية معايير التهيئة مع المفاتيح %s "
 
 #. module: base
 #: code:addons/models.py:0

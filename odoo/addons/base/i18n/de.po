@@ -9248,6 +9248,7 @@ msgstr ""
 msgid ""
 "<code>UserError</code>: Warning Exception to use with <code>raise</code>"
 msgstr ""
+"<code>UserError</code>: Warnungsausnahme zu verwenden mit <code>raise</code>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_fields_form
@@ -12398,7 +12399,7 @@ msgstr "C5E 24  163 x 229 mm"
 #: model:ir.module.category,name:base.module_category_sales_crm
 #: model:ir.module.module,shortdesc:base.module_crm
 msgid "CRM"
-msgstr "Kundenverwaltung"
+msgstr "CRM"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_data_merge_crm
@@ -13214,6 +13215,12 @@ msgstr "Vollständiger Name"
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__compute
 msgid "Compute"
 msgstr "Berechnen"
+
+#. module: base
+#: code:addons/base/models/ir_model.py:0
+#, python-format
+msgid "Compute method cannot depend on field 'id'"
+msgstr "Berechnungsmethode darf nicht vom Feld „ID“ abhängen"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_crm_score
@@ -15631,6 +15638,18 @@ msgstr "Fehler"
 msgid "Error message returned when the constraint is violated."
 msgstr ""
 "Fehlermeldung, die zurückgegeben wird, wenn das Constraint verletzt wird."
+
+#. module: base
+#: code:addons/translate.py:0
+#, python-format
+msgid ""
+"Error while parsing view:\n"
+"\n"
+"%s"
+msgstr ""
+"Fehler bei der Analyse der Ansicht:\n"
+"\n"
+"%s"
 
 #. module: base
 #: code:addons/base/models/ir_ui_view.py:0
@@ -18713,6 +18732,18 @@ msgid "Invalid 'group by' parameter"
 msgstr "Fehlerhafter 'group by'-Parameter"
 
 #. module: base
+#: code:addons/template_inheritance.py:0
+#, python-format
+msgid "Invalid Expression while parsing xpath %r"
+msgstr "Ungültiger Ausdruck beim Parsen von xpath %r"
+
+#. module: base
+#: code:addons/base/models/ir_default.py:0
+#, python-format
+msgid "Invalid JSON format in Default Value field."
+msgstr "Ungültiges JSON-Format im Standardwertfeld."
+
+#. module: base
 #: code:addons/models.py:0
 #, python-format
 msgid "Invalid aggregation function %r."
@@ -20704,6 +20735,74 @@ msgid ""
 "perspectiva contable íntegramente. Por lo tanto, este PCGE no debe ser considerado en ningún aspecto\n"
 "como una guía con propósitos distintos del contable.\n"
 msgstr ""
+"Mindeseinstellung von Konten, um in Perú zu arbeiten.\n"
+"=================================================\n"
+"\n"
+"Die Nutzung dieses Kontenplans muss auf die offizielle Dokumentation auf der Seite des MEF verweisen.\n"
+"\n"
+"https://www.mef.gob.pe/contenidos/conta_publ/documentac/VERSION_MODIFICADA_PCG_EMPRESARIAL.pdf\n"
+"https://www.mef.gob.pe/contenidos/conta_publ/documentac/PCGE_2019.pdf\n"
+"\n"
+"Alle rechtlichen Hinweise finden Sie hier.\n"
+"\n"
+"http://www.sunat.gob.pe/legislacion/general/index.html\n"
+"\n"
+"Hinweise.\n"
+"===============\n"
+"\n"
+"Kontenplan:\n"
+"-----------------\n"
+"\n"
+"Die Struktur des Kontenplans basiert auf Kontengruppen, alle Konten mit Bewegung\n"
+"sind als Gruppen verfügbar, aber nur die gängigeren stehen als tatsächliche Konten zur Verfügung.\n"
+"Wenn Sie ein neues Konto anlegen möchten, verwenden Sie die Kontengruppe als\n"
+"Referenz.\n"
+"\n"
+"# TODO: Bild, das zeigt, wovon ich rede.\n"
+"\n"
+"Taxes:\n"
+"------\n"
+"\n"
+"'IGV': {'name': 'VAT', 'code': 'S'},\n"
+"'IVAP': {'name': 'VAT', 'code': ''},\n"
+"'ISC': {'name': 'EXC', 'code': 'S'},\n"
+"'ICBPER': {'name': 'OTH', 'code': ''},\n"
+"'EXP': {'name': 'FRE', 'code': 'G'},\n"
+"'GRA': {'name': 'FRE', 'code': 'Z'},\n"
+"'EXO': {'name': 'VAT', 'code': 'E'},\n"
+"'INA': {'name': 'FRE', 'code': 'O'},\n"
+"'OTROS': {'name': 'OTH', 'code': 'S'},\n"
+"\n"
+"Wir haben diesem Modul die 3 Steuerkonzepte hinzugefügt (erforderlich für die\n"
+"EDI-Signatur)\n"
+"\n"
+"# TODO: Neue Felder beschreiben.\n"
+"\n"
+"Produkte:\n"
+"---------\n"
+"\n"
+"Codes für Produkte, die im EDI verwendet werden, stehen hier zur Verfügung, um zu entscheiden,\n"
+"welche Steuer aufgrund des folgenden Codes und Python-Codes zu verwenden ist:\n"
+"\n"
+"https://docs.google.com/spreadsheets/d/1f1fxV8uGhA-Qz9-R1L1-dJirZ8xi3Wfg/edit#gid=662652969\n"
+"\n"
+"**NB:**\n"
+"---------\n"
+"\n"
+"**RELACIÓN ENTRE EL PCGE Y LA LEGISLACIÓN TRIBUTARIA:**\n"
+"\n"
+"Este PCGE ha sido preparado como una herramienta de carácter contable, para acumular información que\n"
+"requiere ser expuesta en el cuerpo de los estados financieros o en las notas a dichos estados. Esa acumulación se\n"
+"efectúa en los libros o registros contables, cuya denominación y naturaleza depende de las actividades que se\n"
+"efectúen, y que permiten acciones de verificación, control y seguimiento. Las NIIF completas y la NIIF PYMES no\n"
+"contienen prescripciones sobre teneduría de libros, y consecuentemente, sobre los libros y otros registros\n"
+"de naturaleza contable. Por otro lado, si bien es cierto la contabilidad es también un insumo, dentro de otros, para\n"
+"labores de cumplimiento tributario, este PCGE no ha sido elaborado para satisfacer prescripciones tributarias ni su\n"
+"verificación. No obstante ello, donde no hubo oposición entre la contabilidad financiera prescrita por las NIIF y\n"
+"la legislación tributaria, este PCGE ha incluido subcuentas, divisionarias y sub divisionarias, para\n"
+"distinguir componentes con validez tributaria, dentro del conjunto de componentes que corresponden a una\n"
+"perspectiva contable íntegramente. Por lo tanto, este PCGE no debe ser considerado en ningún aspecto\n"
+"como una guía con propósitos distintos del contable.\n"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_B
@@ -25080,7 +25179,7 @@ msgstr "Lager kaufen"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_stock_enterprise
 msgid "Purchase Stock Enterprise"
-msgstr ""
+msgstr "Einkauf Bestand Enterprise"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_mrp
@@ -26598,6 +26697,18 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_ups
+msgid ""
+"This is the legacy integration with UPS that is no longer supported. Please "
+"install the new \"UPS Shipping\" module and uninstall this one as soon as "
+"possible. This integration will stop working in 2024."
+msgstr ""
+"Dies ist die alte Integration mit UPS, die nicht mehr unterstützt wird. "
+"Bitte installieren Sie das neue Modul „UPS-Versand“ und deinstallieren Sie "
+"dieses Modul so schnell wie möglich. Diese Integration wird im Jahr 2024 "
+"nicht mehr funktionieren."
+
+#. module: base
+#: model:ir.module.module,summary:base.module_delivery_ups_rest
 msgid "Send your shippings through UPS and track them online"
 msgstr "Versenden Sie ihr Lieferungen über UPS und verfolgen Sie sie online."
 
@@ -29376,6 +29487,11 @@ msgstr "UNSPSC product codes"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_ups
+msgid "UPS Shipping (Legacy)"
+msgstr "UPS-Versand (veraltet)"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_ups_rest
 msgid "UPS Shipping"
 msgstr "UPS Versand"
 
@@ -30964,6 +31080,12 @@ msgstr ""
 "sind."
 
 #. module: base
+#: code:addons/base/models/ir_config_parameter.py:0
+#, python-format
+msgid "You cannot delete the %s record."
+msgstr "Sie können den %s-Datensatz nicht löschen."
+
+#. module: base
 #: code:addons/base/models/res_lang.py:0
 #, python-format
 msgid ""
@@ -30986,6 +31108,12 @@ msgstr ""
 msgid "You cannot merge a contact with one of his parent."
 msgstr ""
 "Sie können ein Ansprechpartner nicht mit dessen Unternehmen zusammenfassen."
+
+#. module: base
+#: code:addons/base/models/ir_config_parameter.py:0
+#, python-format
+msgid "You cannot rename config parameters with keys %s"
+msgstr "Sie können Konfigurationsparameter nicht mit %s umbenennen"
 
 #. module: base
 #: code:addons/models.py:0

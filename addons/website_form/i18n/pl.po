@@ -51,7 +51,7 @@ msgstr "'%s' nie jest poprawną datą i czasem"
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid ", .s_website_form"
-msgstr ""
+msgstr ", .s_website_form"
 
 #. module: website_form
 #: code:addons/website_form/controllers/main.py:0
@@ -587,7 +587,7 @@ msgstr "Odpowiemy ci wkrótce."
 #. module: website_form
 #: model:ir.model,name:website_form.model_website
 msgid "Website"
-msgstr "Strona WWW"
+msgstr "Strona internetowa"
 
 #. module: website_form
 #: model:ir.model.fields,field_description:website_form.field_ir_model__website_form_key

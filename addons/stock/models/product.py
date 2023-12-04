@@ -319,7 +319,7 @@ class Product(models.Model):
         if operator not in ('<', '>', '=', '!=', '<=', '>='):
             raise UserError(_('Invalid domain operator %s', operator))
         if not isinstance(value, (float, int)):
-            raise UserError(_('Invalid domain right operand %s', value))
+            raise UserError(_("Invalid domain right operand '%s'. It must be of type Integer/Float", value))
 
         # TODO: Still optimization possible when searching virtual quantities
         ids = []
@@ -332,6 +332,11 @@ class Product(models.Model):
 
     def _search_qty_available_new(self, operator, value, lot_id=False, owner_id=False, package_id=False):
         ''' Optimized method which doesn't search on stock.moves, only on stock.quants. '''
+        if operator not in ('<', '>', '=', '!=', '<=', '>='):
+            raise UserError(_('Invalid domain operator %s', operator))
+        if not isinstance(value, (float, int)):
+            raise UserError(_("Invalid domain right operand '%s'. It must be of type Integer/Float", value))
+
         product_ids = set()
         domain_quant = self._get_domain_locations()[0]
         if lot_id:
@@ -601,7 +606,10 @@ class ProductTemplate(models.Model):
     tracking = fields.Selection([
         ('serial', 'By Unique Serial Number'),
         ('lot', 'By Lots'),
-        ('none', 'No Tracking')], string="Tracking", help="Ensure the traceability of a storable product in your warehouse.", default='none', required=True)
+        ('none', 'No Tracking')],
+        string="Tracking", required=True, default='none',
+        compute='_compute_tracking', store=True, readonly=False,
+        help="Ensure the traceability of a storable product in your warehouse.")
     description_picking = fields.Text('Description on Picking', translate=True)
     description_pickingout = fields.Text('Description on Delivery Orders', translate=True)
     description_pickingin = fields.Text('Description on Receptions', translate=True)
@@ -688,6 +696,12 @@ class ProductTemplate(models.Model):
             }
         return prod_available
 
+    @api.depends('type')
+    def _compute_tracking(self):
+        self.filtered(
+            lambda t: not t.tracking or t.type in ('consu', 'service') and t.tracking != 'none'
+        ).tracking = 'none'
+
     @api.model
     def _get_action_view_related_putaway_rules(self, domain):
         return {
@@ -744,8 +758,6 @@ class ProductTemplate(models.Model):
     @api.onchange('type')
     def _onchange_type(self):
         res = super(ProductTemplate, self)._onchange_type() or {}
-        if self.type == 'consu' and self.tracking != 'none':
-            self.tracking = 'none'
 
         # Return a warning when trying to change the product type
         if self.ids and self.product_variant_ids.ids and self.env['stock.move.line'].sudo().search_count([
@@ -784,7 +796,7 @@ class ProductTemplate(models.Model):
         if 'uom_id' in vals:
             new_uom = self.env['uom.uom'].browse(vals['uom_id'])
             updated = self.filtered(lambda template: template.uom_id != new_uom)
-            done_moves = self.env['stock.move'].search([('product_id', 'in', updated.with_context(active_test=False).mapped('product_variant_ids').ids)], limit=1)
+            done_moves = self.env['stock.move'].sudo().search([('product_id', 'in', updated.with_context(active_test=False).mapped('product_variant_ids').ids)], limit=1)
             if done_moves:
                 raise UserError(_("You cannot change the unit of measure as there are already stock moves for this product. If you want to change the unit of measure, you should rather archive this product and create a new one."))
         if 'type' in vals and vals['type'] != 'product' and sum(self.mapped('nbr_reordering_rules')) != 0:

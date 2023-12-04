@@ -3123,13 +3123,13 @@ msgstr "Cash Statement"
 #: code:addons/account/models/account_bank_statement.py:0
 #, python-format
 msgid "Cash difference observed during the counting (Loss)"
-msgstr ""
+msgstr "Perbedaan kas yang ditemukan pada perhitungan (Rugi)"
 
 #. module: account
 #: code:addons/account/models/account_bank_statement.py:0
 #, python-format
 msgid "Cash difference observed during the counting (Profit)"
-msgstr ""
+msgstr "Perbedaan kas yang ditemukan pada perhitungan (Laba)"
 
 #. module: account
 #: code:addons/account/models/account_journal_dashboard.py:0
@@ -9615,7 +9615,7 @@ msgstr "Impor QIF"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__qr_code
 msgid "QR Code"
-msgstr ""
+msgstr "Kode QR"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -12586,6 +12586,14 @@ msgstr ""
 "- Untuk Mencocokkan teks di awal baris (di label atau catatan), akan mengisi teks Anda.\n"
 "- Untuk Mencocokkan teks di mana saja (di label atau catatan), isi teks di antara .*\n"
 "  misal: .*N°48748 abc123.*"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid ""
+"The move could not be posted for the following reason: %(error_message)s"
+msgstr ""
+"Pergerakkan tidak dapat diposting karena alasan berikut: %(error_message)s"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_move_line__move_id

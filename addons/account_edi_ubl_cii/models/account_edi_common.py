@@ -21,7 +21,7 @@ UOM_TO_UNECE_CODE = {
     'uom.product_uom_hour': 'HUR',
     'uom.product_uom_ton': 'TNE',
     'uom.product_uom_meter': 'MTR',
-    'uom.product_uom_km': 'KTM',
+    'uom.product_uom_km': 'KMT',
     'uom.product_uom_cm': 'CMT',
     'uom.product_uom_litre': 'LTR',
     'uom.product_uom_cubic_meter': 'MTQ',
@@ -53,11 +53,13 @@ COUNTRY_EAS = {
     'CY': 9928,
     'CZ': 9929,
     'DE': 9930,
+    'DK': '0184',
     'EE': 9931,
     'GB': 9932,
     'GR': 9933,
     'HR': 9934,
     'IE': 9935,
+    'IT': '0211',
     'LI': 9936,
     'LT': 9937,
     'LU': 9938,
@@ -107,6 +109,11 @@ class AccountEdiCommon(models.AbstractModel):
         if xmlid and line.product_uom_id.id in xmlid:
             return UOM_TO_UNECE_CODE.get(xmlid[line.product_uom_id.id], 'C62')
         return 'C62'
+
+    def _find_value(self, xpath, tree):
+        # avoid 'TypeError: empty namespace prefix is not supported in XPath'
+        nsmap = {k: v for k, v in tree.nsmap.items() if k is not None}
+        return self.env['account.edi.format']._find_value(xpath=xpath, xml_element=tree, namespaces=nsmap)
 
     # -------------------------------------------------------------------------
     # TAXES
@@ -312,7 +319,7 @@ class AccountEdiCommon(models.AbstractModel):
                 # Normalize the name of the file : some e-fff emitters put the full path of the file
                 # (Windows or Linux style) and/or the name of the xml instead of the pdf.
                 # Get only the filename with a pdf extension.
-                name = attachment_name.text.split('\\')[-1].split('/')[-1].split('.')[0] + '.pdf'
+                name = (attachment_name.text or 'invoice').split('\\')[-1].split('/')[-1].split('.')[0] + '.pdf'
                 attachment = self.env['ir.attachment'].create({
                     'name': name,
                     'res_id': invoice.id,
@@ -513,7 +520,7 @@ class AccountEdiCommon(models.AbstractModel):
         for xpath in xpath_dict['basis_qty']:
             basis_quantity_node = tree.find(xpath)
             if basis_quantity_node is not None:
-                basis_qty = float(basis_quantity_node.text)
+                basis_qty = float(basis_quantity_node.text) or 1
 
         # gross_price_unit (optional)
         gross_price_unit = None
@@ -592,8 +599,10 @@ class AccountEdiCommon(models.AbstractModel):
             price_unit = gross_price_unit / basis_qty
         elif net_price_unit is not None:
             price_unit = (net_price_unit + rebate) / basis_qty
+        elif price_subtotal is not None:
+            price_unit = (price_subtotal + allow_charge_amount) / (billed_qty or 1)
         else:
-            raise UserError(_("No gross price nor net price found for line in xml"))
+            raise UserError(_("No gross price, net price nor line subtotal amount found for line in xml"))
 
         # discount
         discount = 0
@@ -673,11 +682,16 @@ class AccountEdiCommon(models.AbstractModel):
 
         # Set the values on the line_form
         invoice_line_form.quantity = inv_line_vals['quantity']
-        if inv_line_vals.get('product_uom_id'):
-            invoice_line_form.product_uom_id = inv_line_vals['product_uom_id']
-        else:
+        if not inv_line_vals.get('product_uom_id'):
             logs.append(
                 _("Could not retrieve the unit of measure for line with label '%s'.", invoice_line_form.name))
+        elif not invoice_line_form.product_id:
+            # no product set on the line, no need to check uom compatibility
+            invoice_line_form.product_uom_id = inv_line_vals['product_uom_id']
+        elif inv_line_vals['product_uom_id'].category_id == invoice_line_form.product_id.product_tmpl_id.uom_id.category_id:
+            # needed to check that the uom is compatible with the category of the product
+            invoice_line_form.product_uom_id = inv_line_vals['product_uom_id']
+
         invoice_line_form.price_unit = inv_line_vals['price_unit']
         invoice_line_form.discount = inv_line_vals['discount']
         invoice_line_form.tax_ids.clear()

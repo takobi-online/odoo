@@ -28,7 +28,7 @@
 # Maurício Liell <mauricio@liell.com.br>, 2020
 # Vanderlei P. Romera <vanderleiromera@gmail.com>, 2020
 # Luis Felipe Miléo <mileo@kmee.com.br>, 2020
-# grazziano <gra.negocia@gmail.com>, 2020
+# grazziano <grazziano.do+transifex@gmail.com>, 2020
 # Éder Brito <britoederr@gmail.com>, 2021
 # Layna Nascimento, 2023
 # 
@@ -759,7 +759,7 @@ msgstr "Mensagem Pronta"
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__state__draft
 msgid "Draft"
-msgstr "Provisório"
+msgstr "Rascunho"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.transaction_form
@@ -1429,7 +1429,7 @@ msgstr "Token de pagamento"
 #: model_terms:ir.ui.view,arch_db:payment.payment_token_tree_view
 #: model_terms:ir.ui.view,arch_db:payment.payment_token_view_search
 msgid "Payment Tokens"
-msgstr "Tokens de Pagamentos"
+msgstr "Tokens de pagamentos"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_transaction
@@ -1445,7 +1445,7 @@ msgstr "Transação do Pagamento"
 #: model_terms:ir.ui.view,arch_db:payment.transaction_form
 #: model_terms:ir.ui.view,arch_db:payment.transaction_list
 msgid "Payment Transactions"
-msgstr "Transações de Pagamento"
+msgstr "Transações de pagamento"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_acquirer_onboarding_wizard

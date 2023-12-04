@@ -18,9 +18,9 @@
 # Vasiliy Korobatov <korobatov@gmail.com>, 2020
 # ILMIR <karamov@it-projects.info>, 2021
 # Ivan Kropotkin <yelizariev@itpp.dev>, 2022
-# Сергей Шебанин <sergey@shebanin.ru>, 2022
 # valmasone, 2022
 # Alena Vlasova, 2023
+# Сергей Шебанин <sergey@shebanin.ru>, 2023
 # alenafairy, 2023
 # 
 msgid ""
@@ -3007,7 +3007,7 @@ msgstr "Изображение"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_document_file_kanban
 msgid "Image is a link"
-msgstr ""
+msgstr "Изображение - это ссылка"
 
 #. module: mail
 #: code:addons/mail/models/mail_alias.py:0
@@ -4247,7 +4247,7 @@ msgstr "Не запланировано ни одного действия."
 #: code:addons/mail/static/src/components/discuss/discuss.xml:0
 #, python-format
 msgid "No conversation selected."
-msgstr ""
+msgstr "Не выбрано ни одного чата."
 
 #. module: mail
 #. openerp-web
@@ -6660,6 +6660,14 @@ msgstr ""
 "и приема электронных писем в сообществе и версии Enterprise. Интернет-"
 "пользователи уже пользуются готовым к использованию электронным сервером (@ "
 "mycompany.odoo.com)."
+
+#. module: mail
+#: code:addons/mail/models/ir_config_parameter.py:0
+#, python-format
+msgid ""
+"Value for `mail.catchall.domain.allowed` cannot be validated.\n"
+"It should be a comma separated list of domains e.g. example.com,example.org."
+msgstr ""
 
 #. module: mail
 #. openerp-web
