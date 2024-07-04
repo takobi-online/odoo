@@ -13,7 +13,7 @@
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2023
 # Benson <Benson.Dr@Gmail.com>, 2023
 # Wil Odoo, 2023
-# Tony Ng, 2023
+# Tony Ng, 2024
 # 
 msgid ""
 msgstr ""
@@ -21,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-27 13:50+0000\n"
 "PO-Revision-Date: 2020-09-07 08:09+0000\n"
-"Last-Translator: Tony Ng, 2023\n"
+"Last-Translator: Tony Ng, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2616,10 +2616,10 @@ msgid ""
 "invoices from picking, the system is able to add and compute the shipping line.\n"
 msgstr ""
 "\n"
-"允許增加發貨方式在銷售訂單和揀貨.\n"
+"允許增加發貨方式在銷售訂單和提貨.\n"
 "============================\n"
 "您可以定義自己的承運人的價格。當建立\n"
-"揀貨的憑單，該系統能夠增加和計算運輸行。\n"
+"提貨的憑單，該系統能夠增加和計算運輸行。\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_mrp_account_enterprise
@@ -5790,10 +5790,10 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Odoo 企業 Web 客戶端。\n"
+"Odoo 企業版網頁客戶端\n"
 "===========================\n"
 "\n"
-"模組會修改 web 插件以提供企業設計和響應。\n"
+"此模組修改網頁附加組件，以提供企業版設計及回應能力。\n"
 "        "
 
 #. module: base
@@ -5909,11 +5909,11 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"巴拿马会计科目表和税收本地化。\n"
+"Panamenian accounting chart and tax localization.\n"
 "\n"
-"计划承诺 panameño e impuestos de acuerdo a disposiciones vigentes\n"
+"Plan contable panameño e impuestos de acuerdo a disposiciones vigentes\n"
 "\n"
-"Con la Colaboración de \n"
+"Con la Colaboración de\n"
 "- AHMNET CORP http://www.ahmnet.com\n"
 "\n"
 "    "
@@ -6382,7 +6382,7 @@ msgid ""
 "Shorten URLs and use them to track clicks and UTMs\n"
 msgstr ""
 "\n"
-"縮短 URL 並使用它們來追踪點擊次數和整合式威脅管理 \n"
+"縮短網址並使用它們追蹤點擊及 UTM\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_google_map
@@ -7043,12 +7043,12 @@ msgid ""
 "taxes and the Quetzal currency."
 msgstr ""
 "\n"
-"这是管理危地马拉会计科目表的基础模块。\n"
+"This is the base module to manage the accounting chart for Guatemala.\n"
 "=====================================================================\n"
 "\n"
-"危地马拉危地马拉危地马拉危地马拉。Tambiénicluye impuestos y\n"
-"la moneda del Quetzal。 - 增加危地马拉的会计图表。 它还包括\n"
-"税率和格查尔币种。"
+"Agrega una nomenclatura contable para Guatemala. También icluye impuestos y\n"
+"la moneda del Quetzal. -- Adds accounting chart for Guatemala. It also includes\n"
+"taxes and the Quetzal currency."
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_hn
@@ -7294,14 +7294,14 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"这是Odoo中管理波兰会计科目表和税项的模块。\n"
+"This is the module to manage the accounting chart and taxes for Poland in Odoo.\n"
 "==================================================================================\n"
 "\n"
 "To jest moduł do tworzenia wzorcowego planu kont, podatków, obszarów podatkowych i\n"
 "rejestrów podatkowych. Moduł ustawia też konta do kupna i sprzedaży towarów\n"
 "zakładając, że wszystkie towary są w obrocie hurtowym.\n"
 "\n"
-"Niniejszy moduł jest przeznaczony dla Software 8.0.\n"
+"Niniejszy moduł jest przeznaczony dla odoo 8.0.\n"
 "Wewnętrzny numer wersji OpenGLOBE 1.02\n"
 "    "
 
@@ -7552,9 +7552,10 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-" 此模組會為「事件」管理系統增加條碼掃瞄支援。\n"
-" 為每位與會者產生一個條碼，並將其印在徽章上。掃瞄時，\n"
-" 會確認註冊。 "
+"此模組為活動管理系統新增條碼掃瞄支援功能。\n"
+"系統會為每位參加者產生一個條碼，並列印在識別證上。掃瞄該條碼後，\n"
+"登記即獲確認。\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_margin
@@ -8869,7 +8870,7 @@ msgstr "%(xmlid)s 是 %(xmlid_model)s 類型，應為 ir.actions.actions 的子�
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_lang_form
 msgid "%A - Full weekday name."
-msgstr "%A - 星期幾全稱。"
+msgstr "%A - 星期幾全寫。"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_lang_form
@@ -8944,7 +8945,7 @@ msgstr "%s (備份)"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_lang_form
 msgid "%w - Day of the week number [0(Sunday),6].\""
-msgstr "%w - 星期 [0(Sunday),6].\""
+msgstr "%w - 星期幾數字 [0(星期日),6]。\""
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_lang_form
@@ -9307,6 +9308,14 @@ msgid ""
 "                                <b attrs=\"{'invisible': ['&amp;', ('parent_id', '!=', False), ('type', '!=', False)]}\">Address</b>\n"
 "                            </span>"
 msgstr ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b attrs=\"{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'contact')]}\">公司地址</b>\n"
+"                                <b attrs=\"{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'invoice')]}\">發票地址</b>\n"
+"                                <b attrs=\"{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'delivery')]}\">送貨地址</b>\n"
+"                                <b attrs=\"{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'other')]}\">其他地址</b>\n"
+"                                <b attrs=\"{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'private')]}\">私人地址</b>\n"
+"                                <b attrs=\"{'invisible': ['&amp;', ('parent_id', '!=', False), ('type', '!=', False)]}\">地址</b>\n"
+"                            </span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_update
@@ -9363,9 +9372,9 @@ msgid ""
 "                                <span colspan=\"2\">Week of the Year: %(woy)s</span>\n"
 "                                <span colspan=\"2\">Day of the Week (0:Monday): %(weekday)s</span>"
 msgstr ""
-"<span colspan=\"2\">某年某日: %(doy)s</span>\n"
-"                                <span colspan=\"2\">某年某周: %(woy)s</span>\n"
-"                                <span colspan=\"2\">某周某天 (0:週一): %(weekday)s</span>"
+"<span colspan=\"2\">年內第幾天：%(doy)s</span>\n"
+"                                <span colspan=\"2\">年內第幾週：%(woy)s</span>\n"
+"                                <span colspan=\"2\">星期幾（0 = 週一）：%(weekday)s</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.sequence_view
@@ -11174,12 +11183,12 @@ msgstr "預約"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_appraisal
 msgid "Appraisal"
-msgstr "評價"
+msgstr "表現評核"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_appraisal_survey
 msgid "Appraisal - Survey"
-msgstr "審批 - 問卷"
+msgstr "表現評核 - 問卷"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_human_resources_appraisals
@@ -11239,7 +11248,7 @@ msgstr "Arch 檔案名稱"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__arch_to_compare
 msgid "Arch To Compare To"
-msgstr ""
+msgstr "要比較的架構"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_view_form
@@ -11958,7 +11967,7 @@ msgstr "比利時-薪資"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_fleet
 msgid "Belgium - Payroll - Fleet"
-msgstr "比利時 - 薪資表 - 車隊管理"
+msgstr "比利時 - 薪酬管理 - 車隊"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_account
@@ -12158,7 +12167,7 @@ msgstr "專案和企業的橋樑模塊"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_twitter_wall
 msgid "Bridge module to configure a twitter wall on your event"
-msgstr "用於在您的活動中配置推特牆的橋接模塊"
+msgstr "橋接模組，用於在你的活動上配置 Twitter 訊息牆"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_social
@@ -12262,7 +12271,7 @@ msgstr "客戶關係管理"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_data_merge_crm
 msgid "CRM Deduplication"
-msgstr "客戶關係管理重複數據刪除"
+msgstr "消除重複客戶關係"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_gamification_sale_crm
@@ -13924,7 +13933,7 @@ msgstr "貨幣符號，列印金額時使用。"
 #: code:addons/base/models/ir_ui_view.py:0
 #, python-format
 msgid "Current Arch"
-msgstr ""
+msgstr "當前架構"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__current_line_id
@@ -14062,7 +14071,7 @@ msgstr "DLE 26 110 x 220 公釐"
 #: code:addons/base/models/ir_qweb_fields.py:0
 #, python-format
 msgid "Dash"
-msgstr ""
+msgstr "Dash"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_fleet_dashboard
@@ -14243,12 +14252,12 @@ msgstr "Deco Addict 為木材行業帶來誠實和認真，同時幫助客戶處
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_deduplicate
 msgid "Deduplicate Contacts"
-msgstr "刪除重複聯繫人"
+msgstr "消除重複聯絡人"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.base_partner_merge_automatic_wizard_form
 msgid "Deduplicate the other Contacts"
-msgstr "刪除重複其他聯繫人"
+msgstr "消除重複其他聯絡人"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form
@@ -16303,7 +16312,7 @@ msgstr "Finnish Localization"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__week_start
 msgid "First Day of Week"
-msgstr "每週五天"
+msgstr "星期起首日"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_mx_reports_closing
@@ -16549,7 +16558,7 @@ msgstr "法屬圭亞那"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
 msgid "French Payroll"
-msgstr "法國薪資表"
+msgstr "法國薪酬管理"
 
 #. module: base
 #: model:res.country,name:base.pf
@@ -17338,7 +17347,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.category,description:base.module_category_human_resources_payroll
 msgid "Helps you manage your payrolls."
-msgstr "幫您管理您的薪資表。"
+msgstr "幫助你管理薪酬。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_services_project
@@ -18100,7 +18109,7 @@ msgstr "印度 - 庫存報表 (GST)"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_hr_payroll
 msgid "Indian Payroll"
-msgstr "印度薪資表"
+msgstr "印度薪酬管理"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__company_type__person
@@ -18115,7 +18124,7 @@ msgstr "個人"
 #. module: base
 #: model:res.country,name:base.id
 msgid "Indonesia"
-msgstr "印度尼西亞"
+msgstr "印尼"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_id_efaktur
@@ -20013,7 +20022,7 @@ msgstr "管理您的文件以簽署合同"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_payroll
 msgid "Manage your employee payroll records"
-msgstr "管理您的員工薪資表記錄"
+msgstr "管理你的員工薪酬記錄"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_planning
@@ -22881,6 +22890,118 @@ msgid ""
 "\n"
 "Schedule, organize, promote or sell events online; conferences, trainings, webinars, etc.\n"
 msgstr ""
+"Odoo 網站建設\n"
+"--------\n"
+"\n"
+"獲取一個很棒的<a href=\"https://www.odoo.com/page/website-builder\">免費網站</a>，\n"
+"使用 Odoo <a href=\"https://www.odoo.com/page/website-builder\">網站構建器</a>輕鬆定制.\n"
+"\n"
+"使用我們超級簡單的構建器建立企業級網站. 好好使用\n"
+"設計構建模組並線上上編輯所有內容.\n"
+"\n"
+"受益於開箱即用的業務功能；電子商務、活動、部落格、工作\n"
+"公告、客戶推薦、號召性用語等.\n"
+"\n"
+"線上上編輯任何內容\n"
+"--------\n"
+"\n"
+"在沒有技術知識的情況下建立漂亮的網站. Odoo 獨特的 *'edit\n"
+"inline'* 方法使網站建立變得異常簡單. 不再複雜\n"
+"後端；只需點擊任意位置即可更改任何內容.\n"
+"\n"
+"\"想要更改產品的價格? 還是加粗? 想換一個\n"
+"部落格標題? \"只需點擊並更改. 你所看到的就是你得到的. 真的.\n"
+"\n"
+"太棒了. 美得驚人.\n"
+"---------------------\n"
+"\n"
+"Odoo 的構建模組允許設計不可能的現代網站\n"
+"使用傳統的所見即所得頁面編輯器.\n"
+"\n"
+"無論是產品描述、部落格還是靜態頁面，你都不需要\n"
+"做一個專業的設計師來創造乾淨的內容. 只需拖放和\n"
+"自定義預定義的構建模組.\n"
+"\n"
+"企業就緒，開箱即用\n"
+"--------------------------------\n"
+"\n"
+"只需點擊即可激活即用型企業功能；電子商務，\n"
+"號召性用語、工作公告、活動、客戶推薦、部落格等.\n"
+"\n"
+"傳統電子商務和 CMS 的後端設計不佳，因為它不是他們的\n"
+"核心焦點. 通過 Odoo 整合，您將受益於最佳管理\n"
+"追蹤您的訂單、求職者、潛在客戶等的軟體.\n"
+"\n"
+"出色的移動體驗\n"
+"-------------------------\n"
+"\n"
+"我們的響應式設計基於\n"
+"，因此獲得了一個適合移動設備的網站引導程式. 您的所有頁面都會自動適應螢幕尺寸. (移動設備\n"
+"手機、平板電腦、台式機)您不必擔心移動內容，它\n"
+"預設工作.\n"
+"\n"
+"觸手可及的 SEO 工具\n"
+"-----------------------------\n"
+"\n"
+"*Promote* 工具根據 Google 搜索最多的字詞建議關鍵字.\n"
+"搜索引擎優化工具即可使用，無需設定\n"
+"必需.\n"
+"\n"
+"預設情況下，Google Analytics 會追蹤您的購物車事件. 站點地圖和\n"
+"為 Google 索引自動建立結構化內容.\n"
+"\n"
+"多語言變得簡單\n"
+"-------------------------\n"
+"\n"
+"毫不費力地將您的網站翻譯成多種語言. Odoo 建議\n"
+"並根據您編輯的內容自動跨頁面傳播翻譯\n"
+"在母版頁上.\n"
+"\n"
+"設計師友好的模板\n"
+"---------------\n"
+"\n"
+"模板很棒且易於設計. 您無需開發即可建立\n"
+"新頁面、主題或構建塊. 我們使用乾淨的 HTML 結構，a\n"
+"[引導程式](http://getbootstrap.com/) CSS.\n"
+"\n"
+"使用整合的模板編輯器即時自定義每個頁面. 分發\n"
+"你的工作很容易作為一個 Odoo 模組.\n"
+"\n"
+"流體網格佈局\n"
+"--------\n"
+"\n"
+"通過拖放構建模組設計完美的頁面. 移動和縮放它們\n"
+"以適應您正在尋找的佈局.\n"
+"\n"
+"構建模組基於響應迅速、移動友好的流體網格系統\n"
+"根據設備或視窗大小適當地擴展到 12 列\n"
+"增加.\n"
+"\n"
+"專業主題\n"
+"--------\n"
+"\n"
+"設計自定義主題或重複使用預定義的主題來自定義外觀和\n"
+"感覺你的網站.\n"
+"\n"
+"輕鬆測試新的配色方案；您可以在任何時間更改您的主題\n"
+"點擊.\n"
+"\n"
+"與 Odoo 應用程式整合\n"
+"-------------------------\n"
+"\n"
+"### 電子商務\n"
+"\n"
+"推廣產品，線上銷售，優化訪客的購物體驗.\n"
+"\n"
+"\n"
+"### 部落格\n"
+"\n"
+"撰寫新聞，吸引新訪客，建立客戶忠誠度.\n"
+"\n"
+"\n"
+"### 線上活動\n"
+"\n"
+"線上安排、組織、推廣或銷售活動；會議、培訓、網路研討會等.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale
@@ -23665,7 +23786,7 @@ msgstr ""
 "###組織\n"
 "\n"
 "- 高級規劃\n"
-"- 打印徽章\n"
+"- 打印識別證\n"
 "- 自動化跟進電子郵件\n"
 "- 最小/最大容量\n"
 "- 管理課程和資源\n"
@@ -24213,12 +24334,12 @@ msgstr "Paypal付款"
 #: model:ir.module.category,name:base.module_category_human_resources_payroll
 #: model:ir.module.module,shortdesc:base.module_hr_payroll
 msgid "Payroll"
-msgstr "薪資表"
+msgstr "薪酬管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_payroll_account
 msgid "Payroll Accounting"
-msgstr "薪資表會計"
+msgstr "薪酬管理會計"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_payroll_localization
@@ -24479,7 +24600,7 @@ msgstr "預覽pdf src"
 #: code:addons/base/models/ir_ui_view.py:0
 #, python-format
 msgid "Previous Arch"
-msgstr ""
+msgstr "上一個架構"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_view__arch_prev
@@ -25229,7 +25350,7 @@ msgstr "記錄:"
 #: code:addons/base/models/ir_rule.py:0
 #, python-format
 msgid "Records: %s"
-msgstr "Records: %s"
+msgstr "記錄: %s"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_human_resources_recruitment
@@ -26771,7 +26892,7 @@ msgstr "社群推送通知"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_social_twitter
 msgid "Social Twitter"
-msgstr "社交推特"
+msgstr "社交 Twitter"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_media
@@ -28946,7 +29067,7 @@ msgstr "圖瓦魯"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_twitter
 msgid "Twitter Snippet"
-msgstr "推特片段"
+msgstr "Twitter 小片段"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_twitter_wall
@@ -29034,12 +29155,12 @@ msgstr "英國 - 會計報告"
 #: model:ir.module.module,shortdesc:base.module_product_unspsc
 #: model:ir.module.module,summary:base.module_product_unspsc
 msgid "UNSPSC product codes"
-msgstr "UNSPSC product codes"
+msgstr "UNSPSC 產品代碼"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_ups
 msgid "UPS Shipping (Legacy)"
-msgstr ""
+msgstr "UPS 貨運 (舊)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_ups_rest
@@ -29086,7 +29207,7 @@ msgstr "USt"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_data_merge_utm
 msgid "UTM Deduplication"
-msgstr "UTM 刪除重複資料"
+msgstr "UTM 消除重複"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_utm
@@ -29096,7 +29217,7 @@ msgstr "UTM 追蹤器"
 #. module: base
 #: model:ir.module.module,description:base.module_mass_mailing_crm
 msgid "UTM and mass mailing on lead / opportunities"
-msgstr "批量郵寄線索機會"
+msgstr "潛在客戶/銷售機會 UTM 及群發郵件"
 
 #. module: base
 #: model:ir.module.module,description:base.module_mass_mailing_sale
@@ -29458,7 +29579,7 @@ msgstr "在銷售訂單中使用折扣券"
 #. module: base
 #: model:ir.module.module,summary:base.module_account_tax_python
 msgid "Use python code to define taxes"
-msgstr "使用python程式碼定義税"
+msgstr "使用 Python 程式碼定義稅項"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence__use_date_range
@@ -29597,7 +29718,7 @@ msgstr "使用者:"
 #: code:addons/base/models/ir_rule.py:0
 #, python-format
 msgid "User: %s"
-msgstr "User: %s"
+msgstr "使用者: %s"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_user
